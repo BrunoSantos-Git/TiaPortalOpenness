@@ -111,3 +111,4 @@ F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\obj\Debug\TiaOpennessHelper
 F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\obj\Debug\TiaOpennessHelper.csproj.CopyComplete
 F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\obj\Debug\TiaOpennessHelper.dll
 F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\obj\Debug\TiaOpennessHelper.pdb
+F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\obj\Debug\TiaOpennessHelper.csprojAssemblyReference.cache

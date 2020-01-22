@@ -46,7 +46,7 @@
             </StackPanel>
         </Button>
         <CheckBox x:Name="cbImportToTia" Content="Import to TIA" Margin="380,10,10,0" VerticalAlignment="Top" IsEnabled="{Binding IsTiaConnected}" HorizontalAlignment="Left" FontSize="14" FontWeight="Bold" FontFamily="Segoe UI Historic" Foreground="#FFF4F4F4"/>
-        <WindowsFormsHost FontSize="14" Name="WindowFormSaving" Margin="380,30,10,0" HorizontalAlignment="Left" Width="Auto" FontFamily="Segoe UI Emoji" VerticalAlignment="Top" Background="#FF3B4461">
+        <WindowsFormsHost FontSize="14" Name="WindowFormSaving" Margin="380,30,10,0" Height="25" HorizontalAlignment="Stretch" FontFamily="Segoe UI Emoji" VerticalAlignment="Top" Background="#FF3B4461">
             <wf:Label x:Name="Saving" ForeColor="White" BackColor="#FF3B4461" BorderStyle="None"/>
         </WindowsFormsHost>
         <Rectangle Margin="10,60,10,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Stroke="#FFDBDCDC" />
