@@ -99,7 +99,6 @@ F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\bin\Debug\TiaOpennessHelper
 F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\bin\Debug\itextsharp.dll
 F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\bin\Debug\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\bin\Debug\itextsharp.xml
-F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\obj\Debug\TiaOpennessHelper.csprojAssemblyReference.cache
 F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\obj\Debug\SequenceGenerator\TreeViewManager.baml
 F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\obj\Debug\PLCDbGenerator\DBMaker.baml
 F:\TiaPortalOpenness\Visual Studio\TiaOpennessHelper\obj\Debug\SequenceGenerator\ExcelAsker.g.cs

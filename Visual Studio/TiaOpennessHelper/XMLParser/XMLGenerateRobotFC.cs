@@ -357,16 +357,14 @@ namespace TiaOpennessHelper
             XmlNamespaceManager ns = new XmlNamespaceManager(xmlPrgProcess.NameTable);
             ns.AddNamespace("msbld", "http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v2");
 
-            int idFrg = 44;
-            int idVer = 23;
             foreach (var col in colisions)
             {
                 string[] cols = col[3].Split(',');
 
                 for (int i = 0; i < cols.Length; i++)
                 {
-                    idFrg = 44 + int.Parse(cols[i]);
-                    idVer = 23 + int.Parse(cols[i]);
+                    int idFrg = 44 + int.Parse(cols[i]);
+                    int idVer = 23 + int.Parse(cols[i]);
 
                     // ADD FRG
                     XmlNode Frg = xmlPrgProcess.SelectSingleNode("//msbld:Frg"+cols[i], ns);
@@ -394,7 +392,7 @@ namespace TiaOpennessHelper
                 XmlNode Frg = xmlPrgProcess.SelectSingleNode("//msbld:Frg"+i, ns);
                 if (Frg != null)
                 {
-                    idFrg = 44 + i;
+                    int idFrg = 44 + i;
                     XmlNode importNode = OpennessHelper.ConvertXElement(CreateFrg_anTempBool(idFrg), xmlPrgProcess);
                     Frg.AppendChild(importNode);
                     while(Frg.HasChildNodes)
@@ -1236,19 +1234,15 @@ namespace TiaOpennessHelper
             {
                 if (Convert.ToString(matrixRead[rows, 3]) == robName)
                 {
-                    string colision = "";
-                    string robCol = "";
-                    string robColNum = "";
-                    string robNum = "";
                     int col = 4;
                     do
                     {
                         if (!string.IsNullOrEmpty(Convert.ToString(matrixRead[rows, col])) && Convert.ToString(matrixRead[rows, col]) != "0")
                         {
-                            colision = matrixRead[rows, col].ToString();
-                            robCol = matrixRead[5, col].ToString();
-                            robColNum = matrixRead[4, col].ToString();
-                            robNum = matrixRead[rows, 2].ToString();
+                            string colision = matrixRead[rows, col].ToString();
+                            string robCol = matrixRead[5, col].ToString();
+                            string robColNum = matrixRead[4, col].ToString();
+                            string robNum = matrixRead[rows, 2].ToString();
                             Colisions.Add(new List<string>() { robCol, robColNum, robNum, colision });
                         }
 

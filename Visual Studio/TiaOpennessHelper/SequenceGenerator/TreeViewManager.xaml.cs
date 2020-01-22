@@ -85,7 +85,18 @@ namespace TiaOpennessHelper.ExcelTree
         /// <param name="e"></param>
         private void Btn_Add_Click(object sender, RoutedEventArgs e)
         {
-            CreateNewExcel();
+            WriteSavingLabelText("Creating New Excel...");
+
+            RetrieveValues();
+            ExcelAsker excelAsker = new ExcelAsker
+            {
+                SavePath = Path.Combine(savePath, "Excel Files"),
+                Steps = steps
+            };
+            excelAsker.Closed += ExcelAsker_Closed;
+            excelAsker.Show();
+
+            WriteSavingLabelText("");
         }
 
         /// <summary>
@@ -106,7 +117,54 @@ namespace TiaOpennessHelper.ExcelTree
         /// <param name="e"></param>
         private void Btn_GenerateNetNGraf_Click(object sender, RoutedEventArgs e)
         {
-            GenerateNetNGraf();
+            bool importToTia = (bool)cbImportToTia.IsChecked;
+            if (FilePath.Contains(".xlsx") || FilePath.Contains(".xlsm") || FilePath.Contains(".xltx") || FilePath.Contains(".xltm"))
+            {
+                WriteSavingLabelText("Generating NetNGraf...");
+
+                BlocksCreated = new List<string>();
+                RetrieveValues();
+
+                // Update lists "SheetsStepS" and "SheetsNameS"
+                foreach (WorkSheet ws in workSheets)
+                {
+                    if (ws.WorkSheetSteps.Count() > 1)
+                        SaveWorksheetIntoMatrix(ws, ws.WorkSheetName);
+                    else
+                        MessageBox.Show("Worksheet \"" + ws.WorkSheetName + "\" will not be generated because it does not have sufficient steps.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                UpdateWorksheetSteps();
+
+                PlcSoftware plcS = null;
+
+                GrafcetManager.SavePath = Path.Combine(savePath, "50_Stationen");
+
+                if (current != null)
+                    plcS = (PlcSoftware)(current as PlcBlockUserGroup).Parent.Parent;
+
+                try
+                {
+                    GrafcetManager.GenerateGrafcet(sheetsStepS, sheetsNameS, plcS);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    WriteSavingLabelText("");
+                    return;
+                }
+
+                if (importToTia)
+                {
+                    BlocksCreated = BlocksCreated.Distinct().ToList();
+                    using (var access = tiaPortal.ExclusiveAccess("Importing elements"))
+                    {
+                        ExcelManager.BlocksImporter(savePath, current, "50_Stationen", BlocksCreated);
+                    }
+                }
+
+                Changes = true;
+                WriteSavingLabelText("");
+            }
         }
 
         /// <summary>
@@ -115,35 +173,6 @@ namespace TiaOpennessHelper.ExcelTree
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Btn_Save_Click(object sender, RoutedEventArgs e)
-        {
-            SaveExcelValue();
-        }
-        #endregion
-
-        #region BUTTON FUCTIONS
-        /// <summary>
-        /// Function that creates a new excel with the DataGrid values in the chosen path
-        /// </summary>
-        private void CreateNewExcel()
-        {
-            WriteSavingLabelText("Creating New Excel...");
-
-            RetrieveValues();
-            ExcelAsker excelAsker = new ExcelAsker
-            {
-                SavePath = Path.Combine(savePath, "Excel Files"),
-                Steps = steps
-            };
-            excelAsker.Closed += ExcelAsker_Closed;
-            excelAsker.Show();
-
-            WriteSavingLabelText("");
-        }
-
-        /// <summary>
-        /// Function that saves the current values in the DataGrid values in the chosen path
-        /// </summary>
-        private void SaveExcelValue()
         {
             WriteSavingLabelText("Saving...");
 
@@ -239,64 +268,10 @@ namespace TiaOpennessHelper.ExcelTree
                         System.Windows.MessageBox.Show("This Excel does not contain a usable worksheet", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
-            
+
             WriteSavingLabelText("");
         }
-
-        /// <summary>
-        /// Generate the NetWork and GrafcetFiles of the Current Path
-        /// </summary>
-        private void GenerateNetNGraf()
-        {
-            bool importToTia = (bool)cbImportToTia.IsChecked;
-            if (FilePath.Contains(".xlsx") || FilePath.Contains(".xlsm") || FilePath.Contains(".xltx") || FilePath.Contains(".xltm"))
-            {
-                WriteSavingLabelText("Generating NetNGraf...");
-
-                BlocksCreated = new List<string>();
-                RetrieveValues();
-
-                // Update lists "SheetsStepS" and "SheetsNameS"
-                foreach (WorkSheet ws in workSheets)
-                {
-                    if (ws.WorkSheetSteps.Count() > 1)
-                        SaveWorksheetIntoMatrix(ws, ws.WorkSheetName);
-                    else
-                        MessageBox.Show("Worksheet \"" + ws.WorkSheetName + "\" will not be generated because it does not have sufficient steps.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                }
-                UpdateWorksheetSteps();
-
-                PlcSoftware plcS = null;
-
-                GrafcetManager.SavePath = Path.Combine(savePath, "50_Stationen");
-
-                if (current != null)
-                    plcS = (PlcSoftware)(current as PlcBlockUserGroup).Parent.Parent;
-
-                try
-                {
-                    GrafcetManager.GenerateGrafcet(sheetsStepS, sheetsNameS, plcS);
-                } 
-                catch(Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    WriteSavingLabelText("");
-                    return;
-                }
-
-                if (importToTia)
-                {
-                    BlocksCreated = BlocksCreated.Distinct().ToList();
-                    using (var access = tiaPortal.ExclusiveAccess("Importing elements"))
-                    {
-                        ExcelManager.BlocksImporter(savePath, current, "50_Stationen", BlocksCreated);
-                    }
-                }
-
-                Changes = true;
-                WriteSavingLabelText("");
-            }
-        }
+        #endregion
 
         /// <summary>
         /// Populate datagrid with a list of matrixs
@@ -389,7 +364,6 @@ namespace TiaOpennessHelper.ExcelTree
 
             workSheets = new List<WorkSheet>();
         }
-        #endregion
 
         /// <summary>
         /// Fills the Steps List with the Values of the DataGrid

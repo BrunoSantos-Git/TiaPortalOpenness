@@ -1608,21 +1608,6 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
-        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.CreateNewExcel">
-            <summary>
-            Function that creates a new excel with the DataGrid values in the chosen path
-            </summary>
-        </member>
-        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.SaveExcelValue">
-            <summary>
-            Function that saves the current values in the DataGrid values in the chosen path
-            </summary>
-        </member>
-        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.GenerateNetNGraf">
-            <summary>
-            Generate the NetWork and GrafcetFiles of the Current Path
-            </summary>
-        </member>
         <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.PopulateGridWithMatrixList(System.Collections.Generic.List{System.Object[0:,0:]},System.Collections.Generic.List{System.String})">
             <summary>
             Populate datagrid with a list of matrixs

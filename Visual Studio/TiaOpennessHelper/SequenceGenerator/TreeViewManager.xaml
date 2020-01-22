@@ -73,7 +73,7 @@
                 <ComboBox x:Name="ComboSheet" VerticalAlignment="Stretch" SelectionChanged="ComboSheet_SelectionChanged"/>
             </Grid>
         </GroupBox>
-        <WindowsFormsHost Name="WindowFormSaving" FontFamily="Segoe UI Emoji" FontSize="14" Margin="415,59,10,0" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF3B4461">
+        <WindowsFormsHost Name="WindowFormSaving" FontFamily="Segoe UI Emoji" FontSize="14" Margin="415,59,10,0" Height="25" HorizontalAlignment="Stretch" VerticalAlignment="Top" Background="#FF3B4461">
             <wf:Label x:Name="Saving" ForeColor="White" BackColor="#FF3B4461" BorderStyle="None"/>
         </WindowsFormsHost>
     </Grid>
