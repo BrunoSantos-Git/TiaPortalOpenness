@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="TiaPortalOpennessDemo.Views.ImportCaxControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TiaPortalOpennessDemo.Views"
+             xmlns:system="clr-namespace:System;assembly=mscorlib"
+             xmlns:helper="clr-namespace:TiaOpennessHelper;assembly=TiaOpennessHelper"
+             x:Name="parent"
+             mc:Ignorable="d" >
+    <UserControl.Resources>
+        <ObjectDataProvider x:Key="CaxImportOptions" MethodName="GetValues"
+                            ObjectType="{x:Type system:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="helper:ImportCaxOptions" />
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+    </UserControl.Resources>
+    <DockPanel DataContext="{Binding ElementName=parent}" LastChildFill="False" >
+        <Label Content="Import CAx file" Foreground="White" DockPanel.Dock="Top" Margin="10,10,10,0"/>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="10,2,10,2">
+            <Label Content="File Path:" Width="95" Foreground="White" />
+            <local:FileBrowserControl Path="{Binding Path=FilePath, Mode=TwoWay}" x:Name="CaxImportPath" Filter="AML File|*.aml" Width="220" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="10,2,10,2">
+            <Label Content="Import options:" Foreground="White"  Width="95"/>
+            <ComboBox ItemsSource="{Binding Source={StaticResource CaxImportOptions}}" SelectedItem="{Binding Path=SelectedOption}" Width="220" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" DockPanel.Dock="Bottom" HorizontalAlignment="Right" Margin="10,2,10,10">
+            <Button Command="{Binding CancelCommand}" Content="Cancel" Width="75" Margin="0,0,2,0" >
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+            <Button Command="{Binding ImportCommand}" Content="Import" Width="75" Margin="2,0,0,0" >
+                <Button.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                        <GradientStop Color="White"/>
+                        <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+    </DockPanel>
+</UserControl>

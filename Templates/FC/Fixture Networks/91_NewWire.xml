@@ -1,0 +1,4 @@
+	<Wire UId="WIREID">
+      <IdentCon UId="IDENTCONID" />
+      <NameCon UId="NAMECONID" Name="inINPUT" />
+    </Wire>

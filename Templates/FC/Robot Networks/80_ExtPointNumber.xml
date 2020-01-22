@@ -1,0 +1,218 @@
+<SW.Blocks.CompileUnit ID="66" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v2">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_signed</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="22">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_signed</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="IfcFGExternal" />
+        <Address Area="DB" Type="iUDT_IFC_SYS_EXTERNAL_ALARM" BlockNumber="67" BitOffset="800" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="IfcTECH" />
+        <Address Area="DB" Type="iUDT_IFC_ROBOT_TECH" BlockNumber="67" BitOffset="1664" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="DB_Production_Data" />
+        <Component Name="TMU" />
+        <Address Area="DB" Type="Struct" BlockNumber="16505" BitOffset="64" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="DB_PARA_POINT_NUMBER" />
+        <Address Area="DB" Type="iUDT_ROBOT_TECH_POINT_NUMBER" BlockNumber="201" BitOffset="0" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="ROBNAME_PO_DATA" />
+        <Address Area="Output" Type="iUDT_PO_ROBOT_ADRxx96_DATA" BitOffset="40768" Informative="true" />
+      </Symbol>
+    </Access>
+    <Call UId="28">
+      <CallInfo Name="iSF_ROBOT_EXT_POINT_NUMBER" BlockType="FB">
+        <IntegerAttribute Name="BlockNumber" Informative="true">102</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2018-02-19T11:39:09</DateAttribute>
+        <Instance Scope="GlobalVariable" UId="29">
+          <Component Name="FGDB_ROBNAME@POINT_NUMBER" />
+          <Address Area="DB" Type="iSF_ROBOT_EXT_POINT_NUMBER" BlockNumber="218" BitOffset="0" Informative="true" />
+        </Instance>
+        <Parameter Name="attribute_1" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="toolNumber" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="lineNumber" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="attribute_4" Section="Output" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="attribute_5" Section="Output" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="subvariantNumber" Section="Output" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="roofTypeNumber" Section="Output" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="steererNumber" Section="Output" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="typeNumber" Section="Output" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="modelNumber" Section="Output" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="fault" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="IfcFgExternal" Section="InOut" Type="iUDT_IFC_SYS_EXTERNAL_ALARM">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ident" Section="InOut" Type="Variant">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="TMU" Section="InOut" Type="Struct">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="DB_PARA_POINT_NUMBER" Section="InOut" Type="iUDT_ROBOT_TECH_POINT_NUMBER">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Out_PO_DATA" Section="InOut" Type="iUDT_PO_ROBOT_ADRxx96_DATA">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="40">
+      <OpenCon UId="30" />
+      <NameCon UId="28" Name="en" />
+    </Wire>
+    <Wire UId="41">
+      <OpenCon UId="31" />
+      <NameCon UId="28" Name="attribute_1" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="21" />
+      <NameCon UId="28" Name="toolNumber" />
+    </Wire>
+    <Wire UId="43">
+      <IdentCon UId="22" />
+      <NameCon UId="28" Name="lineNumber" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="23" />
+      <NameCon UId="28" Name="IfcFgExternal" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="24" />
+      <NameCon UId="28" Name="ident" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="25" />
+      <NameCon UId="28" Name="TMU" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="26" />
+      <NameCon UId="28" Name="DB_PARA_POINT_NUMBER" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="27" />
+      <NameCon UId="28" Name="Out_PO_DATA" />
+    </Wire>
+    <Wire UId="49">
+      <NameCon UId="28" Name="attribute_4" />
+      <OpenCon UId="32" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="28" Name="attribute_5" />
+      <OpenCon UId="33" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="28" Name="subvariantNumber" />
+      <OpenCon UId="34" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="28" Name="roofTypeNumber" />
+      <OpenCon UId="35" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="28" Name="steererNumber" />
+      <OpenCon UId="36" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="28" Name="typeNumber" />
+      <OpenCon UId="37" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="28" Name="modelNumber" />
+      <OpenCon UId="38" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="28" Name="fault" />
+      <OpenCon UId="39" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="67" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="68" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="69" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="6A" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="6B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="6C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>

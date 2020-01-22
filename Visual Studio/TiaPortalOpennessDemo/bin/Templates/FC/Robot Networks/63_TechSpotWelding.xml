@@ -1,0 +1,252 @@
+<SW.Blocks.CompileUnit ID="A5" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v2">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="COM0" />
+        <Address Area="Memory" Type="Bool" BitOffset="32" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="FGDB_001XSR010" />
+        <Component Name="feedbackTipChangeAutoPos" />
+        <Address Area="DB" Type="Bool" BlockNumber="54" BitOffset="13" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="FGDB_001XSR010" />
+        <Component Name="selectSpecialFctDelete" />
+        <Address Area="DB" Type="Bool" BlockNumber="54" BitOffset="9" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="IfcFGExternal" />
+        <Address Area="DB" Type="iUDT_IFC_SYS_EXTERNAL_ALARM" BlockNumber="83" BitOffset="800" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="IfcTECH" />
+        <Address Area="DB" Type="iUDT_IFC_ROBOT_TECH" BlockNumber="83" BitOffset="1664" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="ROBNAME_PI_TECH" />
+        <Address Area="Input" Type="iUDT_PI_ROBOT_ADRxx48_TECH" BitOffset="41984" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="ROBNAME_PO_TECH" />
+        <Address Area="Output" Type="iUDT_PO_ROBOT_ADRxx48_TECH" BitOffset="41984" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME@Welding" />
+        <Component Name="requestAutoTipChange" />
+        <Address Area="DB" Type="Bool" BlockNumber="117" BitOffset="33" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME@Welding" />
+        <Component Name="requestAutoGroupTipChange" />
+        <Address Area="DB" Type="Bool" BlockNumber="117" BitOffset="34" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME@Welding" />
+        <Component Name="requestManuellTipChange" />
+        <Address Area="DB" Type="Bool" BlockNumber="117" BitOffset="35" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME@Welding" />
+        <Component Name="requestManuellGroupTipChange" />
+        <Address Area="DB" Type="Bool" BlockNumber="117" BitOffset="36" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME@Welding" />
+        <Component Name="fault" />
+        <Address Area="DB" Type="Bool" BlockNumber="117" BitOffset="38" Informative="true" />
+      </Symbol>
+    </Access>
+    <Call UId="33">
+      <CallInfo Name="iSF_TECH_ROBOT_WELDING" BlockType="FB">
+        <IntegerAttribute Name="BlockNumber" Informative="true">22</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2018-02-19T12:27:04</DateAttribute>
+        <Instance Scope="GlobalVariable" UId="34">
+          <Component Name="FGDB_ROBNAME@Welding" />
+          <Address Area="DB" Type="iSF_TECH_ROBOT_WELDING" BlockNumber="117" BitOffset="0" Informative="true" />
+        </Instance>
+        <Parameter Name="fct" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="safetyStop" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="selectGroupMilling" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="resetAutoTipChange" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="resetManuellTipChange" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="requestGroupMilling" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="requestAutoTipChange" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="requestAutoGroupTipChange" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="requestManuellTipChange" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="requestManuellGroupTipChange" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="reqWaterPumpOn" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="fault" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="IfcFGExternal" Section="InOut" Type="iUDT_IFC_SYS_EXTERNAL_ALARM">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="IfcTECH" Section="InOut" Type="iUDT_IFC_ROBOT_TECH">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="In_PI_TECH" Section="InOut" Type="iUDT_PI_ROBOT_ADRxx48_TECH">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Out_PO_TECH" Section="InOut" Type="iUDT_PO_ROBOT_ADRxx48_TECH">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="40">
+      <OpenCon UId="35" />
+      <NameCon UId="33" Name="en" />
+    </Wire>
+    <Wire UId="41">
+      <OpenCon UId="36" />
+      <NameCon UId="33" Name="fct" />
+    </Wire>
+    <Wire UId="42">
+      <IdentCon UId="21" />
+      <NameCon UId="33" Name="safetyStop" />
+    </Wire>
+    <Wire UId="43">
+      <OpenCon UId="37" />
+      <NameCon UId="33" Name="selectGroupMilling" />
+    </Wire>
+    <Wire UId="44">
+      <IdentCon UId="22" />
+      <NameCon UId="33" Name="resetAutoTipChange" />
+    </Wire>
+    <Wire UId="45">
+      <IdentCon UId="23" />
+      <NameCon UId="33" Name="resetManuellTipChange" />
+    </Wire>
+    <Wire UId="46">
+      <IdentCon UId="24" />
+      <NameCon UId="33" Name="IfcFGExternal" />
+    </Wire>
+    <Wire UId="47">
+      <IdentCon UId="25" />
+      <NameCon UId="33" Name="IfcTECH" />
+    </Wire>
+    <Wire UId="48">
+      <IdentCon UId="26" />
+      <NameCon UId="33" Name="In_PI_TECH" />
+    </Wire>
+    <Wire UId="49">
+      <IdentCon UId="27" />
+      <NameCon UId="33" Name="Out_PO_TECH" />
+    </Wire>
+    <Wire UId="50">
+      <NameCon UId="33" Name="requestGroupMilling" />
+      <OpenCon UId="38" />
+    </Wire>
+    <Wire UId="51">
+      <NameCon UId="33" Name="requestAutoTipChange" />
+      <IdentCon UId="28" />
+    </Wire>
+    <Wire UId="52">
+      <NameCon UId="33" Name="requestAutoGroupTipChange" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="53">
+      <NameCon UId="33" Name="requestManuellTipChange" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="54">
+      <NameCon UId="33" Name="requestManuellGroupTipChange" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="55">
+      <NameCon UId="33" Name="reqWaterPumpOn" />
+      <OpenCon UId="39" />
+    </Wire>
+    <Wire UId="56">
+      <NameCon UId="33" Name="fault" />
+      <IdentCon UId="32" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="A6" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="A7" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="A8" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="A9" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="AA" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Call iSF_TECH_ROB_WELDING (Bosch)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="AB" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Aufruf iSF_TECH_ROB_WELDING (Bosch)</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>

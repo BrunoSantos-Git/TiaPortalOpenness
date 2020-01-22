@@ -1,0 +1,2322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document>
+  <Engineering version="V15" />
+  <DocumentInfo>
+    <Created>2018-12-10T18:36:37.9324983Z</Created>
+    <ExportSetting>WithDefaults, WithReadOnly</ExportSetting>
+    <InstalledProducts>
+      <Product>
+        <DisplayName>Totally Integrated Automation Portal</DisplayName>
+        <DisplayVersion>V15 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>TIA Portal Openness</DisplayName>
+        <DisplayVersion>V15 Update 2</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>STEP 7 Professional</DisplayName>
+        <DisplayVersion>V15 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>STEP 7 Safety</DisplayName>
+        <DisplayVersion>V15</DisplayVersion>
+      </OptionPackage>
+      <Product>
+        <DisplayName>WinCC Professional</DisplayName>
+        <DisplayVersion>V15 Update 2</DisplayVersion>
+      </Product>
+      <OptionPackage>
+        <DisplayName>SIMATIC Visualization Architect</DisplayName>
+        <DisplayVersion>V15 Update 1</DisplayVersion>
+      </OptionPackage>
+    </InstalledProducts>
+  </DocumentInfo>
+  <SW.Blocks.GlobalDB ID="0">
+    <AttributeList>
+      <AutoNumber>true</AutoNumber>
+      <CodeModifiedDate ReadOnly="true">2017-10-24T16:57:02.4799433Z</CodeModifiedDate>
+      <CompileDate ReadOnly="true">2018-02-20T10:24:36.1111751Z</CompileDate>
+      <CreationDate ReadOnly="true">2016-12-16T08:19:31.4249609Z</CreationDate>
+      <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+      <HeaderAuthor>integra</HeaderAuthor>
+      <HeaderFamily>SYS</HeaderFamily>
+      <HeaderName />
+      <HeaderVersion>0.51</HeaderVersion>
+      <Interface><Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v3">
+<Section Name="Static">
+    <Member Name="AddInfo" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Additional informations</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Zusätzliche Informationen</MultiLanguageText>
+        </Comment>
+        <Member Name="1" Datatype="DWord">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Additional information 1</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Zusätzliche Information 1</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="DWord">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">32</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Additional information 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Zusätzliche Information 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="DWord">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">64</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Additional information 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Zusätzliche Information 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="DWord">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">96</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Additional information 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Zusätzliche Information 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="DWord">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">128</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Additional information 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Zusätzliche Information 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="DWord">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">160</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Additional information 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Zusätzliche Information 6</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="AddT" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">192</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Additional tags</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Zusätzliche Steuervariablen</MultiLanguageText>
+        </Comment>
+        <Member Name="1" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 1</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 1</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+				<MultiLanguageText Lang="en-US">!* Additional tag 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 8</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="9" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">8</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 9</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 9</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="10" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">9</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 10</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 10</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="11" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">10</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 11</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 11</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="12" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">11</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 12</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 12</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="13" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">12</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 13</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 13</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="14" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">13</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 14</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 14</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="15" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">14</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 15</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 15</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="16" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">15</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 16</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 16</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="AddS" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">208</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Additional sensors</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Zusätzliche Sensoren</MultiLanguageText>
+        </Comment>
+        <Member Name="init_pos" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">initial position station empty</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Anfangsposition Station leer</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 8</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="9" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">8</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 9</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 9</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="10" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">9</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 10</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 10</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="11" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">10</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 11</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 11</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="12" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">11</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 12</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 12</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="13" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">12</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 13</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 13</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="14" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">13</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 14</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 14</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="15" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">14</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 15</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 15</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="16" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">15</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Additional tag 16</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Zusätzliche Steuervariablen 16</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="ExtF" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">224</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">External faults</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Externe Störungen</MultiLanguageText>
+        </Comment>
+        <Member Name="PartControl" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Part Control Error</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Bauteilkontrol Fehler</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 8</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="9" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">8</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 9</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 9</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="10" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">9</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 10</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 10</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="11" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">10</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 11</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 11</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="12" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">11</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 12</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 12</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="13" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">12</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 13</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 13</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="14" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">13</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 14</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 14</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="15" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">14</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 15</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 15</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="16" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">15</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External fault 16</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externer Störung 16</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="TransExtF" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">240</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Transfer external faults</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Übergabe externe Störungen</MultiLanguageText>
+        </Comment>
+        <Member Name="PartControl" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault PartControl</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung Bauteilkontrol</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 8</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="9" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">8</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 9</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 9</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="10" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">9</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 10</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 10</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="11" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">10</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 11</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 11</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="12" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">11</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 12</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 12</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="13" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">12</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 13</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 13</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="14" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">13</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 14</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 14</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="15" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">14</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 15</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 15</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="16" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">15</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external fault 16</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externer Störung 16</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="ExtW" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">256</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">External warnings</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Externe Warnungen</MultiLanguageText>
+        </Comment>
+        <Member Name="1" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External warning 1</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Warnung 1</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External warning 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Warnung 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External warning 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Warnung 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External warning 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Warnung 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External warning 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Warnung 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External warning 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Warnung 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External warning 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Warnung 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External warning 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Warnung 7</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="TransExtW" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">272</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Transfer external warnings</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Übergabe externe Warnungen</MultiLanguageText>
+        </Comment>
+        <Member Name="1" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external warning 1</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Warnung 1</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external warning 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Warnung 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external warning 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Warnung 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external warning 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Warnung 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external warning 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Warnung 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external warning 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Warnung 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external warning 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Warnung 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external warning 8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Warnung 8</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="ExtM" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">288</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">External messages</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Externe Meldungen</MultiLanguageText>
+        </Comment>
+        <Member Name="1" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External message 1</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Meldung 1</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External message 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Meldung 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External message 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Meldung 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External message 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Meldung 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External message 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Meldung 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External message 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Meldung 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External message 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Meldung 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* External message 8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Externe Meldung 8</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="TransExtM" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">304</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Transfer external messages</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Übergabe externe Meldungen</MultiLanguageText>
+        </Comment>
+        <Member Name="1" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external message 1</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Meldung 1</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external message 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Meldung 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external message 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Meldung 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external message 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Meldung 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external message 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Meldung 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external message 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Meldung 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external message 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Meldung 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer external message 8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe externe Meldung 8</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="ES" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">320</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Emergeny stops</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Not-Halt</MultiLanguageText>
+        </Comment>
+        <Member Name="1" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Emergency stop 1</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Not-Halt 1</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Emergency stop 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Not-Halt 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Emergency stop 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Not-Halt 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Emergency stop 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Not-Halt 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Emergency stop 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Not-Halt 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Emergency stop 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Not-Halt 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Emergency stop 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Not-Halt 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">!* Emergency stop 8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">!* Not-Halt 8</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="TransES" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">336</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Transfer Emergeny stops</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Übergabe Not-Halt</MultiLanguageText>
+        </Comment>
+        <Member Name="1" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer Emergeny stop 1</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe Not-Halt 1</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="2" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer Emergeny stop 2</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe Not-Halt 2</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="3" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer Emergeny stop 3</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe Not-Halt 3</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="4" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer Emergeny stop 4</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe Not-Halt 4</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="5" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">4</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer Emergeny stop 5</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe Not-Halt 5</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="6" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">5</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer Emergeny stop 6</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe Not-Halt 6</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="7" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">6</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer Emergeny stop 7</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe Not-Halt 7</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">7</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Transfer Emergeny stop 8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Übergabe Not-Halt 8</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="Masks" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">352</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Masks</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Masken</MultiLanguageText>
+        </Comment>
+        <Member Name="prodRelevantFault1_8" Datatype="Byte">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">* Mask external fault 1-8 (0=production-rel.)</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">* Maske externe Störungen 1- 8 (0=produktionsrel.)</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="prodRelevantFault9_16" Datatype="Byte">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">8</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">* Mask external fault 9-16 (0=production-rel.)</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">* Maske externe Störungen 9- 16 (0=produktionsrel.)</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="prodRelevantWarning1_8" Datatype="Byte">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">16</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">* Mask external warning 1-8 (0=production-rel.)</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">* Maske externe Warnungen 1- 8 (0=produktionsrel.)</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="prodRelevantMessage1_8" Datatype="Byte">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">24</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">* Mask external message 1-8 (0=production-rel.)</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">* Maske externe Meldungen 1- 8 (0=produktionsrel.)</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+    <Member Name="GroupMessages" Datatype="Struct" Remanence="Retain" Accessibility="Public">
+        <AttributeList>
+            <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">384</IntegerAttribute>
+            <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+            <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+            <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+        </AttributeList>
+        <Comment>
+            <MultiLanguageText Lang="en-US">Group messages</MultiLanguageText>
+            <MultiLanguageText Lang="de-DE">Sammelmeldungen</MultiLanguageText>
+        </Comment>
+        <Member Name="groupMessageFault1_8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">0</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Group message external fault 1-8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Sammelmeldung externe Störung 1-8</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="groupMessageFault9_16" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">1</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Group message external fault 9-16</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Sammelmeldung externe Störung 9-16</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="groupMessageWarning1_8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">2</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Group message external warning 1-8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Sammelmeldung externe Warnung 1-8</MultiLanguageText>
+            </Comment>
+        </Member>
+        <Member Name="groupMessageMessage1_8" Datatype="Bool">
+            <AttributeList>
+                <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">3</IntegerAttribute>
+                <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+            </AttributeList>
+            <Comment>
+                <MultiLanguageText Lang="en-US">Group message external message 1-8</MultiLanguageText>
+                <MultiLanguageText Lang="de-DE">Sammelmeldung externe Meldung 1-8</MultiLanguageText>
+            </Comment>
+        </Member>
+    </Member>
+</Section>
+</Sections></Interface>
+      <InterfaceModifiedDate ReadOnly="true">2017-10-24T16:57:02.4799433Z</InterfaceModifiedDate>
+      <IsConsistent ReadOnly="true">true</IsConsistent>
+      <IsKnowHowProtected ReadOnly="true">false</IsKnowHowProtected>
+      <IsOnlyStoredInLoadMemory>false</IsOnlyStoredInLoadMemory>
+      <IsPLCDB ReadOnly="true">false</IsPLCDB>
+      <IsWriteProtectedInAS>false</IsWriteProtectedInAS>
+      <MemoryLayout>Standard</MemoryLayout>
+      <ModifiedDate ReadOnly="true">2018-01-29T16:41:32.7806867Z</ModifiedDate>
+      <Name>FGDB_FIXTURENAME@AddOn</Name>
+      <Number>132</Number>
+      <ParameterModified ReadOnly="true">2017-10-24T16:57:02.4799433Z</ParameterModified>
+      <ProgrammingLanguage>DB</ProgrammingLanguage>
+      <StructureModified ReadOnly="true">2017-10-24T16:57:02.4799433Z</StructureModified>
+    </AttributeList>
+    <ObjectList>
+      <MultilingualText ID="1" CompositionName="Comment">
+        <ObjectList>
+          <MultilingualTextItem ID="2" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="3" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text />
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+      <MultilingualText ID="4" CompositionName="Title">
+        <ObjectList>
+          <MultilingualTextItem ID="5" CompositionName="Items">
+            <AttributeList>
+              <Culture>en-US</Culture>
+              <Text>Geostation addon-info</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+          <MultilingualTextItem ID="6" CompositionName="Items">
+            <AttributeList>
+              <Culture>de-DE</Culture>
+              <Text>Geostation Zusatz-Info</Text>
+            </AttributeList>
+          </MultilingualTextItem>
+        </ObjectList>
+      </MultilingualText>
+    </ObjectList>
+  </SW.Blocks.GlobalDB>
+</Document>

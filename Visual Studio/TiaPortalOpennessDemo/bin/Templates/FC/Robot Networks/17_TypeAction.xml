@@ -1,0 +1,79 @@
+﻿<SW.Blocks.CompileUnit ID="4" CompositionName="CompileUnits">
+	<AttributeList>
+	  <NetworkSource>
+		<FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v2">
+		  <Parts>
+			<Access Scope="GlobalVariable" UId="21">
+			  <Symbol>
+				<Component Name="FGDB_110RF_001@AddOn" />
+				<Component Name="AddT" />
+				<Component Name="ACTIONNAME" />
+				<Address Area="DB" Type="Bool" BlockNumber="258" BitOffset="194" Informative="true" />
+			  </Symbol>
+			</Access>
+			<Access Scope="GlobalVariable" UId="22">
+			  <Symbol>
+				<Component Name="ROBNAME_PO_APPL" />
+				<Component Name="RB-PLC" />
+				<Component Name="LINENNUMBER" />
+				<Address Area="Output" Type="Bool" BitOffset="40288" Informative="true" />
+			  </Symbol>
+			</Access>
+			<Part Name="A" UId="23">
+			  <TemplateValue Name="Card" Type="Cardinality">1</TemplateValue>
+			</Part>
+			<Part Name="Coil" UId="24" />
+		  </Parts>
+		  <Wires>
+			<Wire UId="25">
+			  <IdentCon UId="21" />
+			  <NameCon UId="23" Name="in1" />
+			</Wire>
+			<Wire UId="26">
+			  <NameCon UId="23" Name="out" />
+			  <NameCon UId="24" Name="in" />
+			</Wire>
+			<Wire UId="27">
+			  <IdentCon UId="22" />
+			  <NameCon UId="24" Name="operand" />
+			</Wire>
+		  </Wires>
+		</FlgNet>
+	</NetworkSource>
+	  <ProgrammingLanguage>FBD</ProgrammingLanguage>
+	</AttributeList>
+	<ObjectList>
+	  <MultilingualText ID="5" CompositionName="Comment">
+		<ObjectList>
+		  <MultilingualTextItem ID="6" CompositionName="Items">
+			<AttributeList>
+			  <Culture>en-US</Culture>
+			  <Text />
+			</AttributeList>
+		  </MultilingualTextItem>
+		  <MultilingualTextItem ID="7" CompositionName="Items">
+			<AttributeList>
+			  <Culture>de-DE</Culture>
+			  <Text />
+			</AttributeList>
+		  </MultilingualTextItem>
+		</ObjectList>
+	  </MultilingualText>
+	  <MultilingualText ID="8" CompositionName="Title">
+		<ObjectList>
+		  <MultilingualTextItem ID="9" CompositionName="Items">
+			<AttributeList>
+			  <Culture>en-US</Culture>
+			  <Text>LINENNUMBER Type ACTIONNAME</Text>
+			</AttributeList>
+		  </MultilingualTextItem>
+		  <MultilingualTextItem ID="A" CompositionName="Items">
+			<AttributeList>
+			  <Culture>de-DE</Culture>
+			  <Text>LINENNUMBER Type ACTIONNAME</Text>
+			</AttributeList>
+		  </MultilingualTextItem>
+		</ObjectList>
+	  </MultilingualText>
+	</ObjectList>
+</SW.Blocks.CompileUnit>

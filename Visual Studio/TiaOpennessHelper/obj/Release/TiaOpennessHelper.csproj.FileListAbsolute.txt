@@ -1,0 +1,6 @@
+C:\Users\bruno.alexandre\Desktop\108716692_TiaPortalOpennessDemo_V15\TiaPortalOpennessDemo\TiaOpennessHelper\obj\Release\TiaOpennessHelper.csprojAssemblyReference.cache
+C:\Users\bruno.alexandre\Desktop\108716692_TiaPortalOpennessDemo_V15\TiaPortalOpennessDemo\TiaOpennessHelper\obj\Release\ExcelTree\ExcelAsker.baml
+C:\Users\bruno.alexandre\Desktop\108716692_TiaPortalOpennessDemo_V15\TiaPortalOpennessDemo\TiaOpennessHelper\obj\Release\SafetyMaker\DBMaker.baml
+C:\Users\bruno.alexandre\Desktop\108716692_TiaPortalOpennessDemo_V15\TiaPortalOpennessDemo\TiaOpennessHelper\obj\Release\ExcelTree\ExcelAsker.g.cs
+C:\Users\bruno.alexandre\Desktop\108716692_TiaPortalOpennessDemo_V15\TiaPortalOpennessDemo\TiaOpennessHelper\obj\Release\SafetyMaker\DBMaker.g.cs
+C:\Users\bruno.alexandre\Desktop\108716692_TiaPortalOpennessDemo_V15\TiaPortalOpennessDemo\TiaOpennessHelper\obj\Release\TiaOpennessHelper_MarkupCompile.cache

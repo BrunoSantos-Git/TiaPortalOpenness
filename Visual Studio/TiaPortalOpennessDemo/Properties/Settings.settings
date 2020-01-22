@@ -1,0 +1,27 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="TiaPortalOpennessDemo.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="HideAssemblySelection" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="EngineeringVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">15.0</Value>
+    </Setting>
+    <Setting Name="AssemblyVersion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">15.0.0.0</Value>
+    </Setting>
+    <Setting Name="DefaultExportPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Temp</Value>
+    </Setting>
+    <Setting Name="UserInterfaceEnabled" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ExportWithDefaults" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ExportReadOnly" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,67 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        x:Class="TiaOpennessHelper.SafetyMaker.DBMaker"
+        mc:Ignorable="d"
+        Title="PLC DB Generator" SizeToContent="WidthAndHeight" MinWidth="600" MinHeight="300" MaxHeight="700" Loaded="Window_Loaded"
+        Icon="pack://application:,,,/TiaPortalOpennessDemo;component/Images/tags-icon.png">
+
+    <Grid Background="#3B4461">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <CheckBox x:Name="cbImportToTia" Content="Import to TIA" Margin="10,15,0,0" Height="20" VerticalAlignment="Top" IsEnabled="{Binding IsTiaConnected}" HorizontalAlignment="Left" FontSize="14" FontWeight="Bold" FontFamily="Segoe UI Historic" Foreground="#FFF4F4F4" Grid.Column="0" Width="106"/>
+        <Button Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,45,0,0" Click="Button_CreateDB" Height="40">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Create DB  " TextAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+                <Image Source="pack://application:,,,/TiaPortalOpennessDemo;component/Images/Create-icon.png" Height="20"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,95,0,0" Click="Button_SaveCurrentValues" Height="40">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Save  " TextAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+                <Image Source="pack://application:,,,/TiaPortalOpennessDemo;component/Images/save.png" Height="20"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,145,0,0" Click="Button_ClearGrid" Height="40">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Clear Grid  " TextAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+                <Image Source="pack://application:,,,/TiaPortalOpennessDemo;component/Images/Broom.png" Height="20"/>
+            </StackPanel>
+        </Button>
+        <WindowsFormsHost FontSize="14" Name="WindowFormSaving" Margin="10,195,0,10" Height="25" HorizontalAlignment="Left" Width="120" VerticalAlignment="Top" Background="#FF3B4461">
+            <wf:Label x:Name="Saving" ForeColor="White" BackColor="#FF3B4461" BorderStyle="None"/>
+        </WindowsFormsHost>
+        <StackPanel Grid.Column="0" Orientation="Horizontal">
+            <Rectangle Margin="140,10,0,10" VerticalAlignment="Stretch" Stroke="#FFDBDCDC" />
+        </StackPanel>
+        <WindowsFormsHost Name="WindowsForm_Left" Margin="155,30,2,10" HorizontalAlignment="Stretch" Grid.Column="0" >
+            <wf:DataGridView />
+        </WindowsFormsHost>
+        <WindowsFormsHost Name="WindowsForm" Margin="2,30,10,10" HorizontalAlignment="Stretch" Grid.Column="1" >
+            <wf:DataGridView/>
+        </WindowsFormsHost>
+    </Grid>
+</Window>

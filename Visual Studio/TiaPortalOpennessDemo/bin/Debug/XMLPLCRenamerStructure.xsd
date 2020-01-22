@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Config">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Groups">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs ="unbounded" name="Group" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Strings">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" maxOccurs="unbounded" name="String">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="OldString" minOccurs="0" type="xs:string" />
+                    <xs:element name="NewString" minOccurs="0" type="xs:string" />
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Folges">
+          <xs:complexType>
+            <xs:sequence>
+			  <xs:element name="Options">
+				<xs:complexType>
+				  <xs:sequence>
+					<xs:element name="From" type="xs:string" />
+					<xs:element name="To" type="xs:string" />
+				  </xs:sequence>
+				</xs:complexType>
+			  </xs:element>
+              <xs:element name="Indexes">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Index1">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Old" type="xs:string" />
+                          <xs:element name="New" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Index2">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Old" type="xs:string" />
+                          <xs:element name="New" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Index3">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Old" type="xs:string" />
+                          <xs:element name="New" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Index4">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Old" type="xs:string" />
+                          <xs:element name="New" type="xs:string" />
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="selected" type="xs:string" use="required" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="IP">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute name="selected" type="xs:string" use="required" />
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="project" type="xs:string" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

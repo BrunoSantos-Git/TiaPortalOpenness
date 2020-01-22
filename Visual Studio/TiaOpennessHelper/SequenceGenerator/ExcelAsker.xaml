@@ -1,0 +1,41 @@
+﻿<Window x:Class="TiaOpennessHelper.ExcelTree.ExcelAsker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TiaOpennessHelper.ExcelTree"
+        mc:Ignorable="d"
+        Title="Create Excel" SizeToContent="WidthAndHeight"
+        Icon="pack://application:,,,/TiaPortalOpennessDemo;component/Images/Excel-Icon.png">
+    <Grid Background="#3B4461" VerticalAlignment="Top">
+        <GroupBox VerticalAlignment="Top" Margin="10" Header="Excel Information" Foreground="White">
+            <Grid Background="#FFF0F0F0">
+                <TextBlock HorizontalAlignment="Left" Margin="10" VerticalAlignment="Top" Foreground="Black" FontSize="16">Excel Name:</TextBlock>
+                <TextBlock HorizontalAlignment="Left" Margin="10,40,10,10" VerticalAlignment="Top" Foreground="Black" FontSize="16">WorkSheet Name:</TextBlock>
+                <TextBox Name ="ExcelNameTextBox" Margin="105,12,10,10" VerticalAlignment="Top" HorizontalAlignment="Stretch" FontSize="14" MaxLength="25"/>
+                <Border BorderThickness="0.5" BorderBrush="Gray" Padding="2,0,0,0" VerticalAlignment="Top" Margin="145,41,10,10">
+                    <Grid>
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="AS_" Foreground="Black" FontSize="14"/>
+                        <TextBox Name ="ExcelWorkSheetTextBox" Margin="25,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" FontSize="14" MaxLength="9"/>
+                    </Grid>
+                </Border>
+                <Button Content="Create" HorizontalAlignment="Left" Margin="10,80,10,10" VerticalAlignment="Top" Height="25" Width="100" Click="Button_Create">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Content="Cancel" HorizontalAlignment="Left" Margin="240,80,10,10" VerticalAlignment="Top" Height="25" Width="100" Click="Button_Cancel">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

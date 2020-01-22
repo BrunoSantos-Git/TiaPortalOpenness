@@ -1,0 +1,6 @@
+            <Access Scope="GlobalVariable" UId="ACESS_ID">
+              <Symbol>
+                <Component Name="NA_ME-VALVENAMEMMVALVENRBGAC_TION" />
+                <Address Area="Input" Type="Bool" BitOffset="22739" Informative="true" />
+              </Symbol>
+			</Access>

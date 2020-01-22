@@ -1,0 +1,149 @@
+      <SW.Blocks.CompileUnit ID="58" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v2">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="IfcFGExternal" />
+        <Address Area="DB" Type="iUDT_IFC_SYS_EXTERNAL_ALARM" BlockNumber="186" BitOffset="800" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="IfcTECH" />
+        <Address Area="DB" Type="iUDT_IFC_ROBOT_TECH" BlockNumber="186" BitOffset="1664" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="ROBNAME_PI_TECH" />
+        <Address Area="Input" Type="iUDT_PI_ROBOT_ADRxx48_TECH" BitOffset="45184" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME@Sensopart" />
+        <Component Name="qstop" />
+        <Address Area="DB" Type="Bool" BlockNumber="140" BitOffset="16" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME@Sensopart" />
+        <Component Name="busy" />
+        <Address Area="DB" Type="Bool" BlockNumber="140" BitOffset="17" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME@Sensopart" />
+        <Component Name="fault" />
+        <Address Area="DB" Type="Bool" BlockNumber="140" BitOffset="18" Informative="true" />
+      </Symbol>
+    </Access>
+    <Call UId="27">
+      <CallInfo Name="iSF_TECH_ROBOT_SENSOPART" BlockType="FB">
+        <IntegerAttribute Name="BlockNumber" Informative="true">21</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2017-08-16T11:39:17</DateAttribute>
+        <Instance Scope="GlobalVariable" UId="28">
+          <Component Name="FGDB_ROBNAME@Sensopart" />
+          <Address Area="DB" Type="iSF_TECH_ROBOT_SENSOPART" BlockNumber="140" BitOffset="0" Informative="true" />
+        </Instance>
+        <Parameter Name="fct" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="qstop" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="busy" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="fault" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="IfcFGExternal" Section="InOut" Type="iUDT_IFC_SYS_EXTERNAL_ALARM">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="IfcTECH" Section="InOut" Type="iUDT_IFC_ROBOT_TECH">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="In_PI_TECH" Section="InOut" Type="iUDT_PI_ROBOT_ADRxx48_TECH">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="31">
+      <OpenCon UId="29" />
+      <NameCon UId="27" Name="en" />
+    </Wire>
+    <Wire UId="32">
+      <OpenCon UId="30" />
+      <NameCon UId="27" Name="fct" />
+    </Wire>
+    <Wire UId="33">
+      <IdentCon UId="21" />
+      <NameCon UId="27" Name="IfcFGExternal" />
+    </Wire>
+    <Wire UId="34">
+      <IdentCon UId="22" />
+      <NameCon UId="27" Name="IfcTECH" />
+    </Wire>
+    <Wire UId="35">
+      <IdentCon UId="23" />
+      <NameCon UId="27" Name="In_PI_TECH" />
+    </Wire>
+    <Wire UId="36">
+      <NameCon UId="27" Name="qstop" />
+      <IdentCon UId="24" />
+    </Wire>
+    <Wire UId="37">
+      <NameCon UId="27" Name="busy" />
+      <IdentCon UId="25" />
+    </Wire>
+    <Wire UId="38">
+      <NameCon UId="27" Name="fault" />
+      <IdentCon UId="26" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="59" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="5C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Call iSF_TECH_ROBOT_SENSOPART</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Aufruf iSF_TECH_ROBOT_SENSOPART</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>

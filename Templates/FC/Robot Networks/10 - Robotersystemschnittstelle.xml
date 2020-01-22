@@ -1,0 +1,831 @@
+﻿<SW.Blocks.CompileUnit ID="E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v2">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="A" />
+        <Component Name="A15_PF0" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="1120" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="oRob" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2440" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="F2DRBNAME" />
+        <Component Name="BA" />
+        <Component Name="KWE7" />
+        <Address Area="None" Type="Bool" BlockNumber="102" BitOffset="136" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="F2DRBNAME" />
+        <Component Name="BA" />
+        <Component Name="K90_AnfoZutritt" />
+        <Address Area="None" Type="Bool" BlockNumber="102" BitOffset="344" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="A" />
+        <Component Name="A1_8_Folgespiegelung" />
+        <Address Area="None" Type="Byte" BlockNumber="181" BitOffset="1064" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="Folge" />
+        <Address Area="None" Type="Byte" BlockNumber="181" BitOffset="2392" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="UebFKonsi" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2400" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="FolgeStart" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2368" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="W_FolgeStart" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2408" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="Anw_Wartung" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2416" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="Frg_MaschSich" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2432" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="A" />
+        <Component Name="A9_Bereit" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="1072" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="A" />
+        <Component Name="A15_PF0" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="1120" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="FM" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="32392" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="F&gt;" />
+        <Component Name="ROBNAMEKWE2K" />
+        <Address Area="None" Type="Bool" BlockNumber="1002" BitOffset="200" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="F&gt;" />
+        <Component Name="ROBNAMEK16AK" />
+        <Address Area="None" Type="Bool" BlockNumber="1002" BitOffset="184" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="F&gt;" />
+        <Component Name="ROBNAMEK36K" />
+        <Address Area="None" Type="Bool" BlockNumber="1002" BitOffset="192" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="F&gt;" />
+        <Component Name="ROBNAMEINAKTIV" />
+        <Address Area="None" Type="Bool" BlockNumber="1002" BitOffset="176" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="39">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>1</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_signed</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="40">
+      <Constant>
+        <ConstantType>Word</ConstantType>
+        <ConstantValue>2#11</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bin</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="TypedConstant" UId="41">
+      <Constant>
+        <ConstantValue>T#20S</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Time</StringAttribute>
+        <StringAttribute Name="FormatFlags" Informative="true">TypeQualifier</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="DB_ARG" />
+        <Component Name="IBN=0" />
+        <Address Area="Memory" Type="Bool" BitOffset="80" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="43">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'ROBNAME'</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">String</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Address Area="None" Type="ST_Rob" BlockNumber="181" BitOffset="0" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="PG" />
+        <Address Area="None" Type="ST_PG" BlockNumber="181" BitOffset="14736" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="F2DRBNAME" />
+        <Component Name="BA" />
+        <Address Area="None" Type="ST_Betriebsarten" BlockNumber="102" BitOffset="0" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="47">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="oRob" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2440" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="48">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="E" />
+        <Component Name="E1_8_Folgenanwahl" />
+        <Address Area="None" Type="Byte" BlockNumber="181" BitOffset="64" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="49">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="E" />
+        <Component Name="E9_Folgestart" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="72" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="50">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="E" />
+        <Component Name="E23_keine_ZutrAnfo" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="184" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="51">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="E" />
+        <Component Name="E14_masch_Sich" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="112" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="52">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="E" />
+        <Component Name="E10_Antriebe_ein" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="80" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="53">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="InWartung" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2456" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="54">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="WartAng" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2464" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="55">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="WartExAng" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2472" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="56">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="WartAktiv" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2480" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="57">
+      <Symbol>
+        <Component Name="ROBNAMEPFWE2" />
+        <Address Area="Output" Type="Bool" BitOffset="659" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="58">
+      <Symbol>
+        <Component Name="Temp" />
+        <Component Name="_Bool" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="59">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="K91_Verkl" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="32792" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="60">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="Warn" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2488" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="61">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="Stoe" />
+        <Address Area="None" Type="Bool" BlockNumber="181" BitOffset="2496" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="62">
+      <Symbol>
+        <Component Name="Temp" />
+        <Component Name="_Bool" />
+      </Symbol>
+    </Access>
+    <Part Name="Contact" UId="63" />
+    <Part Name="Contact" UId="64" />
+    <Part Name="O" UId="65">
+      <TemplateValue Name="Card" Type="Cardinality">2</TemplateValue>
+    </Part>
+    <Part Name="Contact" UId="66" />
+    <Part Name="Contact" UId="67">
+      <Negated Name="operand" />
+    </Part>
+    <Call UId="68">
+      <CallInfo Name="FB_Rob" BlockType="FB">
+        <IntegerAttribute Name="BlockNumber" Informative="true">200</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2017-06-20T09:33:55</DateAttribute>
+        <Instance Scope="GlobalVariable" UId="69">
+          <Component Name="ROBNAME#FB_Rob_DB" />
+          <Address Area="DB" Type="FB_Rob" BlockNumber="2065" BitOffset="0" Informative="true" />
+        </Instance>
+        <Parameter Name="FrgAnwahl" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="SpiegelungFolge" Section="Input" Type="Byte">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Folge" Section="Input" Type="Byte">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="UebFKonsi" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="FolgeStart" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="W_FolgeStart" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Anw_Wartung" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg_SPS" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg_MaschSich" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="RoboterBereit" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="PF0" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="FM" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="E2" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="E7" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="K16A" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="K36" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Inaktiv" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Layer" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Cfg" Section="Input" Type="Word">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ZUe_Fahrbed" Section="Input" Type="Time">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="VkStoe_In" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="BMK" Section="Input" Type="String[25]">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ohneRob" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="AnwahlFolge" Section="Output" Type="Byte">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="AnwahlFolgeStart" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frei_RC" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="MaSich" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="AntriebeEin" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="InWartung" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="WartAng" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="WartExAng" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="WartAktiv" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="PWE2" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="PWE7" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="K91_Verkl" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Warn" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Stoexx" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="VkStoe_Out" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ST_ROB" Section="InOut" Type="ST_Rob">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ST_PG" Section="InOut" Type="ST_PG">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ST_BA" Section="InOut" Type="ST_Betriebsarten">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="71">
+      <Powerrail />
+      <NameCon UId="68" Name="en" />
+      <NameCon UId="63" Name="in" />
+      <NameCon UId="64" Name="in" />
+      <NameCon UId="67" Name="in" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="21" />
+      <NameCon UId="63" Name="operand" />
+    </Wire>
+    <Wire UId="73">
+      <NameCon UId="63" Name="out" />
+      <NameCon UId="65" Name="in1" />
+    </Wire>
+    <Wire UId="74">
+      <IdentCon UId="22" />
+      <NameCon UId="64" Name="operand" />
+    </Wire>
+    <Wire UId="75">
+      <NameCon UId="64" Name="out" />
+      <NameCon UId="65" Name="in2" />
+    </Wire>
+    <Wire UId="76">
+      <NameCon UId="65" Name="out" />
+      <NameCon UId="66" Name="in" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="23" />
+      <NameCon UId="66" Name="operand" />
+    </Wire>
+    <Wire UId="78">
+      <NameCon UId="66" Name="out" />
+      <NameCon UId="68" Name="FrgAnwahl" />
+    </Wire>
+    <Wire UId="79">
+      <IdentCon UId="24" />
+      <NameCon UId="67" Name="operand" />
+    </Wire>
+    <Wire UId="80">
+      <NameCon UId="67" Name="out" />
+      <NameCon UId="68" Name="Frg_SPS" />
+    </Wire>
+    <Wire UId="81">
+      <IdentCon UId="25" />
+      <NameCon UId="68" Name="SpiegelungFolge" />
+    </Wire>
+    <Wire UId="82">
+      <IdentCon UId="26" />
+      <NameCon UId="68" Name="Folge" />
+    </Wire>
+    <Wire UId="83">
+      <IdentCon UId="27" />
+      <NameCon UId="68" Name="UebFKonsi" />
+    </Wire>
+    <Wire UId="84">
+      <IdentCon UId="28" />
+      <NameCon UId="68" Name="FolgeStart" />
+    </Wire>
+    <Wire UId="85">
+      <IdentCon UId="29" />
+      <NameCon UId="68" Name="W_FolgeStart" />
+    </Wire>
+    <Wire UId="86">
+      <IdentCon UId="30" />
+      <NameCon UId="68" Name="Anw_Wartung" />
+    </Wire>
+    <Wire UId="87">
+      <IdentCon UId="31" />
+      <NameCon UId="68" Name="Frg_MaschSich" />
+    </Wire>
+    <Wire UId="88">
+      <IdentCon UId="32" />
+      <NameCon UId="68" Name="RoboterBereit" />
+    </Wire>
+    <Wire UId="89">
+      <IdentCon UId="33" />
+      <NameCon UId="68" Name="PF0" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="34" />
+      <NameCon UId="68" Name="FM" />
+    </Wire>
+    <Wire UId="91">
+      <IdentCon UId="35" />
+      <NameCon UId="68" Name="E2" />
+    </Wire>
+    <Wire UId="92">
+      <OpenCon UId="70" />
+      <NameCon UId="68" Name="E7" />
+    </Wire>
+    <Wire UId="93">
+      <IdentCon UId="36" />
+      <NameCon UId="68" Name="K16A" />
+    </Wire>
+    <Wire UId="94">
+      <IdentCon UId="37" />
+      <NameCon UId="68" Name="K36" />
+    </Wire>
+    <Wire UId="95">
+      <IdentCon UId="38" />
+      <NameCon UId="68" Name="Inaktiv" />
+    </Wire>
+    <Wire UId="96">
+      <IdentCon UId="39" />
+      <NameCon UId="68" Name="Layer" />
+    </Wire>
+    <Wire UId="97">
+      <IdentCon UId="40" />
+      <NameCon UId="68" Name="Cfg" />
+    </Wire>
+    <Wire UId="98">
+      <IdentCon UId="41" />
+      <NameCon UId="68" Name="ZUe_Fahrbed" />
+    </Wire>
+    <Wire UId="99">
+      <IdentCon UId="42" />
+      <NameCon UId="68" Name="VkStoe_In" />
+    </Wire>
+    <Wire UId="100">
+      <IdentCon UId="43" />
+      <NameCon UId="68" Name="BMK" />
+    </Wire>
+    <Wire UId="101">
+      <IdentCon UId="44" />
+      <NameCon UId="68" Name="ST_ROB" />
+    </Wire>
+    <Wire UId="102">
+      <IdentCon UId="45" />
+      <NameCon UId="68" Name="ST_PG" />
+    </Wire>
+    <Wire UId="103">
+      <IdentCon UId="46" />
+      <NameCon UId="68" Name="ST_BA" />
+    </Wire>
+    <Wire UId="104">
+      <NameCon UId="68" Name="ohneRob" />
+      <IdentCon UId="47" />
+    </Wire>
+    <Wire UId="105">
+      <NameCon UId="68" Name="AnwahlFolge" />
+      <IdentCon UId="48" />
+    </Wire>
+    <Wire UId="106">
+      <NameCon UId="68" Name="AnwahlFolgeStart" />
+      <IdentCon UId="49" />
+    </Wire>
+    <Wire UId="107">
+      <NameCon UId="68" Name="Frei_RC" />
+      <IdentCon UId="50" />
+    </Wire>
+    <Wire UId="108">
+      <NameCon UId="68" Name="MaSich" />
+      <IdentCon UId="51" />
+    </Wire>
+    <Wire UId="109">
+      <NameCon UId="68" Name="AntriebeEin" />
+      <IdentCon UId="52" />
+    </Wire>
+    <Wire UId="110">
+      <NameCon UId="68" Name="InWartung" />
+      <IdentCon UId="53" />
+    </Wire>
+    <Wire UId="111">
+      <NameCon UId="68" Name="WartAng" />
+      <IdentCon UId="54" />
+    </Wire>
+    <Wire UId="112">
+      <NameCon UId="68" Name="WartExAng" />
+      <IdentCon UId="55" />
+    </Wire>
+    <Wire UId="113">
+      <NameCon UId="68" Name="WartAktiv" />
+      <IdentCon UId="56" />
+    </Wire>
+    <Wire UId="114">
+      <NameCon UId="68" Name="PWE2" />
+      <IdentCon UId="57" />
+    </Wire>
+    <Wire UId="115">
+      <NameCon UId="68" Name="PWE7" />
+      <IdentCon UId="58" />
+    </Wire>
+    <Wire UId="116">
+      <NameCon UId="68" Name="K91_Verkl" />
+      <IdentCon UId="59" />
+    </Wire>
+    <Wire UId="117">
+      <NameCon UId="68" Name="Warn" />
+      <IdentCon UId="60" />
+    </Wire>
+    <Wire UId="118">
+      <NameCon UId="68" Name="Stoexx" />
+      <IdentCon UId="61" />
+    </Wire>
+    <Wire UId="119">
+      <NameCon UId="68" Name="VkStoe_Out" />
+      <IdentCon UId="62" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="12" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="13" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>cs-CZ</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pl-PL</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="17" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pt-BR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="18" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>sk-SK</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>hu-HU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Robotersystemschnittstelle</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="21" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>cs-CZ</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pl-PL</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="24" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pt-BR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>sk-SK</Culture>
+                  <Text>Robotersystemschnittstelle</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="27" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>hu-HU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>

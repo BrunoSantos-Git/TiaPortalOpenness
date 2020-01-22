@@ -1,0 +1,542 @@
+﻿<Window x:Class="TiaPortalOpennessDemo.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:views="clr-namespace:TiaPortalOpennessDemo.Views"
+        xmlns:utilities="clr-namespace:TiaPortalOpennessDemo.Utilities"
+        Title="TIA Portal Openness" Height="750" Width="904" MinWidth="750"
+        Icon="/TiaPortalOpennessDemo;component/Images/ICO_PE_AppOpenness.ico">
+
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BVConverter" />
+        <utilities:InverseBooleanConverter x:Key="IBConverter" />
+        <Style x:Key="ToolBtn" TargetType="Button">
+            <Setter Property="Width" Value="80" />
+            <Setter Property="Height" Value="50"/>
+            <Style.Resources>
+                <Style TargetType="{x:Type utilities:AutoGreyableImage}" >
+                    <Setter Property="Width" Value="70" />
+                    <Setter Property="Height" Value="23" />
+                </Style>
+                <Style TargetType="{x:Type TextBlock}" >
+                    <Setter Property="HorizontalAlignment" Value="Center" />
+                </Style>
+            </Style.Resources>
+        </Style>
+    </Window.Resources>
+
+    <Grid>
+        <Grid Background="#FFF0F0F0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="23" />
+                <RowDefinition Height="50" />
+                <RowDefinition Height="2" />
+                <RowDefinition Height="550*" MinHeight="250" />
+                <RowDefinition Height="4" />
+                <RowDefinition Height="75*" MinHeight="75" />
+                <RowDefinition Height="2" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2" />
+                <ColumnDefinition Width="295*" MinWidth="295.5" />
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition Width="400*" />
+                <ColumnDefinition Width="4" />
+                <ColumnDefinition Width="300*" MinWidth="200" />
+                <ColumnDefinition Width="2" />
+            </Grid.ColumnDefinitions>
+
+            <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="2" Grid.Row="3" ResizeBehavior="PreviousAndNext" Width="5" Background="#FF8194AA" />
+            <GridSplitter HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1" Grid.Row="4" ResizeBehavior="PreviousAndNext" Height="5" Background="#FF8194AA" Grid.ColumnSpan="5" />
+            <GridSplitter HorizontalAlignment="Right" VerticalAlignment="Stretch" Grid.Column="4" Grid.Row="3" ResizeBehavior="PreviousAndNext" Width="5" Background="#FF8194AA" />
+
+            <Menu Grid.Row="0" Grid.ColumnSpan="7" Grid.Column="0" Height="23" HorizontalAlignment="Stretch" VerticalAlignment="Top" >
+                <MenuItem Header="_File">
+                    <MenuItem Header="Start TIA Portal" Command="{Binding OpenTiaPortalCommand}" IsEnabled="{Binding PortalOpened, Converter={StaticResource IBConverter}}"/>
+                    <MenuItem Header="Dispose TIA Portal" Command="{Binding DisposePortalCommand}" IsEnabled="{Binding PortalOpened}"/>
+                    <Separator/>
+                    <MenuItem Header="Connect Portal" Command="{Binding ShowConnectCommand}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Connect-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Disconnect Portal" Command="{Binding DisposePortalCommand}" IsEnabled="{Binding PortalOpened}" >
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Disconnect-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem Header="Open Project" Command="{Binding OpenProjectCommand}" IsEnabled="{Binding ProjectOpened, Converter={StaticResource IBConverter}}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Folder-Open-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Save Project" Command="{Binding SaveProjectCommand}" IsEnabled="{Binding ProjectOpened}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Save-icon.png"  />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Close Project" Command="{Binding CloseProjectCommand}" IsEnabled="{Binding ProjectOpened}" />
+                    <Separator/>
+                    <MenuItem Header="Open global library" Command="{Binding OpenGlobalLibraryCommand}" IsEnabled="{Binding GlobalLibraryOpened, Converter={StaticResource IBConverter}}"/>
+                    <MenuItem Header="Close global library" Command="{Binding CloseGlobalLibraryCommand}" IsEnabled="{Binding GlobalLibraryOpened}"/>
+                    <Separator/>
+                    <MenuItem Header="Refresh navigation" Command="{Binding RefreshProjectCommand}" IsEnabled="{Binding PortalOpened}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Refresh-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Settings" Command="{Binding SettingsCommand}" />
+                </MenuItem>
+                <MenuItem Header="_Edit">
+                    <MenuItem Header="Create folder" Command="{Binding CreateCommand}" IsEnabled="{Binding CreateItem}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Create-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Delete item" Command="{Binding DeleteCommand}" IsEnabled="{Binding DeleteItem}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Close-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <Separator/>
+                    <MenuItem Header="Update library check" Command="{Binding UpdateGlobalLibraryCommand}" IsEnabled="{Binding GlobalLibraryOpened}"/>
+                </MenuItem>
+                <MenuItem Header="_Project">
+                    <MenuItem Header="Editor">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Notepad-icon.png" />
+                        </MenuItem.Icon>
+                        <MenuItem Header="Open editor" Command="{Binding OpenEditorCommand}" IsEnabled="{Binding OpenEditor}">
+                            <MenuItem.Icon>
+                                <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Computer-icon.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Topology view" Command="{Binding OpenTopologyViewCommand}" IsEnabled="{Binding ProjectOpened}"/>
+                        <MenuItem Header="Network view" Command="{Binding OpenNetworkViewCommand}" IsEnabled="{Binding ProjectOpened}">
+                            <MenuItem.Icon>
+                                <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Network-icon.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    <!--<MenuItem Header="Compile" Command="{Binding CompileCommand}" IsEnabled="{Binding Compile}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Compile-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>-->
+                    <MenuItem Header="Import/Export">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Import-export-group.png" />
+                        </MenuItem.Icon>
+                        <MenuItem Header="CAx Import" Command="{Binding EnableCaxImportCommand}" IsEnabled="{Binding ProjectOpened}">
+                            <MenuItem.Icon>
+                                <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Import-icon.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="CAx Export" Command="{Binding CaxExportCommand}" IsEnabled="{Binding ProjectOpened}">
+                            <MenuItem.Icon>
+                                <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Export-icon.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <Separator />
+                        <MenuItem Header="Import" Command="{Binding ImportElementCommand}" IsEnabled="{Binding ImportEnabled}">
+                            <MenuItem.Icon>
+                                <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Import-icon.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Export" Command="{Binding ExportStructureCommand}" IsEnabled="{Binding ExportEnabled}">
+                            <MenuItem.Icon>
+                                <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Export-icon.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                    <!--<MenuItem Header="Save Project" Command="{Binding SaveProjectCommand}" IsEnabled="{Binding ProjectOpened}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Save-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>-->
+                    <MenuItem Header="Rename PLC" Command="{Binding RenamePlcCommand}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Rename-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Generate HW" Command="{Binding GenerateHWCommand}" IsEnabled="{Binding PortalOpened}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Compile-sqr-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>
+                <MenuItem Header="P_LC">
+                    <MenuItem Header="Source files">
+                        <MenuItem Header="Add external Source" Command="{Binding AddExternalSourceCommand}" IsEnabled="{Binding AddExternalSource}"/>
+                        <MenuItem Header="Generate blocks from external source" Command="{Binding GenerateBlockFromSourceCommand}" IsEnabled="{Binding GenerateBlockFromSource}"/>
+                        <MenuItem Header="Generate source from block" Command="{Binding GenerateSourceFromBlockCommand}" IsEnabled="{Binding GenerateSourceFromBlock}"/>
+                    </MenuItem>
+                    <Separator />
+                    <MenuItem Header="Connect/Disconnect" Command="{Binding ConnectPlcCommand}" IsEnabled="{Binding ConfigureConnection}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Connect-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Configure connection" Command="{Binding ConfigureConnectionCommand}" IsEnabled="{Binding ConfigureConnection}" />
+                    <Separator />
+                    <MenuItem Header="Compare">
+                        <MenuItem Header="Compare to offline" Command="{Binding CompareOfflineCommand}" IsEnabled="{Binding CompareOffline}">
+                            <MenuItem.Icon>
+                                <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Compare-offline-icon.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                        <MenuItem Header="Compare to online" Command="{Binding CompareOnlineCommand}" IsEnabled="{Binding CompareOnline}">
+                            <MenuItem.Icon>
+                                <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Compare-online-icon.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+                    </MenuItem>
+                </MenuItem>
+                <!--<MenuItem Header="_Transactions">
+                    <MenuItem Header="Start" Command="{Binding TransactionStartCommand}" IsEnabled="{Binding ProjectOpened}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Transaction-start-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Finish" Command="{Binding TransactionExitCommand}"  IsEnabled="{Binding TransactionRunning}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Transaction-finish-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                    <MenuItem Header="Rollback" Command="{Binding TransactionRollbackCommand}" IsEnabled="{Binding TransactionRunning}">
+                        <MenuItem.Icon>
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Transaction-cancel-icon.png" />
+                        </MenuItem.Icon>
+                    </MenuItem>
+                </MenuItem>-->
+            </Menu>
+            <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="6" Orientation="Horizontal" HorizontalAlignment="Stretch" Background="#FF3B4461" >
+                <Button Command="{Binding OpenProjectCommand}" IsEnabled="{Binding ProjectOpened, Converter={StaticResource IBConverter}}" Style="{StaticResource ToolBtn}">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel >
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Folder-Open-icon.png" />
+                        <TextBlock Text="Open project" />
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding RefreshProjectCommand}" IsEnabled="{Binding PortalOpened}" Style="{StaticResource ToolBtn}" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel>
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Refresh-icon.png" />
+                        <TextBlock Text="Refresh" />
+                    </StackPanel>
+                </Button>
+                <!--<Button Command="{Binding SaveProjectCommand}" IsEnabled="{Binding ProjectOpened}" Style="{StaticResource ToolBtn}" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel>
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Save-icon.png" />
+                        <TextBlock Text="Save project" />
+                    </StackPanel>
+                </Button>-->
+                <!--<Button Command="{Binding DeleteCommand}" IsEnabled="{Binding DeleteItem}" Style="{StaticResource ToolBtn}" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel>
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Close-icon.png" />
+                        <TextBlock Text="Delete item" />
+                    </StackPanel>
+                </Button>-->
+                <Button Command="{Binding ExportStructureCommand}" IsEnabled="{Binding ExportEnabled}" Style="{StaticResource ToolBtn}" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel>
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Export-icon.png" />
+                        <TextBlock Text="Export" />
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding ImportElementCommand}" IsEnabled="{Binding ImportEnabled}" Style="{StaticResource ToolBtn}" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel>
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Import-icon.png" />
+                        <TextBlock Text="Import" />
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding CompileCommand}" IsEnabled="{Binding Compile}" Style="{StaticResource ToolBtn}" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel>
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Compile-icon.png" />
+                        <TextBlock Text="Compile" />
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding GenerateRobotListCommand}" IsEnabled="{Binding GenerateRobotList}" Style="{StaticResource ToolBtn}" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel>
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/File-icon.png" />
+                        <TextBlock Text="RobotList" />
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding RenamePlcCommand}" Style="{StaticResource ToolBtn}" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel>
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Rename-icon.png" />
+                        <TextBlock Text="Rename PLC" />
+                    </StackPanel>
+                </Button>
+                <Button Command="{Binding GenerateHWCommand}" IsEnabled="{Binding PortalOpened}" Style="{StaticResource ToolBtn}" >
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel>
+                        <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Compile-sqr-icon.png" />
+                        <TextBlock Text="Generate HW" />
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <Grid Grid.Row="3" Grid.Column="1" Background="#FFF0F0F0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="277*" />
+                    <RowDefinition Height="277*" />
+                </Grid.RowDefinitions>
+                <Border Grid.RowSpan="2" />
+                <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" VerticalAlignment="Top" ResizeBehavior="PreviousAndCurrent" Background="#FF8194AA" />
+                <TreeView x:Name="Tree" SelectedValuePath="Header" ItemsSource="{Binding ProjectTree.View, Mode=OneWay}" utilities:TreeViewHelper.SelectedItem="{Binding ProjectTree.SelectedItem}" utilities:TreeViewHelper.SelectedItemChanged="{Binding ProjectTree.SelectedItemChgCmd}">
+                    <TreeView.Resources>
+                        <Style TargetType="{x:Type TreeView}">
+                            <Setter Property="BorderThickness">
+                                <Setter.Value>0.0</Setter.Value>
+                            </Setter>
+                            <Setter Property="Background">
+                                <Setter.Value>
+                                    <SolidColorBrush Color="#FFF0F0F0"/>
+                                </Setter.Value>
+                            </Setter>
+                            <Style.Resources>
+                                <Style TargetType="{x:Type TreeViewItem}">
+                                    <Style.Resources>
+                                        <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}" />
+                                        <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+                                        <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="#FF3399FF"/>
+                                    </Style.Resources>
+                                </Style>
+                            </Style.Resources>
+                        </Style>
+                    </TreeView.Resources>
+                </TreeView>
+
+                <GroupBox Header="Main folder files list" Grid.Row="1" Margin="0,5,0,0">
+                    <Grid>
+                        <Border VerticalAlignment="Top" Height="20" HorizontalAlignment="Stretch" BorderBrush="Black" BorderThickness="1">
+                            <Grid>
+                                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Path:" Margin="10,0,0,0" VerticalAlignment="Bottom" FontWeight="Bold"/>
+                                <TextBlock Name="MainFolderPath" HorizontalAlignment="Left" TextTrimming="CharacterEllipsis" Margin="45,0,60,0" ToolTip="{Binding MainFolderPath}" Text="{Binding MainFolderPath}" VerticalAlignment="Bottom" MouseDown="TextBlock_MouseDown"/>
+                                <Button Command="{Binding RefreshMainTreeCommand}" ToolTip="Refresh navigation"  Width="20" Height="20"  HorizontalAlignment="Right">
+                                    <utilities:AutoGreyableImage  Source="/TiaPortalOpennessDemo;component/Images/Refresh-icon.png"/>
+                                </Button>
+                                <Button Command="{Binding EditMainTreeFileCommand}" ToolTip="Edit file"  Width="20" Height="20" Margin="0,0,20,0" HorizontalAlignment="Right">
+                                    <utilities:AutoGreyableImage  Source="/TiaPortalOpennessDemo;component/Images/Rename-icon.png"/>
+                                </Button>
+                                <Button Command="{Binding ImportMainTreeFileCommand}" ToolTip="Import files"  Width="20" Height="20" Margin="0,0,40,0" HorizontalAlignment="Right">
+                                    <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Import-icon.png"/>
+                                </Button>
+                                <Button Command="{Binding ChooseFolderCommand}" ToolTip="Import files from folder"  Width="20" Height="20" Margin="0,0,60,0" HorizontalAlignment="Right">
+                                    <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Folder-Open-icon.png"/>
+                                </Button>
+                            </Grid>
+                        </Border>
+                        <TreeView x:Name="MainTree" Margin="0,25,0,0" SelectedValuePath="Header" ItemsSource="{Binding MainTree.View, Mode=OneWay}" utilities:TreeViewHelper.SelectedItem="{Binding MainTree.SelectedItem}" utilities:TreeViewHelper.SelectedItemChanged="{Binding MainTree.SelectedItemChgCmd}">
+                            <TreeView.Resources>
+                                <Style TargetType="{x:Type TreeView}">
+                                    <Setter Property="BorderThickness">
+                                        <Setter.Value>0.0</Setter.Value>
+                                    </Setter>
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="#FFF0F0F0"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Resources>
+                                        <Style TargetType="{x:Type TreeViewItem}">
+                                            <Style.Resources>
+                                                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}" />
+                                                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+                                                <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="#FF3399FF"/>
+                                            </Style.Resources>
+                                        </Style>
+                                    </Style.Resources>
+                                </Style>
+                            </TreeView.Resources>
+                        </TreeView>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+
+            <ListView Grid.Column="3" Grid.Row="3"  Margin="0" Background="#FFF0F0F0" ItemsSource="{Binding PropertiesListView, Mode=OneWay}" Visibility="{Binding PropertiesShown, Converter={StaticResource BVConverter}}" >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="auto" Header="Name" DisplayMemberBinding="{Binding Key}"/>
+                        <GridViewColumn Width="auto" Header="Value" DisplayMemberBinding="{Binding Value}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <ListBox ItemsSource="{Binding StatusListView, Mode=OneWay}" Grid.Row="5" Grid.Column="1"  Grid.ColumnSpan="5" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBox Text="{Binding Path=.}" TextWrapping="Wrap" BorderThickness="0" HorizontalAlignment="Stretch" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+                <ListBox.ItemContainerStyle>
+                    <Style TargetType="ListBoxItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                    </Style>
+                </ListBox.ItemContainerStyle>
+            </ListBox>
+
+            <Grid Grid.Row="3" Grid.Column="5" Background="#FFF0F0F0" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="277*" />
+                    <RowDefinition Height="277*" />
+                </Grid.RowDefinitions>
+                <Border Grid.RowSpan="2" />
+                <GridSplitter Grid.Row="1" Height="5" HorizontalAlignment="Stretch" VerticalAlignment="Top" ResizeBehavior="PreviousAndCurrent" Background="#FF8194AA" />
+                <GroupBox Grid.Row="0" Header="Project Library">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="30*"/>
+                            <ColumnDefinition Width="89*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Command="{Binding RefreshLibraryCommand}" ToolTip="Refresh navigation"  Height="20" HorizontalAlignment="Left" IsEnabled="{Binding PortalOpened}" Margin="0,0,0,0" VerticalAlignment="Top" Width="20">
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Refresh-icon.png" />
+                        </Button>
+                        <Button Content="P" Command="{Binding InvokeLibToProjectCommand}" IsEnabled="{Binding PortalOpened}" ToolTip="Copy to project" Width="20" Height="20" VerticalAlignment="Top" Margin="20,0,0,0" HorizontalAlignment="Left">
+
+                        </Button>
+                        <TreeView Name="LibraryTree" Margin="0,25,0.4,0.2" ItemsSource="{Binding LibraryTree.View}" utilities:TreeViewHelper.SelectedItem="{Binding LibraryTree.SelectedItem}" utilities:TreeViewHelper.SelectedItemChanged="{Binding LibraryTree.SelectedItemChgCmd}" Grid.ColumnSpan="2" >
+                            <TreeView.Resources>
+                                <Style TargetType="{x:Type TreeView}">
+                                    <Setter Property="BorderThickness">
+                                        <Setter.Value>0.0</Setter.Value>
+                                    </Setter>
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="#FFF0F0F0"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Resources>
+                                        <Style TargetType="{x:Type TreeViewItem}">
+                                            <Style.Resources>
+                                                <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="#FF3399FF"/>
+                                            </Style.Resources>
+                                        </Style>
+                                    </Style.Resources>
+                                </Style>
+                            </TreeView.Resources>
+                        </TreeView>
+                    </Grid>
+                </GroupBox>
+                <GroupBox Header="Global Library" Grid.Row="1" Margin="0,5,0,0">
+                    <Grid>
+                        <Button Command="{Binding OpenGlobalLibraryCommand}" IsEnabled="{Binding GlobalLibraryOpened, Converter={StaticResource IBConverter}}" ToolTip="Open library"  Width="20" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left">
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Folder-Open-icon.png"/>
+                        </Button>
+                        <Button Command="{Binding CloseGlobalLibraryCommand}"  IsEnabled="{Binding GlobalLibraryOpened}" ToolTip="Close library"  Width="20" Height="20" VerticalAlignment="Top" Margin="20,0,0,0" HorizontalAlignment="Left">
+                            <utilities:AutoGreyableImage Source="/TiaPortalOpennessDemo;component/Images/Close-icon.png"/>
+                        </Button>
+                        <Button Command="{Binding RefreshLibraryCommand}" IsEnabled="{Binding GlobalLibraryOpened}" ToolTip="Refresh navigation"  Width="20" Height="20" VerticalAlignment="Top" Margin="40,0,0,0" HorizontalAlignment="Left">
+                            <utilities:AutoGreyableImage  Source="/TiaPortalOpennessDemo;component/Images/Refresh-icon.png"/>
+                        </Button>
+                        <Button Content="P" Command="{Binding InvokeGlobalToProjectCommand}" IsEnabled="{Binding GlobalLibraryOpened}" ToolTip="Copy to project" Width="20" Height="20" VerticalAlignment="Top" Margin="60,0,0,0" HorizontalAlignment="Left">
+
+                        </Button>
+                        <Button Content="L" Command="{Binding InvokeGlobalToLibCommand}" IsEnabled="{Binding GlobalLibraryOpened}" ToolTip="Copy to project library" Width="20" Height="20" VerticalAlignment="Top" Margin="80,0,0,0" HorizontalAlignment="Left">
+
+                        </Button>
+                        <TreeView Name="GlobalLibraryTree" Margin="0,25,0,0" ItemsSource="{Binding GlobalLibraryTree.View}" utilities:TreeViewHelper.SelectedItem="{Binding GlobalLibraryTree.SelectedItem}" utilities:TreeViewHelper.SelectedItemChanged="{Binding GlobalLibraryTree.SelectedItemChgCmd}" >
+                            <TreeView.Resources>
+                                <Style TargetType="{x:Type TreeView}">
+                                    <Setter Property="BorderThickness">
+                                        <Setter.Value>0.0</Setter.Value>
+                                    </Setter>
+                                    <Setter Property="Background">
+                                        <Setter.Value>
+                                            <SolidColorBrush Color="#FFF0F0F0"/>
+                                        </Setter.Value>
+                                    </Setter>
+                                    <Style.Resources>
+                                        <Style TargetType="{x:Type TreeViewItem}">
+                                            <Style.Resources>
+                                                <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="#FF3399FF"/>
+                                            </Style.Resources>
+                                        </Style>
+                                    </Style.Resources>
+                                </Style>
+                            </TreeView.Resources>
+                        </TreeView>
+                    </Grid>
+                </GroupBox>
+            </Grid>
+        </Grid>
+
+        <Grid Visibility="{Binding CopyLibElement, Converter={StaticResource BVConverter}, FallbackValue=Collapsed}" Margin="284,23,0,0" Background="#3B4461" Panel.ZIndex="1" Height="122" VerticalAlignment="Top" HorizontalAlignment="Left" Width="328">
+            <Label Content="Copy from project library to project" Height="28"  Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left" Width="328" />
+            <Label Content="Destination:" Height="23" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" Width="83" Foreground="White" />
+            <TextBox Text="{Binding CopyDestination.Header}" Height="23" Margin="99,33,0,0" VerticalAlignment="Top" IsReadOnly="True" HorizontalAlignment="Left" Width="219" />
+            <Label Content="Source:" Margin="10,59,0,0" Foreground="White" HorizontalAlignment="Left" Width="83" Height="23" VerticalAlignment="Top" />
+            <TextBox Text="{Binding CopySource.Header}" Margin="99,61,10,0" IsReadOnly="True" Height="23" VerticalAlignment="Top" />
+            <Button Command="{Binding CancelCopyCommand}" Content="Cancel" HorizontalAlignment="Left" Margin="10,89,0,0" Width="75" Height="23" VerticalAlignment="Top" />
+            <Button Command="{Binding CopyLibCommand}" Content="Copy" HorizontalAlignment="Right" Margin="0,89,10,0" Width="75" Height="23" VerticalAlignment="Top" />
+        </Grid>
+
+        <!--<Grid Visibility="{Binding CaxImportVisible, Converter={StaticResource BVConverter}, FallbackValue=Visible}" Margin="284,23,0,0" Background="#3B4461" Panel.ZIndex="1" VerticalAlignment="Top" HorizontalAlignment="Left" >
+            <views:ImportCaxControl FilePath="{Binding CaxImportFilePath, Mode=TwoWay}"
+                                    SelectedOption="{Binding SelectedCaxImportOption, Mode=TwoWay}"
+                                    CancelCommand="{Binding DisableCaxImportCommand, Mode=TwoWay}"
+                                    ImportCommand="{Binding CaxImportCommand, Mode=TwoWay}" />
+        </Grid>-->
+
+        <Grid>
+            <views:Overlay Visibility="{Binding IsLoading, Converter={StaticResource BVConverter}, FallbackValue=Collapsed}" Panel.ZIndex="2"/>
+        </Grid>
+    </Grid>
+</Window>

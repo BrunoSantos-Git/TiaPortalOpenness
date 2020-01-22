@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# CS1591: Missing XML comment for publicly visible type or member
+dotnet_diagnostic.CS1591.severity = none
+
+# CS1570: XML comment has badly formed XML
+dotnet_diagnostic.CS1570.severity = none

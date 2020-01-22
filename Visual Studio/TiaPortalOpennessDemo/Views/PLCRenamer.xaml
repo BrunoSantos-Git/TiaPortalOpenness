@@ -1,0 +1,177 @@
+﻿<Window x:Class="TiaPortalOpennessDemo.Views.PLCRenamer"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" 
+        xmlns:utilities="clr-namespace:TiaPortalOpennessDemo.Utilities"
+        mc:Ignorable="d"
+        Title="PLCRenamer" ResizeMode="NoResize" Width="877" Height="669"
+        Icon="/TiaPortalOpennessDemo;component/Images/Rename-icon.png">
+    <Grid Background="#FF3B4461">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="23*"/>
+            <RowDefinition Height="269*"/>
+            <RowDefinition Height="126*"/>
+            <RowDefinition Height="66*"/>
+            <RowDefinition Height="154*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="339*"/>
+            <ColumnDefinition Width="265*"/>
+        </Grid.ColumnDefinitions>
+        <TreeView x:Name="Tree" SelectedValuePath="Header" ItemsSource="{Binding ProjectTree.View, Mode=OneWay}" utilities:TreeViewHelper.SelectedItem="{Binding ProjectTree.SelectedItem}" Margin="10,10,3,2" Grid.RowSpan="4">
+            <TreeView.Resources>
+                <Style TargetType="{x:Type TreeView}">
+                    <Setter Property="BorderThickness">
+                        <Setter.Value>0.0</Setter.Value>
+                    </Setter>
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <SolidColorBrush Color="#FFF0F0F0"/>
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Resources>
+                        <Style TargetType="{x:Type TreeViewItem}">
+                            <Style.Resources>
+                                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightBrushKey}" Color="{DynamicResource {x:Static SystemColors.HighlightColorKey}}" />
+                                <SolidColorBrush x:Key="{x:Static SystemColors.InactiveSelectionHighlightTextBrushKey}" Color="{DynamicResource {x:Static SystemColors.HighlightTextColorKey}}"/>
+                                <SolidColorBrush x:Key="{x:Static SystemColors.ControlBrushKey}" Color="#FF3399FF"/>
+                            </Style.Resources>
+                        </Style>
+                    </Style.Resources>
+                </Style>
+            </TreeView.Resources>
+        </TreeView>
+        <TextBlock Grid.Column="1" Grid.Row="0" Margin="5,6,0,2" VerticalAlignment="Center" Foreground="Red" FontSize="13" FontWeight="Bold" FontFamily="Consolas" Height="15">* Case Sensitive</TextBlock>
+        <ContentControl Content="{Binding WindowsFormsGrid}" Name="WindowsFormsNames" Margin="5,0,5,2" Grid.Column="1" Grid.RowSpan="3" Grid.Row="1" />
+        <ListBox Margin="5,0,10,10" ItemsSource="{Binding StatusListView, Mode=OneWay}" Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2" ScrollViewer.HorizontalScrollBarVisibility="Disabled" HorizontalAlignment="Stretch" Name="listbox">
+            <i:Interaction.Behaviors>
+                <utilities:ScrollIntoViewBehavior/>
+            </i:Interaction.Behaviors>
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBox Text="{Binding Path=.}" TextWrapping="Wrap" BorderThickness="0" HorizontalAlignment="Stretch" />
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            <ListBox.ItemContainerStyle>
+                <Style TargetType="ListBoxItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+                </Style>
+            </ListBox.ItemContainerStyle>
+        </ListBox>
+        <Border Margin="3,10,10,1" BorderBrush="Black" BorderThickness="1" Grid.Column="2" Grid.RowSpan="2">
+            <StackPanel Background="White">
+                <Label Content="Change Folgen" Margin="0,5,0,0" FontSize="14" HorizontalAlignment="Center"/>
+                <Separator Height="5"/>
+                <StackPanel Margin="0,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <ComboBox Text="{Binding CbOldIndex}" Margin="10,5,13,5" Width="80">
+                        <ComboBoxItem Content="CUSTOM" />
+                        <ComboBoxItem Content="KETVOL" />
+                        <ComboBoxItem Content="KETVOR" />
+                        <ComboBoxItem Content="KETHIR" />
+                        <ComboBoxItem Content="KETHIL" />
+                    </ComboBox>
+                    <Label Margin="0,5,0,5" Content="to"/>
+                    <ComboBox Text="{Binding CbNewIndex}" Margin="13,5,10,5" Width="80">
+                        <ComboBoxItem Content="CUSTOM" />
+                        <ComboBoxItem Content="KETVOL" />
+                        <ComboBoxItem Content="KETVOR" />
+                        <ComboBoxItem Content="KETHIR" />
+                        <ComboBoxItem Content="KETHIL" />
+                    </ComboBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Label Margin="0,10,0,0" Content="Old Index" FontWeight="Bold"/>
+                    <Label Margin="72,10,0,0" Content="New Index" FontWeight="Bold"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Text="{Binding OldIndex1}" Height="20" Margin="0,0,26,0" TextWrapping="Wrap" TextAlignment="Center" Width="70" Name="txtOldIndex1" MaxLength="2"/>
+                    <Label Content="-" FontWeight="Bold"/>
+                    <TextBox Text="{Binding NewIndex1}" Height="20" Margin="26,0,0,0" TextWrapping="Wrap" TextAlignment="Center" Width="70" Name="txtNewIndex1" MaxLength="2"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Text="{Binding OldIndex2}" Height="20" Margin="0,0,26,0" TextWrapping="Wrap" TextAlignment="Center" Width="70" Name="txtOldIndex2" MaxLength="2"/>
+                    <Label Content="-" FontWeight="Bold"/>
+                    <TextBox Text="{Binding NewIndex2}" Height="20" Margin="26,0,0,0" TextWrapping="Wrap" TextAlignment="Center" Width="70" Name="txtNewIndex2" MaxLength="2"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Text="{Binding OldIndex3}" Height="20" Margin="0,0,26,0" TextWrapping="Wrap" TextAlignment="Center" Width="70" Name="txtOldIndex3" MaxLength="2"/>
+                    <Label Content="-" FontWeight="Bold"/>
+                    <TextBox Text="{Binding NewIndex3}" Height="20" Margin="26,0,0,0" TextWrapping="Wrap" TextAlignment="Center" Width="70" Name="txtNewIndex3" MaxLength="2"/>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Text="{Binding OldIndex4}" Height="20" Margin="0,0,26,0" TextWrapping="Wrap" TextAlignment="Center" Width="70" Name="txtOldIndex4" MaxLength="2"/>
+                    <Label Content="-" FontWeight="Bold"/>
+                    <TextBox Text="{Binding NewIndex4}" Height="20" Margin="26,0,0,0" TextWrapping="Wrap" TextAlignment="Center" Width="70" Name="txtNewIndex4" MaxLength="2"/>
+                </StackPanel>
+                <CheckBox IsChecked="{Binding ChangeFolgenIsChecked}" Margin="0,15,0,0" HorizontalAlignment="Center" Content="Change Folgen Numbers" FontSize="14" x:Name="checkBoxChangeFolgen"/>
+            </StackPanel>
+        </Border>
+        <Border Margin="3,2,10,1" BorderBrush="Black" BorderThickness="1" Grid.Column="2" Grid.Row="2">
+            <StackPanel Background="White">
+                <Label Content="Change IP's" Margin="0,5,0,0" FontSize="14" HorizontalAlignment="Center"/>
+                <Separator Height="5"/>
+                <StackPanel Margin="0,10,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <TextBox Text="{Binding IP1}" Height="20" TextWrapping="Wrap" TextAlignment="Center" Width="40" Name="txtIP1" MaxLength="3"/>
+                    <Label Content="." FontWeight="Bold"/>
+                    <TextBox Text="{Binding IP2}" Height="20" TextWrapping="Wrap" TextAlignment="Center" Width="40" Name="txtIP2" MaxLength="3"/>
+                    <Label Content="." FontWeight="Bold"/>
+                    <TextBox Text="{Binding IP3}" Height="20" TextWrapping="Wrap" TextAlignment="Center" Width="40" Name="txtIP3" MaxLength="3"/>
+                    <Label Content="." FontWeight="Bold"/>
+                    <TextBox Text="1" Height="20" TextWrapping="Wrap" TextAlignment="Center" Width="40" MaxLength="3" IsReadOnly="True"/>
+                </StackPanel>
+                <CheckBox IsChecked="{Binding ChangeIpIsChecked}" Margin="0,15,0,10" Content="Change IP numbers" HorizontalAlignment="Center" FontSize="14" x:Name="checkBoxChangeIP"/>
+            </StackPanel>
+        </Border>
+        <Button Command="{Binding RenameCommand}" IsEnabled="{Binding CanRename}" Margin="2,2,10,2" Grid.Column="2" Name="Rename" Grid.Row="3" FontSize="14">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Rename  " TextAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+                <Image Source="/TiaPortalOpennessDemo;component/Images/Rename-icon.png" Height="20"/>
+            </StackPanel>
+        </Button>
+        <Button Command="{Binding ExportConfigCommand}" Margin="10,2,3,0" Grid.Column="0" Name="Export" Grid.Row="4" Height="46" VerticalAlignment="Top">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Export Config  " TextAlignment="Center" FontSize="14" FontFamily="Segoe UI Emoji"/>
+                <Image Source="/TiaPortalOpennessDemo;component/Images/Export-icon.png" Height="15"/>
+            </StackPanel>
+        </Button>
+        <Button Command="{Binding ImportConfigCommand}" Margin="10,49,3,0" Grid.Column="0" Name="Import" Grid.Row="4" Height="46" VerticalAlignment="Top">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Import Config  " TextAlignment="Center" FontSize="14" FontFamily="Segoe UI Emoji"/>
+                <Image Source="/TiaPortalOpennessDemo;component/Images/Import-icon.png" Height="15"/>
+            </StackPanel>
+        </Button>
+        <Button Command="{Binding OpenLogCommand}" IsEnabled="{Binding LogExist}" Margin="10,0,3,10" Grid.Column="0" Name="SeeLog" Grid.Row="4" Height="46" VerticalAlignment="Bottom">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Log File  " TextAlignment="Center" FontSize="14" FontFamily="Segoe UI Emoji"/>
+                <Image Source="/TiaPortalOpennessDemo;component/Images/Notepad-icon.png" Height="15"/>
+            </StackPanel>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,6 @@
+	<Access Scope="GlobalVariable" UId="NEWUID">
+      <Symbol>
+        <Component Name="VALVENAMEMMVALVENRSENSOR" />
+        <Address Area="Input" Type="Bool" BitOffset="22720" Informative="true" />
+      </Symbol>
+    </Access>

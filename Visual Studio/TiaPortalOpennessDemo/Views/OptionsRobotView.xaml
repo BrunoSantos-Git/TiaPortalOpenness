@@ -1,0 +1,29 @@
+﻿<Window x:Class="TiaPortalOpennessDemo.Views.OptionsRobotView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        ResizeMode="NoResize"
+        Title="Select Robot" SizeToContent="WidthAndHeight" Closed="Window_Closed" Loaded="Window_Loaded">
+    <StackPanel Background="#3B4461">
+        <GroupBox Header="Choose an Option:" Foreground="White" Height="Auto" Margin="10,10,10,10">
+            <Grid Name="buttons">
+                <Button Name="btnCreateNew" HorizontalAlignment="Left" Height="32" Margin="10,10,10,10" VerticalAlignment="Top" Width="307" Click="BtnCreateNew_Click">
+                    <Button.Background>
+                        <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                            <GradientStop Color="White"/>
+                            <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Create New  " TextAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+                        <Image Source="/TiaPortalOpennessDemo;component/Images/Create-icon.png" Height="20"/>
+                    </StackPanel>
+                </Button>
+                <Rectangle Margin="10,54,10,10" VerticalAlignment="Top" HorizontalAlignment="Stretch" Stroke="#FFDBDCDC" />
+                <Label Content="Robots from Excel File:" HorizontalContentAlignment="Center" Margin="10,55,10,0" FontSize="20" FontWeight="Bold" FontFamily="Segoe UI Emoji" Foreground="#FFF4F4F4" Height="37" VerticalAlignment="Top"/>
+            </Grid>
+        </GroupBox>
+    </StackPanel>
+</Window>

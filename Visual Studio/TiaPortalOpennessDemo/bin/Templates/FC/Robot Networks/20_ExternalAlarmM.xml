@@ -1,0 +1,457 @@
+    <SW.Blocks.CompileUnit ID="97" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v2">
+  <Parts>
+    <Access Scope="LiteralConstant" UId="21">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>3</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_signed</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="FGDB_SECTIONNAME" />
+        <Component Name="controlVoltageOn" />
+        <Address Area="DB" Type="Bool" BlockNumber="1" BitOffset="32" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="23">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bool</StringAttribute>
+      </Constant>
+    </Access>
+	<Access Scope="LiteralConstant" UId="24">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bool</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="25">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bool</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="26">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bool</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="27">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bool</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="28">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bool</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="29">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bool</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="30">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bool</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="31">
+      <Constant>
+        <ConstantType>Bool</ConstantType>
+        <ConstantValue>false</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Bool</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="Masks" />
+        <Component Name="prodRelevantMessage1_8" />
+        <Address Area="DB" Type="Byte" BlockNumber="164" BitOffset="368" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="33">
+      <Constant>
+        <ConstantType>DWord</ConstantType>
+        <ConstantValue>0</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_unsigned</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="34">
+      <Constant>
+        <ConstantType>DWord</ConstantType>
+        <ConstantValue>0</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_unsigned</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="35">
+      <Constant>
+        <ConstantType>DWord</ConstantType>
+        <ConstantValue>0</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_unsigned</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="36">
+      <Constant>
+        <ConstantType>DWord</ConstantType>
+        <ConstantValue>0</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_unsigned</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="37">
+      <Constant>
+        <ConstantType>DWord</ConstantType>
+        <ConstantValue>0</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_unsigned</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="38">
+      <Constant>
+        <ConstantType>DWord</ConstantType>
+        <ConstantValue>0</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_unsigned</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="ExtM" />
+        <Component Name="1" />
+        <Address Area="DB" Type="Bool" BlockNumber="164" BitOffset="256" Informative="true" />
+	  </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="ExtM" />
+        <Component Name="2" />
+        <Address Area="DB" Type="Bool" BlockNumber="164" BitOffset="257" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="41">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="ExtM" />
+        <Component Name="3" />
+        <Address Area="DB" Type="Bool" BlockNumber="164" BitOffset="258" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="42">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="ExtM" />
+        <Component Name="4" />
+        <Address Area="DB" Type="Bool" BlockNumber="164" BitOffset="259" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="ExtM" />
+        <Component Name="5" />
+        <Address Area="DB" Type="Bool" BlockNumber="164" BitOffset="260" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="ExtM" />
+        <Component Name="6" />
+        <Address Area="DB" Type="Bool" BlockNumber="164" BitOffset="261" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="45">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="ExtM" />
+        <Component Name="7" />
+        <Address Area="DB" Type="Bool" BlockNumber="164" BitOffset="262" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="46">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="ExtM" />
+        <Component Name="8" />
+        <Address Area="DB" Type="Bool" BlockNumber="164" BitOffset="263" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="47">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME" />
+        <Component Name="IfcFGExternal" />
+        <Address Area="DB" Type="iUDT_IFC_SYS_EXTERNAL_ALARM" BlockNumber="83" BitOffset="800" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="48">
+      <Symbol>
+        <Component Name="FGDB_COMPNAME@AddOn" />
+        <Component Name="GroupMessages" />
+        <Component Name="groupMessageMessage1_8" />
+        <Address Area="DB" Type="Bool" BlockNumber="164" BitOffset="386" Informative="true" />
+      </Symbol>
+    </Access>
+    <Call UId="49">
+      <CallInfo Name="iFC_SYS_EXTERNAL_ALARM" BlockType="FC">
+        <IntegerAttribute Name="BlockNumber" Informative="true">17</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2016-12-22T18:43:45</DateAttribute>
+        <Parameter Name="fct" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="enableIn" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ack" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="triggerMessage_1" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="triggerMessage_2" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="triggerMessage_3" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="triggerMessage_4" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="triggerMessage_5" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="triggerMessage_6" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="triggerMessage_7" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="triggerMessage_8" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="maskPr" Section="Input" Type="Byte">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="addInfo_1" Section="Input" Type="DWord">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="addInfo_2" Section="Input" Type="DWord">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="addInfo_3" Section="Input" Type="DWord">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="addInfo_4" Section="Input" Type="DWord">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="addInfo_5" Section="Input" Type="DWord">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="addInfo_6" Section="Input" Type="DWord">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="groupMessage" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="message_1" Section="InOut" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="message_2" Section="InOut" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="message_3" Section="InOut" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="message_4" Section="InOut" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="message_5" Section="InOut" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="message_6" Section="InOut" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="message_7" Section="InOut" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="message_8" Section="InOut" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="IfcFGExternal" Section="InOut" Type="iUDT_IFC_SYS_EXTERNAL_ALARM">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="51">
+      <OpenCon UId="50" />
+      <NameCon UId="49" Name="en" />
+    </Wire>
+    <Wire UId="52">
+      <IdentCon UId="21" />
+      <NameCon UId="49" Name="fct" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="22" />
+      <NameCon UId="49" Name="enableIn" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="23" />
+      <NameCon UId="49" Name="ack" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="24" />
+      <NameCon UId="49" Name="triggerMessage_1" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="25" />
+      <NameCon UId="49" Name="triggerMessage_2" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="26" />
+      <NameCon UId="49" Name="triggerMessage_3" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="27" />
+      <NameCon UId="49" Name="triggerMessage_4" />
+    </Wire>
+    <Wire UId="59">
+      <IdentCon UId="28" />
+      <NameCon UId="49" Name="triggerMessage_5" />
+    </Wire>
+    <Wire UId="60">
+      <IdentCon UId="29" />
+      <NameCon UId="49" Name="triggerMessage_6" />
+    </Wire>
+    <Wire UId="61">
+      <IdentCon UId="30" />
+      <NameCon UId="49" Name="triggerMessage_7" />
+    </Wire>
+    <Wire UId="62">
+      <IdentCon UId="31" />
+      <NameCon UId="49" Name="triggerMessage_8" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="32" />
+      <NameCon UId="49" Name="maskPr" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="33" />
+      <NameCon UId="49" Name="addInfo_1" />
+    </Wire>
+    <Wire UId="65">
+      <IdentCon UId="34" />
+      <NameCon UId="49" Name="addInfo_2" />
+    </Wire>
+    <Wire UId="66">
+      <IdentCon UId="35" />
+      <NameCon UId="49" Name="addInfo_3" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="36" />
+      <NameCon UId="49" Name="addInfo_4" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="37" />
+      <NameCon UId="49" Name="addInfo_5" />
+    </Wire>
+    <Wire UId="69">
+      <IdentCon UId="38" />
+      <NameCon UId="49" Name="addInfo_6" />
+    </Wire>
+    <Wire UId="70">
+      <IdentCon UId="39" />
+      <NameCon UId="49" Name="message_1" />
+    </Wire>
+    <Wire UId="71">
+      <IdentCon UId="40" />
+      <NameCon UId="49" Name="message_2" />
+    </Wire>
+    <Wire UId="72">
+      <IdentCon UId="41" />
+      <NameCon UId="49" Name="message_3" />
+    </Wire>
+    <Wire UId="73">
+      <IdentCon UId="42" />
+      <NameCon UId="49" Name="message_4" />
+    </Wire>
+    <Wire UId="74">
+      <IdentCon UId="43" />
+      <NameCon UId="49" Name="message_5" />
+    </Wire>
+    <Wire UId="75">
+      <IdentCon UId="44" />
+      <NameCon UId="49" Name="message_6" />
+    </Wire>
+    <Wire UId="76">
+      <IdentCon UId="45" />
+      <NameCon UId="49" Name="message_7" />
+    </Wire>
+    <Wire UId="77">
+      <IdentCon UId="46" />
+      <NameCon UId="49" Name="message_8" />
+    </Wire>
+    <Wire UId="78">
+      <IdentCon UId="47" />
+      <NameCon UId="49" Name="IfcFGExternal" />
+    </Wire>
+    <Wire UId="79">
+      <NameCon UId="49" Name="groupMessage" />
+      <IdentCon UId="48" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="98" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="99" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="9B" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="9C" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>External Messages COMPNAME</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="9D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Susatz COMPNAME</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>

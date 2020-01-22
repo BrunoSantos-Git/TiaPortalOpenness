@@ -1,0 +1,386 @@
+<SW.Blocks.CompileUnit ID="58" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v2">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="safetyStop" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="16" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="enableOut" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="17" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="FGDB_001BR_010" />
+        <Component Name="automaticOn" />
+        <Address Area="DB" Type="Bool" BlockNumber="49" BitOffset="49" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="24">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="robotStop" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="19" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="25">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="ghostMode" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="20" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="26">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="reqSpecialPos" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="21" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="27">
+      <Symbol>
+        <Component Name="ROBNAME_PI" />
+        <Address Area="Input" Type="iUDT_PI_ROBOT" BitOffset="40096" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="28">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="selectionPGNO" />
+        <Address Area="DB" Type="Int" BlockNumber="67" BitOffset="352" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="29">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="robotSelected" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="64" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="30">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="initialPosition" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="65" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="31">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="automaticOFF" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="66" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="32">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="readyPGNO_REQ" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="67" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="33">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="stop" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="68" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="34">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="specialPos" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="69" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="35">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="reqBrakecheck" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="70" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="36">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="reqReference" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="71" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="37">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="activeProgram" />
+        <Address Area="DB" Type="Int" BlockNumber="67" BitOffset="80" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="38">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="fault" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="288" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="39">
+      <Symbol>
+        <Component Name="FGDB_ROBNAME" />
+        <Component Name="faultExt" />
+        <Address Area="DB" Type="Bool" BlockNumber="67" BitOffset="289" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="ROBNAME_PO" />
+        <Address Area="Output" Type="iUDT_PO_ROBOT" BitOffset="40096" Informative="true" />
+      </Symbol>
+    </Access>
+    <Call UId="41">
+      <CallInfo Name="iFG_ROBOT" BlockType="FB">
+        <IntegerAttribute Name="BlockNumber" Informative="true">13</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2018-01-24T13:15:23</DateAttribute>
+        <Instance Scope="GlobalVariable" UId="42">
+          <Component Name="FGDB_ROBNAME" />
+          <Address Area="DB" Type="iFG_ROBOT" BlockNumber="67" BitOffset="0" Informative="true" />
+        </Instance>
+        <Parameter Name="fct" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="safetyStop" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="enableOut" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="autoStart" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="robotStop" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ghostMode" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="reqSpecialPos" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="shutdownActivate" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="shutdownDeactivate" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="brakecheckPGNO" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="referencePGNO" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="robotSelected" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="initialPosition" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="automaticOFF" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="readyPGNO_REQ" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="stop" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="specialPos" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="reqBrakecheck" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="reqReference" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="activeProgram" Section="Output" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="shutdownActivated" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="shutdownDeactivated" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Out_PO" Section="Output" Type="iUDT_PO_ROBOT">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="fault" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="faultExt" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="In_PI" Section="InOut" Type="iUDT_PI_ROBOT">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="selectionPGNO" Section="InOut" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="51">
+      <OpenCon UId="43" />
+      <NameCon UId="41" Name="en" />
+    </Wire>
+    <Wire UId="52">
+      <OpenCon UId="44" />
+      <NameCon UId="41" Name="fct" />
+    </Wire>
+    <Wire UId="53">
+      <IdentCon UId="21" />
+      <NameCon UId="41" Name="safetyStop" />
+    </Wire>
+    <Wire UId="54">
+      <IdentCon UId="22" />
+      <NameCon UId="41" Name="enableOut" />
+    </Wire>
+    <Wire UId="55">
+      <IdentCon UId="23" />
+      <NameCon UId="41" Name="autoStart" />
+    </Wire>
+    <Wire UId="56">
+      <IdentCon UId="24" />
+      <NameCon UId="41" Name="robotStop" />
+    </Wire>
+    <Wire UId="57">
+      <IdentCon UId="25" />
+      <NameCon UId="41" Name="ghostMode" />
+    </Wire>
+    <Wire UId="58">
+      <IdentCon UId="26" />
+      <NameCon UId="41" Name="reqSpecialPos" />
+    </Wire>
+    <Wire UId="59">
+      <OpenCon UId="45" />
+      <NameCon UId="41" Name="shutdownActivate" />
+    </Wire>
+    <Wire UId="60">
+      <OpenCon UId="46" />
+      <NameCon UId="41" Name="shutdownDeactivate" />
+    </Wire>
+    <Wire UId="61">
+      <OpenCon UId="47" />
+      <NameCon UId="41" Name="brakecheckPGNO" />
+    </Wire>
+    <Wire UId="62">
+      <OpenCon UId="48" />
+      <NameCon UId="41" Name="referencePGNO" />
+    </Wire>
+    <Wire UId="63">
+      <IdentCon UId="27" />
+      <NameCon UId="41" Name="In_PI" />
+    </Wire>
+    <Wire UId="64">
+      <IdentCon UId="28" />
+      <NameCon UId="41" Name="selectionPGNO" />
+    </Wire>
+    <Wire UId="65">
+      <NameCon UId="41" Name="robotSelected" />
+      <IdentCon UId="29" />
+    </Wire>
+    <Wire UId="66">
+      <NameCon UId="41" Name="initialPosition" />
+      <IdentCon UId="30" />
+    </Wire>
+    <Wire UId="67">
+      <NameCon UId="41" Name="automaticOFF" />
+      <IdentCon UId="31" />
+    </Wire>
+    <Wire UId="68">
+      <NameCon UId="41" Name="readyPGNO_REQ" />
+      <IdentCon UId="32" />
+    </Wire>
+    <Wire UId="69">
+      <NameCon UId="41" Name="stop" />
+      <IdentCon UId="33" />
+    </Wire>
+    <Wire UId="70">
+      <NameCon UId="41" Name="specialPos" />
+      <IdentCon UId="34" />
+    </Wire>
+    <Wire UId="71">
+      <NameCon UId="41" Name="reqBrakecheck" />
+      <IdentCon UId="35" />
+    </Wire>
+    <Wire UId="72">
+      <NameCon UId="41" Name="reqReference" />
+      <IdentCon UId="36" />
+    </Wire>
+    <Wire UId="73">
+      <NameCon UId="41" Name="activeProgram" />
+      <IdentCon UId="37" />
+    </Wire>
+    <Wire UId="74">
+      <NameCon UId="41" Name="shutdownActivated" />
+      <OpenCon UId="49" />
+    </Wire>
+    <Wire UId="75">
+      <NameCon UId="41" Name="shutdownDeactivated" />
+      <OpenCon UId="50" />
+    </Wire>
+    <Wire UId="76">
+      <NameCon UId="41" Name="fault" />
+      <IdentCon UId="38" />
+    </Wire>
+    <Wire UId="77">
+      <NameCon UId="41" Name="faultExt" />
+      <IdentCon UId="39" />
+    </Wire>
+    <Wire UId="78">
+      <NameCon UId="41" Name="Out_PO" />
+      <IdentCon UId="40" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>FBD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="59" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="5A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="5C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="5D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text>Call iFG_ROBOT</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="5E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Aufruf iFG_ROBOT</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>

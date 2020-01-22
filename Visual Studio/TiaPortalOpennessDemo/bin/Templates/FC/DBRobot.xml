@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document>
+   <Engineering version="V15" />
+   <DocumentInfo>
+      <Created />
+      <ExportSetting>WithDefaults, WithReadOnly</ExportSetting>
+      <InstalledProducts>
+         <Product>
+            <DisplayName>Totally Integrated Automation Portal</DisplayName>
+            <DisplayVersion>V15</DisplayVersion>
+         </Product>
+         <OptionPackage>
+            <DisplayName>TIA Portal Openness</DisplayName>
+            <DisplayVersion>V15</DisplayVersion>
+         </OptionPackage>
+         <Product>
+            <DisplayName>STEP 7 Professional</DisplayName>
+            <DisplayVersion>V15</DisplayVersion>
+         </Product>
+         <OptionPackage>
+            <DisplayName>STEP 7 Safety</DisplayName>
+            <DisplayVersion>V15</DisplayVersion>
+         </OptionPackage>
+         <Product>
+            <DisplayName>WinCC Professional</DisplayName>
+            <DisplayVersion>V15</DisplayVersion>
+         </Product>
+         <OptionPackage>
+            <DisplayName>SIMATIC Visualization Architect</DisplayName>
+            <DisplayVersion>V15</DisplayVersion>
+         </OptionPackage>
+      </InstalledProducts>
+   </DocumentInfo>
+   <SW.Blocks.GlobalDB ID="0">
+      <AttributeList>
+         <AutoNumber>false</AutoNumber>
+         <CodeModifiedDate ReadOnly="true" />
+         <CompileDate ReadOnly="true" />
+         <CreationDate ReadOnly="true" />
+         <DBAccessibleFromOPCUA>true</DBAccessibleFromOPCUA>
+         <DownloadWithoutReinit ReadOnly="true">false</DownloadWithoutReinit>
+         <HeaderAuthor>INTROSYS</HeaderAuthor>
+         <HeaderFamily />
+         <HeaderName>ROBNAME</HeaderName>
+         <HeaderVersion>0.0</HeaderVersion>
+         <Interface>
+            <Sections xmlns="http://www.siemens.com/automation/Openness/SW/Interface/v3">
+               <Section Name="Static">
+                  <Member Name="Rob" Datatype="&quot;ST_Rob&quot;" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Roboter</MultiLanguageText>
+                     </Comment>
+                     <Sections>
+                        <Section Name="None">
+                           <Member Name="E" Datatype="&quot;ST_Rob_E&quot;">
+                              <Sections>
+                                 <Section Name="None">
+                                    <Member Name="E1_8_Folgenanwahl" Datatype="Byte" />
+                                    <Member Name="E9_Folgestart" Datatype="Bool" />
+                                    <Member Name="E10_Antriebe_ein" Datatype="Bool" />
+                                    <Member Name="E11_Anlage_Hand" Datatype="Bool" />
+                                    <Member Name="E12_Anlage_Auto" Datatype="Bool" />
+                                    <Member Name="E13_Schutzkreis_geschl" Datatype="Bool" />
+                                    <Member Name="E14_masch_Sich" Datatype="Bool" />
+                                    <Member Name="E15_FktTest_ohne_Teil" Datatype="Bool" />
+                                    <Member Name="E16_Halt_Korr" Datatype="Bool" />
+                                    <Member Name="E17_Quit_Wart" Datatype="Bool" />
+                                    <Member Name="E18_Halt_WartBer" Datatype="Bool" />
+                                    <Member Name="E19_Wart_in_AFolge" Datatype="Bool" />
+                                    <Member Name="E20_Anw_WkzWPos" Datatype="Bool" />
+                                    <Member Name="E21_Anw_RefPos" Datatype="Bool" />
+                                    <Member Name="E22_Frg_Folgenwiederh" Datatype="Bool" />
+                                    <Member Name="E23_keine_ZutrAnfo" Datatype="Bool" />
+                                    <Member Name="E24_Medien_vorh" Datatype="Bool" />
+                                    <Member Name="E25_Medien_einsch" Datatype="Bool" />
+                                    <Member Name="E26_Quit_m_Wiederh" Datatype="Bool" />
+                                    <Member Name="E27_Quit_Weiter" Datatype="Bool" />
+                                    <Member Name="E28_Quit_ausschl" Datatype="Bool" />
+                                    <Member Name="E29_Anfo_EnergyMode" Datatype="Bool" />
+                                    <Member Name="E30_Anfo_Abschalt" Datatype="Bool" />
+                                    <Member Name="E31_Anfo_Archivierung" Datatype="Bool" />
+                                    <Member Name="E32_Rueckzug_aus_Vorpos" Datatype="Bool" />
+                                    <Member Name="E33_40_Quit_FM_Typinfo" Datatype="Byte" />
+                                    <Member Name="E41_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E42_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E43_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E44_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E45_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E46_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E47_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E48_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E49_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E50_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E51_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E52_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E53_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E54_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E55_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E56_Roboter_FRG" Datatype="Bool" />
+                                    <Member Name="E57_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E58_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E59_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E60_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E61_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E62_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E63_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E64_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E65_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E66_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E67_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E68_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E69_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E70_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E71_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E72_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E73_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E74_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E75_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E76_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E77_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E78_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E79_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E80_Stell_FRG" Datatype="Bool" />
+                                    <Member Name="E81_88_Quit_RobVerr" Datatype="Byte" />
+                                    <Member Name="E89_96_Quit_RobVerr" Datatype="Byte" />
+                                    <Member Name="E97_Res" Datatype="Bool" />
+                                    <Member Name="E98_Res" Datatype="Bool" />
+                                    <Member Name="E99_Res" Datatype="Bool" />
+                                    <Member Name="E100_Res" Datatype="Bool" />
+                                    <Member Name="E101_Res" Datatype="Bool" />
+                                    <Member Name="E102_Res" Datatype="Bool" />
+                                    <Member Name="E103_Res" Datatype="Bool" />
+                                    <Member Name="E104_Res" Datatype="Bool" />
+                                    <Member Name="E105_Res" Datatype="Bool" />
+                                    <Member Name="E106_Res" Datatype="Bool" />
+                                    <Member Name="E107_Res" Datatype="Bool" />
+                                    <Member Name="E108_Res" Datatype="Bool" />
+                                    <Member Name="E109_Res" Datatype="Bool" />
+                                    <Member Name="E110_Res" Datatype="Bool" />
+                                    <Member Name="E111_Res" Datatype="Bool" />
+                                    <Member Name="E112_Res" Datatype="Bool" />
+                                    <Member Name="E113_120_Dock_Fraes" Datatype="Byte" />
+                                    <Member Name="E121_128_Greifer" Datatype="Byte" />
+                                    <Member Name="E129_224_Option" Datatype="Array[1..12] of Byte" />
+                                    <Member Name="E225_Res" Datatype="Bool" />
+                                    <Member Name="E226_Res" Datatype="Bool" />
+                                    <Member Name="E227_Res" Datatype="Bool" />
+                                    <Member Name="E228_Res" Datatype="Bool" />
+                                    <Member Name="E229_Res" Datatype="Bool" />
+                                    <Member Name="E230_Res" Datatype="Bool" />
+                                    <Member Name="E231_Res" Datatype="Bool" />
+                                    <Member Name="E232_Res" Datatype="Bool" />
+                                    <Member Name="E233_240_Typinfo_SPS" Datatype="Byte" />
+                                    <Member Name="E241_248_Teilespeicher" Datatype="Byte" />
+                                    <Member Name="E249_256_EnergyMM" Datatype="Byte" />
+                                 </Section>
+                              </Sections>
+                           </Member>
+                           <Member Name="E_F" Datatype="&quot;ST_Rob_E_F&quot;">
+                              <Sections>
+                                 <Section Name="None">
+                                    <Member Name="F_E1_IN1" Datatype="Bool" />
+                                    <Member Name="F_E2_NHE" Datatype="Bool" />
+                                    <Member Name="F_E3_BS" Datatype="Bool" />
+                                    <Member Name="F_E4_QBS" Datatype="Bool" />
+                                    <Member Name="F_E5_SHS1" Datatype="Bool" />
+                                    <Member Name="F_E6_SHS2" Datatype="Bool" />
+                                    <Member Name="F_E7_E2" Datatype="Bool" />
+                                    <Member Name="F_E8_E7" Datatype="Bool" />
+                                    <Member Name="F_E9_US2" Datatype="Bool" />
+                                    <Member Name="F_E10_SBH" Datatype="Bool" />
+                                    <Member Name="F_E11_IN11" Datatype="Bool" />
+                                    <Member Name="F_E12_IN12" Datatype="Bool" />
+                                    <Member Name="F_E13_IN13" Datatype="Bool" />
+                                    <Member Name="F_E14_IN14" Datatype="Bool" />
+                                    <Member Name="F_E15_IN15" Datatype="Bool" />
+                                    <Member Name="F_E16_SPA" Datatype="Bool" />
+                                    <Member Name="F_E17_JR" Datatype="Bool" />
+                                    <Member Name="F_E18_VRED" Datatype="Bool" />
+                                    <Member Name="F_E19_SBH1" Datatype="Bool" />
+                                    <Member Name="F_E20_SBH2" Datatype="Bool" />
+                                    <Member Name="F_E21_SBH3" Datatype="Bool" />
+                                    <Member Name="F_E22_SBH4" Datatype="Bool" />
+                                    <Member Name="F_E23_SBH5" Datatype="Bool" />
+                                    <Member Name="F_E24_SBH6" Datatype="Bool" />
+                                    <Member Name="F_E25_IN" Datatype="Bool" />
+                                    <Member Name="F_E26_IN" Datatype="Bool" />
+                                    <Member Name="F_E27_IN" Datatype="Bool" />
+                                    <Member Name="F_E28_IN" Datatype="Bool" />
+                                    <Member Name="F_E29_IN" Datatype="Bool" />
+                                    <Member Name="F_E30_IN" Datatype="Bool" />
+                                    <Member Name="F_E31_IN" Datatype="Bool" />
+                                    <Member Name="F_E32_IN" Datatype="Bool" />
+                                    <Member Name="F_E33_UER01" Datatype="Bool" />
+                                    <Member Name="F_E34_UER02" Datatype="Bool" />
+                                    <Member Name="F_E35_UER03" Datatype="Bool" />
+                                    <Member Name="F_E36_UER04" Datatype="Bool" />
+                                    <Member Name="F_E37_UER05" Datatype="Bool" />
+                                    <Member Name="F_E38_UER06" Datatype="Bool" />
+                                    <Member Name="F_E39_UER07" Datatype="Bool" />
+                                    <Member Name="F_E40_UER08" Datatype="Bool" />
+                                    <Member Name="F_E41_UER09" Datatype="Bool" />
+                                    <Member Name="F_E42_UER010" Datatype="Bool" />
+                                    <Member Name="F_E43_UER011" Datatype="Bool" />
+                                    <Member Name="F_E44_UER012" Datatype="Bool" />
+                                    <Member Name="F_E45_UER013" Datatype="Bool" />
+                                    <Member Name="F_E46_UER014" Datatype="Bool" />
+                                    <Member Name="F_E47_UER015" Datatype="Bool" />
+                                    <Member Name="F_E48_UER016" Datatype="Bool" />
+                                    <Member Name="F_E49_WZ1" Datatype="Bool" />
+                                    <Member Name="F_E50_WZ2" Datatype="Bool" />
+                                    <Member Name="F_E51_WZ3" Datatype="Bool" />
+                                    <Member Name="F_E52_WZ4" Datatype="Bool" />
+                                    <Member Name="F_E53_WZ5" Datatype="Bool" />
+                                    <Member Name="F_E54_WZ6" Datatype="Bool" />
+                                    <Member Name="F_E55_WZ7" Datatype="Bool" />
+                                    <Member Name="F_E56_WZ8" Datatype="Bool" />
+                                    <Member Name="F_E57_WZ9" Datatype="Bool" />
+                                    <Member Name="F_E58_WZ10" Datatype="Bool" />
+                                    <Member Name="F_E59_WZ11" Datatype="Bool" />
+                                    <Member Name="F_E60_WZ12" Datatype="Bool" />
+                                    <Member Name="F_E61_WZ13" Datatype="Bool" />
+                                    <Member Name="F_E62_WZ14" Datatype="Bool" />
+                                    <Member Name="F_E63_WZ15" Datatype="Bool" />
+                                    <Member Name="F_E64_WZ16" Datatype="Bool" />
+                                 </Section>
+                              </Sections>
+                           </Member>
+                           <Member Name="A" Datatype="&quot;ST_Rob_A&quot;">
+                              <Sections>
+                                 <Section Name="None">
+                                    <Member Name="A1_8_Folgespiegelung" Datatype="Byte" />
+                                    <Member Name="A9_Bereit" Datatype="Bool" />
+                                    <Member Name="A10_FRG_Stellglieder" Datatype="Bool" />
+                                    <Member Name="A11_Single_Step" Datatype="Bool" />
+                                    <Member Name="A12_Automatik" Datatype="Bool" />
+                                    <Member Name="A13_NotHalt" Datatype="Bool" />
+                                    <Member Name="A14_LPKT" Datatype="Bool" />
+                                    <Member Name="A15_PF0" Datatype="Bool" />
+                                    <Member Name="A16_SAK" Datatype="Bool" />
+                                    <Member Name="A17_in_Wartung" Datatype="Bool" />
+                                    <Member Name="A18_in_Wartungsbereich" Datatype="Bool" />
+                                    <Member Name="A19_Warte_Fahrbedingung" Datatype="Bool" />
+                                    <Member Name="A20_Warte_SPS_RM" Datatype="Bool" />
+                                    <Member Name="A21_Warte_RoboVerr" Datatype="Bool" />
+                                    <Member Name="A22_Folgenwiederh_aktiv" Datatype="Bool" />
+                                    <Member Name="A23_Schutzgitter_gesp" Datatype="Bool" />
+                                    <Member Name="A24_Roboter_in_Bewegung" Datatype="Bool" />
+                                    <Member Name="A25_Medien_sind_Ein" Datatype="Bool" />
+                                    <Member Name="A26_Feldbus_Quality" Datatype="Bool" />
+                                    <Member Name="A27_Master_IO" Datatype="Bool" />
+                                    <Member Name="A28_Override_nicht_100" Datatype="Bool" />
+                                    <Member Name="A29_EnergyMode" Datatype="Bool" />
+                                    <Member Name="A30_Abschaltung_erlaubt" Datatype="Bool" />
+                                    <Member Name="A31_Archivierung_beendet" Datatype="Bool" />
+                                    <Member Name="A32_Warn_PuffBatt" Datatype="Bool" />
+                                    <Member Name="A33_40_FM_Typinfo" Datatype="Byte" />
+                                    <Member Name="A41_48_Roboter_FRG" Datatype="Byte" />
+                                    <Member Name="A49_56_Roboter_FRG" Datatype="Byte" />
+                                    <Member Name="A57_64_Wkz_FRG" Datatype="Byte" />
+                                    <Member Name="A65_72_Wkz_FRG" Datatype="Byte" />
+                                    <Member Name="A73_80_Wkz_FRG" Datatype="Byte" />
+                                    <Member Name="A81_88_Anfo_RobVerr" Datatype="Byte" />
+                                    <Member Name="A89_96_Anfo_RobVerr" Datatype="Byte" />
+                                    <Member Name="A97_104_ProzesspunktNr" Datatype="Byte" />
+                                    <Member Name="A105_112_ProzesspunktNr" Datatype="Byte" />
+                                    <Member Name="A113_120_Dock_Fraes" Datatype="Byte" />
+                                    <Member Name="A121_128_Greifer" Datatype="Byte" />
+                                    <Member Name="A129_224_Option" Datatype="Array[1..12] of Byte" />
+                                    <Member Name="A225_232_FehlerNr" Datatype="Byte" />
+                                    <Member Name="A233_240_Typinfo_SPS" Datatype="Byte" />
+                                    <Member Name="A241_248_Teilespeicher" Datatype="Byte" />
+                                    <Member Name="A249_256_EnergyMM" Datatype="Byte" />
+                                 </Section>
+                              </Sections>
+                           </Member>
+                           <Member Name="A_F" Datatype="&quot;ST_Rob_A_F&quot;">
+                              <Sections>
+                                 <Section Name="None">
+                                    <Member Name="F_A1_NHL" Datatype="Bool" />
+                                    <Member Name="F_A2_AF" Datatype="Bool" />
+                                    <Member Name="F_A3_FF" Datatype="Bool" />
+                                    <Member Name="F_A4_ZS" Datatype="Bool" />
+                                    <Member Name="F_A5_OUT5" Datatype="Bool" />
+                                    <Member Name="F_A6_AUT" Datatype="Bool" />
+                                    <Member Name="F_A7_T1" Datatype="Bool" />
+                                    <Member Name="F_A8_T2" Datatype="Bool" />
+                                    <Member Name="F_A9_NHEK" Datatype="Bool" />
+                                    <Member Name="F_A10_BSK" Datatype="Bool" />
+                                    <Member Name="F_A11_SHS1K" Datatype="Bool" />
+                                    <Member Name="F_A12_SHS2K" Datatype="Bool" />
+                                    <Member Name="F_A13_OUT13" Datatype="Bool" />
+                                    <Member Name="F_A14_OUT14" Datatype="Bool" />
+                                    <Member Name="F_A15_PSA" Datatype="Bool" />
+                                    <Member Name="F_A16_SP" Datatype="Bool" />
+                                    <Member Name="F_A17_SO" Datatype="Bool" />
+                                    <Member Name="F_A18_RR" Datatype="Bool" />
+                                    <Member Name="F_A19_JF" Datatype="Bool" />
+                                    <Member Name="F_A20_VREDAKTIV" Datatype="Bool" />
+                                    <Member Name="F_A21_SBHAKTIV1" Datatype="Bool" />
+                                    <Member Name="F_A22_SBHAKTIV2" Datatype="Bool" />
+                                    <Member Name="F_A23_SBHAKTIV3" Datatype="Bool" />
+                                    <Member Name="F_A24_SBHAKTIV4" Datatype="Bool" />
+                                    <Member Name="F_A25_SBHAKTIV5" Datatype="Bool" />
+                                    <Member Name="F_A26_SBHAKTIV6" Datatype="Bool" />
+                                    <Member Name="F_A27_OUT" Datatype="Bool" />
+                                    <Member Name="F_A28_OUT" Datatype="Bool" />
+                                    <Member Name="F_A29_OUT" Datatype="Bool" />
+                                    <Member Name="F_A30_OUT" Datatype="Bool" />
+                                    <Member Name="F_A31_OUT" Datatype="Bool" />
+                                    <Member Name="F_A32_OUT" Datatype="Bool" />
+                                    <Member Name="F_A33_MR1" Datatype="Bool" />
+                                    <Member Name="F_A34_MR2" Datatype="Bool" />
+                                    <Member Name="F_A35_MR3" Datatype="Bool" />
+                                    <Member Name="F_A36_MR4" Datatype="Bool" />
+                                    <Member Name="F_A37_MR5" Datatype="Bool" />
+                                    <Member Name="F_A38_MR6" Datatype="Bool" />
+                                    <Member Name="F_A39_MR7" Datatype="Bool" />
+                                    <Member Name="F_A40_MR8" Datatype="Bool" />
+                                    <Member Name="F_A41_MR9" Datatype="Bool" />
+                                    <Member Name="F_A42_MR10" Datatype="Bool" />
+                                    <Member Name="F_A43_MR11" Datatype="Bool" />
+                                    <Member Name="F_A44_MR12" Datatype="Bool" />
+                                    <Member Name="F_A45_MR13" Datatype="Bool" />
+                                    <Member Name="F_A46_MR14" Datatype="Bool" />
+                                    <Member Name="F_A47_MR15" Datatype="Bool" />
+                                    <Member Name="F_A48_MR16" Datatype="Bool" />
+                                    <Member Name="F_A49_OUT" Datatype="Bool" />
+                                    <Member Name="F_A50_OUT" Datatype="Bool" />
+                                    <Member Name="F_A51_OUT" Datatype="Bool" />
+                                    <Member Name="F_A52_OUT" Datatype="Bool" />
+                                    <Member Name="F_A53_OUT" Datatype="Bool" />
+                                    <Member Name="F_A54_OUT" Datatype="Bool" />
+                                    <Member Name="F_A55_OUT" Datatype="Bool" />
+                                    <Member Name="F_A56_OUT" Datatype="Bool" />
+                                    <Member Name="F_A57_OUT" Datatype="Bool" />
+                                    <Member Name="F_A58_OUT" Datatype="Bool" />
+                                    <Member Name="F_A59_OUT" Datatype="Bool" />
+                                    <Member Name="F_A60_OUT" Datatype="Bool" />
+                                    <Member Name="F_A61_OUT" Datatype="Bool" />
+                                    <Member Name="F_A62_OUT" Datatype="Bool" />
+                                    <Member Name="F_A63_OUT" Datatype="Bool" />
+                                    <Member Name="F_A64_VERR" Datatype="Bool" />
+                                 </Section>
+                              </Sections>
+                           </Member>
+                           <Member Name="E_Rob" Datatype="Array[0..39] of Byte" />
+                           <Member Name="A_Rob" Datatype="Array[0..39] of Byte" />
+                           <Member Name="Frg_Option" Datatype="Array[1..12] of Byte" />
+                           <Member Name="FrgAnwahl" Datatype="Bool" />
+                           <Member Name="FrgFolge" Datatype="Bool" />
+                           <Member Name="FolgeStart" Datatype="Bool" />
+                           <Member Name="RobZurueckAnwAlle" Datatype="Bool" />
+                           <Member Name="RobZurueckAbwAlle" Datatype="Bool" />
+                           <Member Name="Folge" Datatype="Byte" />
+                           <Member Name="UebFKonsi" Datatype="Bool" />
+                           <Member Name="W_FolgeStart" Datatype="Bool" />
+                           <Member Name="Anw_Wartung" Datatype="Bool" />
+                           <Member Name="Frg_SPS" Datatype="Bool" />
+                           <Member Name="Frg_MaschSich" Datatype="Bool" />
+                           <Member Name="oRob" Datatype="Bool" />
+                           <Member Name="oRobProz" Datatype="Bool" />
+                           <Member Name="InWartung" Datatype="Bool" />
+                           <Member Name="WartAng" Datatype="Bool" />
+                           <Member Name="WartExAng" Datatype="Bool" />
+                           <Member Name="WartAktiv" Datatype="Bool" />
+                           <Member Name="Warn" Datatype="Bool" />
+                           <Member Name="Stoe" Datatype="Bool" />
+                           <Member Name="GrSt" Datatype="Bool" />
+                           <Member Name="FrgK90" Datatype="Bool" />
+                           <Member Name="VerrText" Datatype="Array[0..16] of String[80]" />
+                           <Member Name="InFolge" Datatype="Array[0..125] of Bool" />
+                           <Member Name="E33_36_Quit_FM" Datatype="Byte" />
+                           <Member Name="E37_40_Typinfo" Datatype="Byte" />
+                           <Member Name="E81_96_Quit_RobVerr" Datatype="Word" />
+                           <Member Name="A33_36_FM" Datatype="Byte" />
+                           <Member Name="A37_40_Typinfo" Datatype="Byte" />
+                           <Member Name="A41_56_Roboter_FRG" Datatype="Word" />
+                           <Member Name="A81_96_Anfo_RobVerr" Datatype="Word" />
+                           <Member Name="A97_112_ProzesspunktNr" Datatype="Word" />
+                        </Section>
+                     </Sections>
+                  </Member>
+                  <Member Name="PG" Datatype="&quot;ST_PG&quot;" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Prozessgerätstruktur</MultiLanguageText>
+                     </Comment>
+                     <Sections>
+                        <Section Name="None">
+                           <Member Name="Anw_Wart_ex" Datatype="Bool" />
+                           <Member Name="Quit_Wart_ex" Datatype="Bool" />
+                           <Member Name="InWartung" Datatype="Bool" />
+                           <Member Name="WartungAktiv" Datatype="Bool" />
+                           <Member Name="WartungAngew" Datatype="Bool" />
+                           <Member Name="WartungVonExtAngew" Datatype="Bool" />
+                           <Member Name="Quit_mFk" Datatype="Bool" />
+                           <Member Name="Quit_mA" Datatype="Bool" />
+                           <Member Name="Quit_mW" Datatype="Bool" />
+                           <Member Name="oRobProz" Datatype="Bool" />
+                           <Member Name="Rob_GrSt" Datatype="Bool" />
+                           <Member Name="PPNr" Datatype="Word" />
+                           <Member Name="Stoe" Datatype="Bool" />
+                           <Member Name="MaxWert" Datatype="Bool" />
+                           <Member Name="Warn" Datatype="Bool" />
+                           <Member Name="OptText1" Datatype="Array[0..12] of String[80]" />
+                           <Member Name="OptText2" Datatype="Array[0..12] of String[80]" />
+                           <Member Name="OptTInit" Datatype="Bool" />
+                           <Member Name="OptTNeu" Datatype="Bool" />
+                           <Member Name="K91_Verkl" Datatype="Bool" />
+                        </Section>
+                     </Sections>
+                  </Member>
+                  <Tecnologies />
+                  <Fms />
+                  <Member Name="FM" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Fertigmeldung Gesamt</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <AandE />
+				  <Member Name="K91_Verkl" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Verklemmanzeige</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="Warn" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Warnung</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="Stoe" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Störung</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="Wart" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Wartung</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="PGWarn" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Warnung</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="PGStoe" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Störung</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="PGWart" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Wartung</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="Taktzeit_Plus_Typ" Datatype="Int" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Uebergabe Typ an FB_Taktzeit_Plus</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="TZL_Wert" Datatype="Int" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Letzter gemesssener diZeitwert in 1/10s</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="TZStoe" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Taktzeit Störung</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="TZStop" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Taktzeit Stopp Hifu</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="SFN1" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">225050R01SFN1</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="Frg_MaschSich" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Freigabe Maschinensicherheit Hifu</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="Frg_MaschSich1" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Freigabe Maschinensicherheit Hifu 1</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="ExtMedienEIN" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">externe Medien einschalten</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="StoeMedien" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Störung Roboter Medien</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <Member Name="FolgeStart" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+                     <AttributeList>
+                        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+                        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+                        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+                     </AttributeList>
+                     <Comment>
+                        <MultiLanguageText Lang="de-DE">Start Arbeitsfolge Hifu</MultiLanguageText>
+                     </Comment>
+                  </Member>
+                  <FrgFolges />
+               </Section>
+            </Sections>
+         </Interface>
+         <InterfaceModifiedDate ReadOnly="true">2019-04-05T16:56:39.048637Z</InterfaceModifiedDate>
+         <IsConsistent ReadOnly="true">true</IsConsistent>
+         <IsKnowHowProtected ReadOnly="true">false</IsKnowHowProtected>
+         <IsOnlyStoredInLoadMemory>false</IsOnlyStoredInLoadMemory>
+         <IsPLCDB ReadOnly="true">false</IsPLCDB>
+         <IsRetainMemResEnabled>false</IsRetainMemResEnabled>
+         <IsWriteProtectedInAS>false</IsWriteProtectedInAS>
+         <MemoryLayout>Optimized</MemoryLayout>
+         <MemoryReserve>100</MemoryReserve>
+         <ModifiedDate ReadOnly="true">2019-04-05T16:57:03.123955Z</ModifiedDate>
+         <Name>ROBNAME</Name>
+         <Number>100</Number>
+         <ParameterModified ReadOnly="true">2019-04-05T16:56:39.048637Z</ParameterModified>
+         <ProgrammingLanguage>DB</ProgrammingLanguage>
+         <StructureModified ReadOnly="true">2019-04-05T16:56:39.048637Z</StructureModified>
+      </AttributeList>
+      <ObjectList>
+         <MultilingualText ID="1" CompositionName="Comment">
+            <ObjectList>
+               <MultilingualTextItem ID="2" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>de-DE</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="3" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>en-US</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="4" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>es-ES</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="5" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>fr-FR</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="6" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>zh-CN</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="7" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>nl-BE</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="8" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>pl-PL</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="9" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>pt-BR</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="A" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>ru-RU</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="B" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>sk-SK</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="C" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>cs-CZ</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="D" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>hu-HU</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+            </ObjectList>
+         </MultilingualText>
+         <MultilingualText ID="E" CompositionName="Title">
+            <ObjectList>
+               <MultilingualTextItem ID="F" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>de-DE</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="10" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>en-US</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="11" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>es-ES</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="12" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>fr-FR</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="13" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>zh-CN</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="14" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>nl-BE</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="15" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>pl-PL</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="16" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>pt-BR</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="17" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>ru-RU</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="18" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>sk-SK</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="19" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>cs-CZ</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+               <MultilingualTextItem ID="1A" CompositionName="Items">
+                  <AttributeList>
+                     <Culture>hu-HU</Culture>
+                     <Text />
+                  </AttributeList>
+               </MultilingualTextItem>
+            </ObjectList>
+         </MultilingualText>
+      </ObjectList>
+   </SW.Blocks.GlobalDB>
+</Document>

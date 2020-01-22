@@ -1,0 +1,39 @@
+﻿	  <Step Number="UNR" Init="true" Name="DESCRIPTION" MaximumStepTime="T#10S" WarningTime="T#7S">
+        <Actions>
+          <Action Qualifier="N">
+            <Token Text="&quot;DB_ACTIONS_STATIONXSKFIXTURENR&quot;.A_AC_TION" />
+            <Token Text="&#xA;" />
+          </Action>
+          <Action />
+        </Actions>
+        <Supervisions>
+          <Supervision ProgrammingLanguage="FBD">
+            <FlgNet>
+              <Parts>
+                <Part Name="SvCoil" UId="21" />
+              </Parts>
+              <Wires>
+                <Wire UId="23">
+                  <OpenCon UId="22" />
+                  <NameCon UId="21" Name="in" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </Supervision>
+        </Supervisions>
+        <Interlocks>
+          <Interlock ProgrammingLanguage="FBD">
+            <FlgNet>
+              <Parts>
+                <Part Name="IlCoil" UId="21" />
+              </Parts>
+              <Wires>
+                <Wire UId="23">
+                  <OpenCon UId="22" />
+                  <NameCon UId="21" Name="in" />
+                </Wire>
+              </Wires>
+            </FlgNet>
+          </Interlock>
+        </Interlocks>
+      </Step>

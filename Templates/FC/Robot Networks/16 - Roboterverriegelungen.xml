@@ -1,0 +1,594 @@
+﻿<SW.Blocks.CompileUnit ID="E" CompositionName="CompileUnits">
+        <AttributeList>
+          <NetworkSource><FlgNet xmlns="http://www.siemens.com/automation/Openness/SW/NetworkSource/FlgNet/v2">
+  <Parts>
+    <Access Scope="GlobalVariable" UId="21">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="A" />
+        <Component Name="A15_PF0" />
+        <Address Area="None" Type="Bool" BlockNumber="180" BitOffset="1120" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="22">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+		<Component Name="A" />
+        <Component Name="A16_SAK" />
+        <Address Area="None" Type="Bool" BlockNumber="180" BitOffset="1128" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="23">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="oRob" />
+        <Address Area="None" Type="Bool" BlockNumber="180" BitOffset="2440" Informative="true" />
+      </Symbol>
+    </Access>
+	
+	
+	<Ver1 />
+	<Ver2 />
+	<Ver3 />
+	<Ver4 />
+	<Ver5 />
+	<Ver6 />
+	<Ver7 />
+	<Ver8 />
+	<Ver9 />
+	<Ver10 />
+	<Ver11 />
+	<Ver12 />
+	<Ver13 />
+	<Ver14 />
+	<Ver15 />
+	<Ver16 />
+	
+	<Access Scope="GlobalVariable" UId="40">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="A81_96_Anfo_RobVerr" />
+        <Address Area="None" Type="Word" BlockNumber="180" BitOffset="32" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LiteralConstant" UId="41">
+      <Constant>
+        <ConstantType>Int</ConstantType>
+        <ConstantValue>ROBNR</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">Dec_signed</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="LiteralConstant" UId="42">
+      <Constant>
+        <ConstantType>String</ConstantType>
+        <ConstantValue>'ROBNAME'</ConstantValue>
+        <StringAttribute Name="Format" Informative="true">String</StringAttribute>
+      </Constant>
+    </Access>
+    <Access Scope="GlobalVariable" UId="43">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Address Area="None" Type="ST_Rob" BlockNumber="180" BitOffset="0" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="GlobalVariable" UId="44">
+      <Symbol>
+        <Component Name="DB_ARG" />
+        <Component Name="RobVer_Struct" />
+        <Address Area="None" Type="ST_RobVer_Struct" BlockNumber="100" BitOffset="131280" Informative="true" />
+      </Symbol>
+    </Access>
+	
+    <Frg1 />
+	<Frg2 />
+	<Frg3 />
+	<Frg4 />
+	<Frg5 />
+	<Frg6 />
+	<Frg7 />
+	<Frg8 />
+	<Frg9 />
+	<Frg10 />
+	<Frg11 />
+	<Frg12 />
+	<Frg13 />
+	<Frg14 />
+	<Frg15 />
+	<Frg16 />
+    
+	
+	<Access Scope="GlobalVariable" UId="61">
+      <Symbol>
+        <Component Name="ROBNAME" />
+        <Component Name="Rob" />
+        <Component Name="E81_96_Quit_RobVerr" />
+        <Address Area="None" Type="Word" BlockNumber="180" BitOffset="0" Informative="true" />
+      </Symbol>
+    </Access>
+    <Access Scope="LocalVariable" UId="62">
+      <Symbol>
+        <Component Name="Temp" />
+        <Component Name="_Bool" />
+      </Symbol>
+    </Access>
+    <Call UId="63">
+      <CallInfo Name="FB_Rob_Frg_Ver" BlockType="FB">
+        <IntegerAttribute Name="BlockNumber" Informative="true">207</IntegerAttribute>
+        <DateAttribute Name="ParameterModifiedTS" Informative="true">2017-06-20T09:34:16</DateAttribute>
+        <Instance Scope="GlobalVariable" UId="64">
+          <Component Name="ROBNAME#FB_Rob_Frg_Ver_DB" />
+          <Address Area="DB" Type="FB_Rob_Frg_Ver" BlockNumber="2093" BitOffset="0" Informative="true" />
+        </Instance>
+        <Parameter Name="PF0" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="SAK" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ohne_Rob" Section="Input" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver1_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver2_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver3_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver4_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver5_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver6_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver7_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver8_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver9_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver10_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver11_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver12_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver13_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver14_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver15_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver16_Rob" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Ver_Anf" Section="Input" Type="Word">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Stell_Frg" Section="Input" Type="Word">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="R_Nr" Section="Input" Type="Int">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="BMK" Section="Input" Type="String[25]">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg1_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg2_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg3_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg4_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg5_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg6_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg7_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg8_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg9_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg10_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg11_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg12_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg13_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg14_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg15_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Frg16_an" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="Quitt_Anf" Section="Output" Type="Word">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="PAFE" Section="Output" Type="Bool">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ST_ROB" Section="InOut" Type="ST_Rob">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+        <Parameter Name="ST_ROBVER" Section="InOut" Type="ST_RobVer_Struct_1">
+          <StringAttribute Name="InterfaceFlags" Informative="true">S7_Visible</StringAttribute>
+        </Parameter>
+      </CallInfo>
+    </Call>
+  </Parts>
+  <Wires>
+    <Wire UId="66">
+      <Powerrail />
+      <NameCon UId="63" Name="en" />
+    </Wire>
+    <Wire UId="67">
+      <IdentCon UId="21" />
+      <NameCon UId="63" Name="PF0" />
+    </Wire>
+    <Wire UId="68">
+      <IdentCon UId="22" />
+      <NameCon UId="63" Name="SAK" />
+    </Wire>
+    <Wire UId="69">
+      <IdentCon UId="23" />
+      <NameCon UId="63" Name="ohne_Rob" />
+    </Wire>
+    <Wire UId="70">
+      <OpenCon UId="24" />
+      <NameCon UId="63" Name="Ver1_Rob" />
+    </Wire>
+    <Wire UId="71">
+      <OpenCon UId="25" />
+      <NameCon UId="63" Name="Ver2_Rob" />
+    </Wire>
+    <Wire UId="72">
+      <OpenCon UId="26" />
+      <NameCon UId="63" Name="Ver3_Rob" />
+    </Wire>
+    <Wire UId="73">
+      <OpenCon UId="27" />
+      <NameCon UId="63" Name="Ver4_Rob" />
+    </Wire>
+    <Wire UId="74">
+      <OpenCon UId="28" />
+      <NameCon UId="63" Name="Ver5_Rob" />
+    </Wire>
+    <Wire UId="75">
+      <OpenCon UId="29" />
+      <NameCon UId="63" Name="Ver6_Rob" />
+    </Wire>
+    <Wire UId="76">
+      <OpenCon UId="30" />
+      <NameCon UId="63" Name="Ver7_Rob" />
+    </Wire>
+    <Wire UId="77">
+      <OpenCon UId="31" />
+      <NameCon UId="63" Name="Ver8_Rob" />
+    </Wire>
+    <Wire UId="78">
+      <OpenCon UId="32" />
+      <NameCon UId="63" Name="Ver9_Rob" />
+    </Wire>
+    <Wire UId="79">
+      <OpenCon UId="33" />
+      <NameCon UId="63" Name="Ver10_Rob" />
+    </Wire>
+    <Wire UId="80">
+      <OpenCon UId="34" />
+      <NameCon UId="63" Name="Ver11_Rob" />
+    </Wire>
+    <Wire UId="81">
+      <OpenCon UId="35" />
+      <NameCon UId="63" Name="Ver12_Rob" />
+    </Wire>
+    <Wire UId="82">
+      <OpenCon UId="36" />
+      <NameCon UId="63" Name="Ver13_Rob" />
+    </Wire>
+    <Wire UId="83">
+      <OpenCon UId="37" />
+      <NameCon UId="63" Name="Ver14_Rob" />
+    </Wire>
+    <Wire UId="84">
+      <OpenCon UId="38" />
+      <NameCon UId="63" Name="Ver15_Rob" />
+    </Wire>
+    <Wire UId="85">
+      <OpenCon UId="39" />
+      <NameCon UId="63" Name="Ver16_Rob" />
+    </Wire>
+    <Wire UId="86">
+      <IdentCon UId="40" />
+      <NameCon UId="63" Name="Ver_Anf" />
+    </Wire>
+    <Wire UId="87">
+      <OpenCon UId="65" />
+      <NameCon UId="63" Name="Stell_Frg" />
+    </Wire>
+    <Wire UId="88">
+      <IdentCon UId="41" />
+      <NameCon UId="63" Name="R_Nr" />
+    </Wire>
+    <Wire UId="89">
+      <IdentCon UId="42" />
+      <NameCon UId="63" Name="BMK" />
+    </Wire>
+    <Wire UId="90">
+      <IdentCon UId="43" />
+      <NameCon UId="63" Name="ST_ROB" />
+    </Wire>
+    <Wire UId="91">
+      <IdentCon UId="44" />
+      <NameCon UId="63" Name="ST_ROBVER" />
+    </Wire>
+    <Wire UId="92">
+      <NameCon UId="63" Name="Frg1_an" />
+      <IdentCon UId="45" />
+    </Wire>
+    <Wire UId="93">
+      <NameCon UId="63" Name="Frg2_an" />
+      <IdentCon UId="46" />
+    </Wire>
+    <Wire UId="94">
+      <NameCon UId="63" Name="Frg3_an" />
+      <IdentCon UId="47" />
+    </Wire>
+    <Wire UId="95">
+      <NameCon UId="63" Name="Frg4_an" />
+      <IdentCon UId="48" />
+    </Wire>
+    <Wire UId="96">
+      <NameCon UId="63" Name="Frg5_an" />
+      <IdentCon UId="49" />
+    </Wire>
+    <Wire UId="97">
+      <NameCon UId="63" Name="Frg6_an" />
+      <IdentCon UId="50" />
+    </Wire>
+    <Wire UId="98">
+      <NameCon UId="63" Name="Frg7_an" />
+      <IdentCon UId="51" />
+    </Wire>
+    <Wire UId="99">
+      <NameCon UId="63" Name="Frg8_an" />
+      <IdentCon UId="52" />
+    </Wire>
+    <Wire UId="100">
+      <NameCon UId="63" Name="Frg9_an" />
+      <IdentCon UId="53" />
+    </Wire>
+    <Wire UId="101">
+      <NameCon UId="63" Name="Frg10_an" />
+      <IdentCon UId="54" />
+    </Wire>
+    <Wire UId="102">
+      <NameCon UId="63" Name="Frg11_an" />
+      <IdentCon UId="55" />
+    </Wire>
+    <Wire UId="103">
+      <NameCon UId="63" Name="Frg12_an" />
+      <IdentCon UId="56" />
+    </Wire>
+    <Wire UId="104">
+      <NameCon UId="63" Name="Frg13_an" />
+      <IdentCon UId="57" />
+    </Wire>
+    <Wire UId="105">
+      <NameCon UId="63" Name="Frg14_an" />
+      <IdentCon UId="58" />
+    </Wire>
+    <Wire UId="106">
+      <NameCon UId="63" Name="Frg15_an" />
+      <IdentCon UId="59" />
+    </Wire>
+    <Wire UId="107">
+      <NameCon UId="63" Name="Frg16_an" />
+      <IdentCon UId="60" />
+    </Wire>
+    <Wire UId="108">
+      <NameCon UId="63" Name="Quitt_Anf" />
+      <IdentCon UId="61" />
+    </Wire>
+    <Wire UId="109">
+      <NameCon UId="63" Name="PAFE" />
+      <IdentCon UId="62" />
+    </Wire>
+  </Wires>
+</FlgNet></NetworkSource>
+          <ProgrammingLanguage>LAD</ProgrammingLanguage>
+        </AttributeList>
+        <ObjectList>
+          <MultilingualText ID="F" CompositionName="Comment">
+            <ObjectList>
+              <MultilingualTextItem ID="10" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text></Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="11" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="12" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="13" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="14" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="15" CompositionName="Items">
+                <AttributeList>
+                  <Culture>cs-CZ</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="16" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pl-PL</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="17" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pt-BR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="18" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="19" CompositionName="Items">
+                <AttributeList>
+                  <Culture>sk-SK</Culture>
+                  <Text></Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1A" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1B" CompositionName="Items">
+                <AttributeList>
+                  <Culture>hu-HU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+          <MultilingualText ID="1C" CompositionName="Title">
+            <ObjectList>
+              <MultilingualTextItem ID="1D" CompositionName="Items">
+                <AttributeList>
+                  <Culture>de-DE</Culture>
+                  <Text>Roboterverriegelungen</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1E" CompositionName="Items">
+                <AttributeList>
+                  <Culture>es-ES</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="1F" CompositionName="Items">
+                <AttributeList>
+                  <Culture>en-US</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="20" CompositionName="Items">
+                <AttributeList>
+                  <Culture>fr-FR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="21" CompositionName="Items">
+                <AttributeList>
+                  <Culture>zh-CN</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="22" CompositionName="Items">
+                <AttributeList>
+                  <Culture>cs-CZ</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="23" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pl-PL</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="24" CompositionName="Items">
+                <AttributeList>
+                  <Culture>pt-BR</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="25" CompositionName="Items">
+                <AttributeList>
+                  <Culture>ru-RU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="26" CompositionName="Items">
+                <AttributeList>
+                  <Culture>sk-SK</Culture>
+                  <Text>Roboterverriegelungen</Text>
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="27" CompositionName="Items">
+                <AttributeList>
+                  <Culture>nl-BE</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+              <MultilingualTextItem ID="28" CompositionName="Items">
+                <AttributeList>
+                  <Culture>hu-HU</Culture>
+                  <Text />
+                </AttributeList>
+              </MultilingualTextItem>
+            </ObjectList>
+          </MultilingualText>
+        </ObjectList>
+      </SW.Blocks.CompileUnit>

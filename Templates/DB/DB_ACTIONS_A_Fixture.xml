@@ -1,0 +1,16 @@
+<Member Name="FIXTUREACTION" Datatype="Bool" Remanence="Retain" Accessibility="Public">
+    <AttributeList>
+        <IntegerAttribute Name="Offset" Informative="true" SystemDefined="true">BITOFFSET</IntegerAttribute>
+        <BooleanAttribute Name="ExternalAccessible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalVisible" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="ExternalWritable" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="UserVisible" Informative="true" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="UserReadOnly" Informative="true" SystemDefined="true">false</BooleanAttribute>
+        <BooleanAttribute Name="UserDeletable" Informative="true" SystemDefined="true">true</BooleanAttribute>
+        <BooleanAttribute Name="SetPoint" SystemDefined="true">false</BooleanAttribute>
+    </AttributeList>
+    <Comment>
+        <MultiLanguageText Lang="en-US">EN_COMMENT</MultiLanguageText>
+        <MultiLanguageText Lang="de-DE">DE_COMMENT</MultiLanguageText>
+    </Comment>
+</Member>

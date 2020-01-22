@@ -1,0 +1,9 @@
+      <Connection>
+        <NodeFrom>
+          <BranchRef Number="UID_B" Out="UID_NR" />
+        </NodeFrom>
+        <NodeTo>
+          <TransitionRef Number="UID_FROM" />
+        </NodeTo>
+        <LinkType>Direct</LinkType>
+      </Connection>

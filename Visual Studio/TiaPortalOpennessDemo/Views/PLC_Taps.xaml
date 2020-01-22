@@ -1,0 +1,57 @@
+﻿<Window x:Class="TiaPortalOpennessDemo.Views.PLC_Taps"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        mc:Ignorable="d"
+        Title="PLC Tags" SizeToContent="WidthAndHeight" MinHeight="250" MaxHeight="800" ResizeMode="CanResize" Loaded="Window_Loaded"
+        Icon="/TiaPortalOpennessDemo;component/Images/tags-icon.png">
+
+    <Grid Background="#FF3B4461">
+        <Button x:Name="btnSave" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="110" Height="40" Click="Save">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Save  " TextAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+                <Image Source="/TiaPortalOpennessDemo;component/Images/Save-icon.png" Height="20"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnClearGrid" HorizontalAlignment="Left" Margin="130,10,0,0" VerticalAlignment="Top" Width="110" Height="40" Click="Clear">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Clear  " TextAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+                <Image Source="/TiaPortalOpennessDemo;component/Images/Broom.png" Height="20"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="btnGenerateXML" HorizontalAlignment="Left" Margin="250,10,0,0" VerticalAlignment="Top" Width="120" Height="40" Click="CreateXML">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
+                    <GradientStop Color="White"/>
+                    <GradientStop Color="#FFDBDCDC" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Generate  " TextAlignment="Center" FontSize="16" FontFamily="Segoe UI Emoji"/>
+                <Image Source="/TiaPortalOpennessDemo;component/Images/xml-icon.png" Height="20"/>
+            </StackPanel>
+        </Button>
+        <CheckBox x:Name="cbImportToTia" Content="Import to TIA" Margin="380,10,10,0" VerticalAlignment="Top" IsEnabled="{Binding IsTiaConnected}" HorizontalAlignment="Left" FontSize="14" FontWeight="Bold" FontFamily="Segoe UI Historic" Foreground="#FFF4F4F4"/>
+        <WindowsFormsHost FontSize="14" Name="WindowFormSaving" Margin="380,30,10,0" HorizontalAlignment="Left" Width="Auto" FontFamily="Segoe UI Emoji" VerticalAlignment="Top" Background="#FF3B4461">
+            <wf:Label x:Name="Saving" ForeColor="White" BackColor="#FF3B4461" BorderStyle="None"/>
+        </WindowsFormsHost>
+        <Rectangle Margin="10,60,10,0" VerticalAlignment="Top" HorizontalAlignment="Stretch" Stroke="#FFDBDCDC" />
+        <WindowsFormsHost HorizontalAlignment="Stretch" Name="WindowFormPlcTags" Margin="10,75,10,10">
+            <wf:DataGridView Name="PlcTags"/>
+        </WindowsFormsHost>
+    </Grid>
+</Window>

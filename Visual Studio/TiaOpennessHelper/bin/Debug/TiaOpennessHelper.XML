@@ -1,0 +1,3311 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TiaOpennessHelper</name>
+    </assembly>
+    <members>
+        <member name="T:TiaOpennessHelper.OpennessHelper">
+            <summary>
+            Helper class with commonly used functions for TIA Portal Openness
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.CompileObject(Siemens.Engineering.IEngineeringServiceProvider)">
+            <summary>Compiles elementToCompile</summary>
+            <param name="elementToCompile">The element to compile.</param>
+            <returns>CompilerResult</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ExportStructure(Siemens.Engineering.IEngineeringCompositionOrObject,System.String)">
+            <summary>
+            Exports the selected structure including subdirectories. Missing folders will be created.
+            </summary>
+            <param name="elementToExport">Project, station or folder to export</param>
+            <param name="exportPath">Folder path in which to export</param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ExportStructure(Siemens.Engineering.IEngineeringCompositionOrObject,Siemens.Engineering.ExportOptions,System.String)">
+            <summary>
+            Exports the selected structure including subdirectories. Missing folders will be created.
+            </summary>
+            <param name="elementToExport">Project, station or folder to export</param>
+            <param name="exportOptions">The export options.</param>
+            <param name="exportPath">Folder path in which to export</param>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;elementToExport</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;exportPath</exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ExportItem(Siemens.Engineering.IEngineeringObject,Siemens.Engineering.ExportOptions,System.String)">
+            <summary>
+            Exports the given object with the give options to the defined path.
+            </summary>
+            <param name="exportItem">Object to export</param>
+            <param name="exportOption">Export options</param>
+            <param name="exportPath">Folder path in which to export</param>
+            <returns>String</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;exportItem</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;exportPath</exception>
+            <exception cref="T:Siemens.Engineering.EngineeringException"></exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateSourceFromBlock(Siemens.Engineering.SW.Blocks.PlcBlock,System.String,Siemens.Engineering.SW.ExternalSources.GenerateOptions)">
+            <summary>Generates a source file from the given PlcBlock</summary>
+            <param name="exportItem">The export item.</param>
+            <param name="exportPath">The export path.</param>
+            <param name="options"></param>
+            <returns>String</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;exportItem</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;exportPath</exception>
+            <exception cref="T:Siemens.Engineering.EngineeringException"></exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.DeletePreviousExportedElements(System.String,System.String)">
+            <summary>Deletes everything in the given folder</summary>
+            <param name="projectName">Name of the folder which holds the exported files</param>
+            <param name="exportPath">Folder Path in which the exported project folder is</param>
+            <exception cref="T:System.ArgumentException">
+            Parameter is null or empty;exportPath
+            or
+            Parameter is null or empty;projectName
+            </exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ImportItem(Siemens.Engineering.IEngineeringCompositionOrObject,System.String,Siemens.Engineering.ImportOptions)">
+            <summary>
+            Imports a file under the given TIA object with the given import options
+            </summary>
+            <param name="destination">TIA object under which the file will be imported.</param>
+            <param name="filePath">Path to the file</param>
+            <param name="importOption">TIA import options</param>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;destination</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;filePath</exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ImportStructure(Siemens.Engineering.IEngineeringObject,System.String,Siemens.Engineering.ImportOptions)">
+            <summary>Imports a folder structure into the given destination</summary>
+            <param name="targetLocation">TIA object under which the structure will be imported</param>
+            <param name="folderPath">Path to the folder to import</param>
+            <param name="importOption">TIA import options</param>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;targetLocation</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;folderPath</exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetGaretelistePages(System.String)">
+            <summary>
+            Get all page numbers that contains Geräteliste
+            </summary>
+            <param name="fileName"></param>
+            <returns>List of page numbers</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetHWPart(System.String)">
+            <summary>
+            Return the name of a module
+            </summary>
+            <param name="orderNumber"></param>
+            <returns>Name of the module with order number</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.HWInfo(System.String,System.String,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Look for a device on EPlan PDF and returns it's information
+            </summary>
+            <param name="path"></param>
+            <param name="deviceFGroup"></param>
+            <param name="deviceIdentifier"></param>
+            <param name="garetelistPages"></param>
+            <returns>HW Information</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetHWRawInformation(System.String[],System.String,System.String)">
+            <summary>
+            Get Hardware Raw information from the pdf text
+            </summary>
+            <param name="text"></param>
+            <param name="HWName"></param>
+            <param name="HWIdentifier"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.IsPartNumber(System.String)">
+            <summary>
+            Check if a given string is a Part Number
+            </summary>
+            <param name="part"></param>
+            <returns>True or False</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetPagesByString(System.String,System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Get all page numbers that contains a string
+            </summary>
+            <param name="fileName"></param>
+            <param name="searchText"></param>
+            <param name="garetelistPages"></param>
+            <returns>List of page numbers</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ReadPdf(System.String,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            Read text from PDF file
+            </summary>
+            <param name="path"></param>
+            <param name="pages"></param>
+            <returns>Text from pdf File</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetCacheData(System.String)">
+            <summary>
+            Get cache data
+            </summary>
+            <param name="CacheKey"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.SetCacheData(System.String,System.Object)">
+            <summary>
+            Set cache data
+            </summary>
+            <param name="CacheKey"></param>
+            <param name="StoreItem"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ClearCacheData">
+            <summary>
+            Clear cache data
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.DisposeCacheData(System.String)">
+            <summary>
+            Dispose specific cache data
+            </summary>
+            <param name="CacheKey"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetCacheDataContaining(System.String)">
+            <summary>
+            Get CacheKey that contains a certain string
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetExcelFile(System.String,Microsoft.Office.Interop.Excel.Application)">
+            <summary>
+            Import Excel File
+            </summary>
+            <param name="path"></param>
+            <param name="xlApp"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ColumnIndexToColumnLetter(System.Int32)">
+            <summary>
+            Get column letter by column number
+            </summary>
+            <param name="colIndex"></param>
+            <returns>Column letter</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ExcelToMatrix(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Transform excel sheet in a matrix
+            </summary>
+            <param name="xlWorksheet"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.TextPosInRow(System.Object[0:,0:],Microsoft.Office.Interop.Excel.Range)">
+            <summary>
+            Check first cell containing text and return row[0] and column[1] in a List
+            </summary>
+            <returns>List containing the row and column</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetIndexOfSheet(System.String,Microsoft.Office.Interop.Excel.Sheets)">
+            <summary>
+            Search for a certain sheet name on excel file
+            </summary>
+            <param name="sheetName"></param>
+            <param name="xlWorksheet"></param>
+            <returns>Sheet index</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.IsSequence(System.Object[0:,0:])">
+            <summary>
+            Check if excel file is a sequence
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.IsPlcDb(System.Object[0:,0:])">
+            <summary>
+            Check if excel file is a PLC Database
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.IsSymbolic(System.Object[0:,0:])">
+            <summary>
+            Check if excel file is a Symbolic
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.IsSchnittstelle(System.Object[0:,0:])">
+            <summary>
+            Check if excel file is a Robot WorkBook
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.IsPlcTags(System.Object[0:,0:])">
+            <summary>
+            Check if the excel file contains a Plc Tag sheet
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.IsNetworkList(System.Object[0:,0:])">
+            <summary>
+            Check if the excel file is a NetWorkList
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.CheckFileType(System.String)">
+            <summary>
+            Check file type
+            </summary>
+            <param name="path"></param>
+            <returns>file type</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.IsCorrectPlcNumber(System.Collections.Generic.List{System.String},System.String,System.String)">
+            <summary>
+            Check if excel sheets names contains a certain PLC Number
+            </summary>
+            <param name="sheetsNames"></param>
+            <param name="plcNum"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.DirectoryExists(System.String)">
+            <summary>
+            Check if a directory exists and if it doesnt creates it
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.CreateKetFolder(System.String,System.String)">
+            <summary>
+            Identify file "ket" and return folder to save file
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllDevicesNetworkList(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Get all devices from Network List Excel File
+            </summary>
+            <param name="xlWorksheet"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetRobotBase(System.Object[0:,0:],Microsoft.Office.Interop.Excel.Range)">
+            <summary>
+            Get robot base properties from sheet
+            </summary>
+            <param name="matrix"></param>
+            <param name="lastCellRange"></param>
+            <returns>List containing robot inputs[0] and outputs[1]</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetRobotTecnologies(System.Object[0:,0:],Microsoft.Office.Interop.Excel.Range,System.String)">
+            <summary>
+            Get robot teclonogies from sheet
+            </summary>
+            <param name="matrix"></param>
+            <param name="lastCellRange"></param>
+            <param name="type"></param>
+            <returns>List with the input properties[0] and output properties[1]</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetRobotSafeRangeMonitoring(System.Object[0:,0:],Microsoft.Office.Interop.Excel.Range)">
+            <summary>
+            Get robot safe range monitoring  from sheet
+            </summary>
+            <param name="matrix"></param>
+            <param name="lastCellRange"></param>
+            <returns>List with the input properties[0] and output properties[1]</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetRobotSafeOperation(System.Object[0:,0:],Microsoft.Office.Interop.Excel.Range)">
+            <summary>
+            Get robot safe operation from sheet
+            </summary>
+            <param name="matrix"></param>
+            <param name="lastCellRange"></param>
+            <returns>List with the input properties[0] and output properties[1]</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetCreatedRobotsInfo(System.Object[0:,0:])">
+            <summary>
+            Get created robots info from sheet
+            </summary>
+            <param name="matrix"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateRobotFC(System.String,System.String)">
+            <summary>
+            Generate Empty RobotFC XML
+            </summary>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the RobotFC</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateEingabenLesen(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "Eingaben lesen"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateFreigabeFolge(System.Xml.XmlDocument,System.String,System.String,System.String,System.String)">
+            <summary>
+            Generate Network "Freigabe Folge"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="folgeNum"></param>
+            <param name="folgeDesc"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateBildungFolgen(System.Xml.XmlDocument,System.String,System.String,Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Generate Network "Bildung Folgen"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="xlWorksheet"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateTypRoboter(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "TypRoboter"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateStartArbeitsfolge(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "StartArbeitsfolge"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateStartWartungsfolge(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "StartWartungsfolge"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateFreigabeMaschinensicherheitHifu(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "FreigabeMaschinensicherheitHifu"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateFreigabeMaschinensicherheit(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "FreigabeMaschinensicherheit"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateUberbruckungFolgenkonsistenzprufung(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "UberbruckungFolgenkonsistenzprufung"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateRobotersystemschnittstelle(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "Robotersystemschnittstelle"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateRoboterHaltKorrigieren(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "RoboterHaltKorrigieren"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateAnwahlWartungWechsel(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "AnwahlWartungWechsel"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateRoboterfertigmeldungen(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "Roboterfertigmeldungen"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateStatusFertigmeldung(System.Xml.XmlDocument,System.String,System.String,System.String,System.String)">
+            <summary>
+            Generate Network "StatusFertigmeldung"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="fmNum"></param>
+            <param name="fmDesc"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateStatusFertigmeldungGesamt(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "StatusFertigmeldungGesamt"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateRoboterverriegelungen(System.Xml.XmlDocument,System.String,System.String,System.Collections.Generic.List{System.Collections.Generic.List{System.String}})">
+            <summary>
+            Generate Network "Roboterverriegelungen"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="colisions"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateWerkzeugfreigabenAnlage(System.Xml.XmlDocument,System.String,System.String,System.Collections.Generic.List{System.String},System.String,System.String)">
+            <summary>
+            Generate Network "WerkzeugfreigabenAnlage"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="Frgs"></param>
+            <param name="mask"></param>
+            <param name="frgNr"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateStellungsfreigabe(System.Xml.XmlDocument,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Generate Network "Stellungsfreigabe"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="ANum"></param>
+            <param name="bescheibung"></param>
+            <param name="funktion"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateRoboterfehlernummer(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "Roboterfehlernummer"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateTaktzeitStoppHifu(System.Xml.XmlDocument,System.String,System.String,System.Collections.Generic.Dictionary{System.Int32,System.String})">
+            <summary>
+            Generate Network "TaktzeitStoppHifu"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="sequences"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateTaktzeitRoboter(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "TaktzeitRoboter"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateAusgabenSchreiben(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "AusgabenSchreiben"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateStatusRoboter(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "StatusRoboter"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateStatusProzessgerate(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "StatusProzessgerate"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateBausteinende(System.Xml.XmlDocument,System.String)">
+            <summary>
+            Generate Network "Bausteinende"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateStellungsfreigaben(System.Xml.XmlDocument,System.String,System.String,System.Collections.Generic.List{System.String},System.String,System.String)">
+            <summary>
+            Generate Network "Stellungsfreigaben"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="Frgs"></param>
+            <param name="mask"></param>
+            <param name="FrgNr"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateDB(System.String,System.String,System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Collections.Generic.List{System.Collections.Generic.List{System.String}},System.Collections.Generic.Dictionary{System.Int32,System.String},System.Collections.Generic.Dictionary{System.Int32,System.String},System.Collections.Generic.Dictionary{System.String,System.String})">
+            <summary>
+            Generate Robot Database
+            </summary>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="outputs"></param>
+            <param name="inputs"></param>
+            <param name="sequences"></param>
+            <param name="fms"></param>
+            <param name="tecnologies"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateSchweibsteuerung(System.Xml.XmlDocument,System.String,System.String,System.String)">
+            <summary>
+            Generate Network "Schweibsteuerung"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="tecName"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateMedien(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Generate Network "Medien"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateGreifer(System.Xml.XmlDocument,System.String,System.String,System.String)">
+            <summary>
+            Generate Network "Greifer"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="tecName"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateKleben(System.Xml.XmlDocument,System.String,System.String,System.String)">
+            <summary>
+            Generate Network "Kleben"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="tecName"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateKappenwechsler(System.Xml.XmlDocument,System.String,System.String,System.String)">
+            <summary>
+            Generate Network "Kappenwechsler"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="tecName"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GenerateStanzen(System.Xml.XmlDocument,System.String,System.String,System.String)">
+            <summary>
+            Generate Network "Mutternstanzen"
+            </summary>
+            <param name="xmlRobot"></param>
+            <param name="rob"></param>
+            <param name="workPath"></param>
+            <param name="tecName"></param>
+            <returns>XMLDocument containing the Network</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertNewMember(System.Xml.XmlDocument,System.Xml.Linq.XElement,System.Xml.XmlNode)">
+            <summary>
+            Insert new member inside section tag
+            </summary>
+            <param name="xmlPrgProcess"></param>
+            <param name="memberToAppend"></param>
+            <param name="nodeToAppend"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.SaveXMLDocument(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Save RobotFC as XML
+            </summary>
+            <param name="xmlDoc"></param>
+            <param name="xmlName"></param>
+            <param name="workPath"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertNewNetwork(System.Xml.XmlDocument,System.Xml.XmlDocument)">
+            <summary>
+            Insert of the new networks inside the Robot FC
+            </summary>
+            <param name="originalXml"></param>
+            <param name="newNetwork"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.CreateFrgFolgeGlobalVariable(System.Int32,System.String,System.String)">
+            <summary>
+            Create element "Access" to the network "Bildung Folgen" with scope = GlobalVariable
+            </summary>
+            <param name="num"></param>
+            <param name="robName"></param>
+            <param name="id"></param>
+            <returns>XElement containing the Access element</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.CreateFrgFolgeLiteralConstant(System.String,System.Int32)">
+            <summary>
+            Create element "Access" to the network "Bildung Folgen" with scope = LiteralConstant
+            </summary>
+            <returns>XElement containing the Access element</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.CreateFrg_an(System.String,System.String,System.Int32)">
+            <summary>
+            Create element "Access" to the network "Roboterverriegelungen" with custom Frg_an
+            </summary>
+            <returns>XElement containing the Access element</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.CreateFrg_anTempBool(System.Int32)">
+            <summary>
+            Create element "Access" to the network "Roboterverriegelungen" with Temp_Bool Frg_an
+            </summary>
+            <returns>XElement containing the Access element</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.CreateVer(System.Int32,System.String)">
+            <summary>
+            Create element "Access" to the network "Roboterverriegelungen" to Ver1_Rob
+            </summary>
+            <returns>XElement containing the Access element</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.CreateMemberTag(System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Create Memeber Tag for Robot Database
+            </summary>
+            <param name="name"></param>
+            <param name="dataType"></param>
+            <param name="comment"></param>
+            <param name="isTecnologie"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetFMs(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Get all FM's information from excel file
+            </summary>
+            <param name="xlWorksheet"></param>
+            <returns>Dictionary containing the number and the description</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetTecnologies(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Get all Tecnologie Descriptions from excel file
+            </summary>
+            <param name="xlWorksheet"></param>
+            <returns>List containing the descriptions</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetSequences(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Get all Sequence Informations from excel file
+            </summary>
+            <param name="xlWorksheet"></param>
+            <returns>Dictionary containing the number and the description</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetRobotOutputs(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Get Robot Outputs Informations from excel file
+            [0] = E/A Number
+            [1] = Description
+            [2] = Function
+            [3] = Mask
+            </summary>
+            <param name="xlWorksheet"></param>
+            <returns>List containing Robot Outputs Information</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetRobotInputs(Microsoft.Office.Interop.Excel.Worksheet)">
+            <summary>
+            Get Robot Inputs Informations from excel file
+            [0] = E/A Number
+            [1] = Description
+            [2] = Function
+            [3] = Mask
+            </summary>
+            <param name="xlWorksheet"></param>
+            <returns>List containing Robot Inputs Information</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetRobotColisions(Microsoft.Office.Interop.Excel.Worksheet,System.String)">
+            <summary>
+            Get Robot Colisions Informations from excel file
+            Pos[0] = Colision Robot Name
+            Pos[1] = Colision Robot Number
+            Pos[2] = Current Robot Number
+            Pos[3] = Colision Numbers
+            </summary>
+            <param name="xlWorksheet"></param>
+            <param name="robName"></param>
+            <returns>List containing Robot Colisions</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.ConvertXElement(System.Xml.Linq.XElement,System.Xml.XmlDocument)">
+            <summary>
+            Convert XElement to XmlNode
+            </summary>
+            <param name="element"></param>
+            <param name="doc"></param>
+            <returns>XmlNode converted</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.OpenToIdentCon(System.Xml.XmlDocument,System.Xml.XmlNamespaceManager,System.Int32)">
+            <summary>
+            Change OpenCon to IdentCon
+            </summary>
+            <param name="doc"></param>
+            <param name="ns"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertNewAction(System.Xml.XmlDocument,System.Xml.XmlDocument)">
+            <summary>
+            Insert of the new networks inside the DB_ACTIONS
+            </summary>
+            <param name="originalXml"></param>
+            <param name="newNetwork"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.OffsetRenumbering(System.Xml.XmlDocument)">
+            <summary>
+            Renumbering Offset
+            </summary>
+            <param name="originalXml"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertNewAccessNode(System.Xml.XmlDocument,System.Xml.XmlDocument,System.String)">
+            <summary>
+            Insert New Access
+            </summary>
+            <param name="originalXml"></param>
+            <param name="newNode"></param>
+            <param name="workPath"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertNewWireNode(System.Xml.XmlDocument,System.Xml.XmlDocument,System.String)">
+            <summary>
+            Insert New Wire
+            </summary>
+            <param name="originalXml"></param>
+            <param name="newNode"></param>
+            <param name="workPath"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWRobot(System.String,System.String,System.String,Siemens.Engineering.Project)">
+            <summary>
+            Handles the Executed event of the GenerateRobotCommand control.
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWRobotScalance(System.String,System.String,Siemens.Engineering.Project)">
+            <summary>
+            Handles the Executed event of the GenerateRobotCommand control.
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWPneumatic(System.String,System.String,System.String,System.Collections.Generic.List{System.Int32},Siemens.Engineering.Project)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="pneuList"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWEuchner(System.String,System.String,System.String,System.Boolean,Siemens.Engineering.Project,Siemens.Engineering.Library.MasterCopies.MasterCopySystemFolder)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="leftDoor"></param>
+            <param name="tiaPortal"></param>
+            <param name="library"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHwPLS(System.String,System.String,System.String,Siemens.Engineering.Project,System.Boolean,Siemens.Engineering.Library.MasterCopies.MasterCopySystemFolder)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="tiaPortal"></param>
+            <param name="SickS3000"></param>
+            <param name="library"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWKP32F(System.String,System.String,System.String,Siemens.Engineering.Project,Siemens.Engineering.Library.MasterCopies.MasterCopySystemFolder)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="tiaPortal"></param>
+            <param name="library"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWScalanceKP32F(System.String,System.String,Siemens.Engineering.Project,Siemens.Engineering.Library.MasterCopies.MasterCopySystemFolder)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="tiaPortal"></param>
+            <param name="library"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetLibrariesNamesFromTIA(Siemens.Engineering.TiaPortal)">
+            <summary>
+            Get libraries names from TIA Portal 
+            </summary>
+            <param name="tiaPortal"></param>
+            <returns>List containing libraries names</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetHWMasterCopies(Siemens.Engineering.TiaPortal,System.String,System.Boolean)">
+            <summary>
+            Get hardware master copies from tiaPortal with a specific name
+            </summary>
+            <param name="tiaPortal"></param>
+            <param name="lib"></param>
+            <param name="fromPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWOperatorDoor(System.String,System.String,System.String,Siemens.Engineering.Project,Siemens.Engineering.Library.MasterCopies.MasterCopySystemFolder)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="tiaPortal"></param>
+            <param name="library"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.RenameDevice(Siemens.Engineering.HW.Device,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="device"></param>
+            <param name="devName"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWMURRFDI8FDO4MVK(System.String,System.String,System.String,Siemens.Engineering.Project)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWMURRDI6DO6MVK(System.String,System.Collections.Generic.List{System.Int32},System.String,System.String,Siemens.Engineering.Project)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="murrDi6List"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWT200(System.String,System.String,System.String,System.Collections.Generic.List{System.Int32},Siemens.Engineering.Project)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="T200List"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWLenze(System.String,System.String,System.String,System.Collections.Generic.List{System.Int32},Siemens.Engineering.Project,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="motorsList"></param>
+            <param name="tiaPortal"></param>
+            <param name="type"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWMV5(System.String,System.String,Siemens.Engineering.Project)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWIDENTControl(System.String,System.String,Siemens.Engineering.Project)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWEuchnermgb(System.String,System.String,Siemens.Engineering.Project)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.InsertHWCoupler(System.String,System.String,System.String,System.Collections.Generic.List{System.Int32},System.String,Siemens.Engineering.Project)">
+            <summary>
+            
+            </summary>
+            <param name="devName"></param>
+            <param name="IPAddr"></param>
+            <param name="startAddr"></param>
+            <param name="listCoupler"></param>
+            <param name="type"></param>
+            <param name="tiaPortal"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.SearchLibraryFolder(Siemens.Engineering.Library.MasterCopies.MasterCopySystemFolder,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="library"></param>
+            <param name="folderName"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.AssemblyResolve">
+            <summary>
+            Adds an AssemblResolve for Siemens.Engineering.dll and Siemens.Engineering.HMI.dll
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindPlcSoftwareByName(Siemens.Engineering.Project,System.String)">
+            <summary>
+            Searches the project for a PlcSoftware with the given name.
+            </summary>
+            <param name="project">Opened TIA project</param>
+            <param name="controllerName">name to search for</param>
+            <returns>Reference to found PlcSoftware</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;controllerName</exception>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;controllerName</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindHmiTargetByName(Siemens.Engineering.Project,System.String)">
+            <summary>Searches the project for a HmiTarget with given name.</summary>
+            <param name="project">opened TIA project</param>
+            <param name="hmiName">name to search for</param>
+            <returns>Reference to found HmiTarget</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;hmiName</exception>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;hmiName</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllTargets(Siemens.Engineering.Project)">
+            <summary>
+            Returns IEnumerable Collection of all PlcSoftwares and HmiTargets in project
+            </summary>
+            <param name="project">The project.</param>
+            <returns>IEnumerable&lt;IDeviceItem&gt;</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllPlcSoftwares(Siemens.Engineering.Project)">
+            <summary>
+            Returns IEnumerable Collection of PlcSoftwares in project
+            </summary>
+            <param name="project">The project.</param>
+            <returns>IEnumerable&lt;PlcSoftware&gt;</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllHmiTargets(Siemens.Engineering.Project)">
+            <summary>Returns IEnumerable Collection of HmiTargets in project</summary>
+            <param name="project">The project.</param>
+            <returns>IEnumerable&lt;HmiTarget&gt;</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetPlcSoftware(Siemens.Engineering.HW.Device)">
+            <summary>Returns the PlcSoftware representing the device or null.</summary>
+            <param name="device">The device.</param>
+            <returns>PlcSoftware</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;device</exception>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;device</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetHmiTarget(Siemens.Engineering.HW.Device)">
+            <summary>Returns the HmiTarget representing the device or null.</summary>
+            <param name="device">The device.</param>
+            <returns>HmiTarget</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;device</exception>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;device</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetObjectName(Siemens.Engineering.IEngineeringInstance)">
+            <summary>Returns the name of the IEngineeringInstance</summary>
+            <param name="item">The item.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.RecursiveFindElementByName(System.Object,System.String)">
+            <summary>Recursively searches for a object with given namen in folder</summary>
+            <param name="folder">The folder.</param>
+            <param name="name">The name.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.RecursiveGetAllElements(System.Object,System.Collections.ObjectModel.Collection{System.Object}@)">
+            <summary>
+            Recursively gathers all subitems and folder in the provided folder
+            </summary>
+            <param name="folder">The folder.</param>
+            <param name="collection">The collection.</param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetSubItem(System.Object)">
+            <summary>Returns a IEnumerable of all subitems of item</summary>
+            <param name="item">The item.</param>
+            <returns>IEnumerable&lt;object&gt;</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetSubFolder(System.Object)">
+            <summary>Returns a IEnumerbale of all subfolder of item</summary>
+            <param name="item">The item.</param>
+            <returns>IEnumerable&lt;object&gt;</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetFolderByName(System.Object,System.String)">
+            <summary>Returns the folder with the given namen under target</summary>
+            <param name="target">The target.</param>
+            <param name="folderName">Name of the folder.</param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.RecursiveFindBlocksByLanguage(Siemens.Engineering.SW.Blocks.PlcBlockGroup,Siemens.Engineering.SW.Blocks.ProgrammingLanguage,System.Collections.ObjectModel.Collection{Siemens.Engineering.SW.Blocks.PlcBlock}@)">
+            <summary>
+            Adds all PlcBlocks with the defined ProgrammingLanguage to collection
+            </summary>
+            <param name="folder">The folder.</param>
+            <param name="language">The language.</param>
+            <param name="collection">The collection.</param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindBlocksByLanguage(Siemens.Engineering.SW.PlcSoftware,Siemens.Engineering.SW.Blocks.ProgrammingLanguage)">
+            <summary>
+            Returns a Collection of Blocks with the specified Programming language
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <param name="language">Programming language to search for</param>
+            <returns>Collection of matching blocks</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;PlcSoftware</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindBlockByName(Siemens.Engineering.SW.PlcSoftware,System.String)">
+            <summary>
+            Searches recursively through the PlcSoftware to find the block with given name.
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <param name="blockName">Name to be searched for</param>
+            <returns>Reference to found block</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;PlcSoftware</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;blockName</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindPlcTagTableByName(Siemens.Engineering.SW.PlcSoftware,System.String)">
+            <summary>
+            Searches recursively through the PlcSoftware to find the PlcTagTable with given name.
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <param name="tagTableName">Name to be searched for</param>
+            <returns>Reference to found PlcTagTable</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;PlcSoftware</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;tagTableName</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindPlcTypeByName(Siemens.Engineering.SW.PlcSoftware,System.String)">
+            <summary>
+            Searches recursively through the PlcSoftware to find the PlcType with given name.
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <param name="datatypeName">Name to be searched for</param>
+            <returns>Reference to found PlcTagTable</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;PlcSoftware</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;datatypeName</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllBlocks(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Returns a Collection of all Programm Blocks in the PlcSoftware
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <returns>Collection of PlcBlocks</returns>
+            <exception cref="T:System.ArgumentNullException">PArameter is null;PlcSoftware</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllTagTables(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Returns IEnumerable Collection of all PlcTagTables in the PlcSoftware
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <returns>Collection of ControlerTagTables</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;controlllerTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllDatatypes(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Returns a Collection of all PlcTypes in the PlcSoftware
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <returns>Collection of PlcTypes</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is nul;PlcSoftware</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllPlcExternalSourceFiles(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Returns a Collection of all ExternalSourceFiles in the PlcSoftware
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <returns>Collection of ExternalSourceFiles</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;PlcSoftware</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindScreenByName(Siemens.Engineering.Hmi.HmiTarget,System.String)">
+            <summary>
+            Returns a reference to the screen with given name if found, otherwise null.
+            </summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <param name="name">The name.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;name</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindTagTableByName(Siemens.Engineering.Hmi.HmiTarget,System.String)">
+            <summary>
+            Returns a reference to the HmiTagTable with given name if found, otherwise null.
+            </summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <param name="name">The name.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;name</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllScreens(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns IEnumerable Collection of all screens in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>IEnumerable&lt;Screen&gt;</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllTagTables(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns IEnumerable Collection of all TagTables in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>IEnumerable&lt;TagTable&gt;</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllCycles(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns IEnumerable Collection of all TagTables in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>IEnumerable&lt;TagTable&gt;</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllConnections(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns IEnumerable Collection of all TagTables in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>IEnumerable&lt;TagTable&gt;</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.UpdateAllTypesInTarget(Siemens.Engineering.Library.Types.IUpdateProjectScope,Siemens.Engineering.Library.ILibrary)">
+            <summary>Updates all LibraryTypes from globalLib in target</summary>
+            <param name="target">The target.</param>
+            <param name="library">The library.</param>
+            <exception cref="T:System.ArgumentNullException">
+            Argument is null;target
+            or
+            Argument is null;library
+            </exception>
+            <exception cref="T:System.ArgumentException"></exception>
+            <exception cref="T:System.IO.IOException"></exception>
+            <exception cref="T:System.UnauthorizedAccessException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.GetAllTypes(Siemens.Engineering.Library.ILibrary)">
+            <summary>
+            Returns IEnumerable Collection of all LibraryTypes in library
+            </summary>
+            <param name="library">The library.</param>
+            <returns>IEnumerable&lt;LibraryType&gt;</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;library</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindTypeByName(Siemens.Engineering.Library.ILibrary,System.String)">
+            <summary>Returns the LibraryType with given name</summary>
+            <param name="library">The library.</param>
+            <param name="name">The name.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;library</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;name</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessHelper.FindMasterCopyByName(Siemens.Engineering.Library.ILibrary,System.String)">
+            <summary>Returns the MasterCopy with given name</summary>
+            <param name="library">The library.</param>
+            <param name="name">The name.</param>
+            <returns></returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;library</exception>
+            <exception cref="T:System.ArgumentException">Parameter is null or empty;name</exception>
+        </member>
+        <member name="T:TiaOpennessHelper.ExcelTree.ExcelAsker">
+            <summary>
+            ExcelAsker
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelAsker.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelAsker.Button_Create(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button Create Click Event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelAsker.Button_Cancel(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button Cancel Click Event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelAsker.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.PrepareExcelValues(System.Object[0:,0:],System.String)">
+            <summary>
+            Prepare worksheet from sequence excel
+            </summary>
+            <param name="ObjectX"></param>
+            <param name="name"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.EngAssist">
+            <summary>
+            Retrives the values of the worksheet named "EngAssist" and saves them on the DBMaker EngValues list
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.IsDigitsOnly(System.String)">
+            <summary>
+            Used to see if a string is all Digits
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.SPS(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the worksheet named "SPS" and saves them on the DBMaker Variables list
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.Schutzkreis(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the worksheet named "Schutzkreis" and saves them on the DBMaker Variables list
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.Safety_Standart(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the worksheet named Safety that are from the Safety to Standart part and saves them on the DBMaker Variables list"
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.Standart_Safety(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the worksheet named Safety that are from the Standart to Safety part and saves them on the DBMaker Variables list
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.EngAssist(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the worksheet named "EngAssisst" and saves them on the DBMaker EngValues list
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.PLC_Tags(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the worksheet named "PLC Tags" and saves them on the DBMaker PLC_Tags list
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.EngConfig(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the worksheet named "User Config" and saves them on the DBMaker UserConfigs list
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.StationName1(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the first part of the Station WorkSheet
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.StationName2(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the second part of the Station WorkSheet
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.StationName3(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of the third part of the Station WorkSheet
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.ARG(System.Object[0:,0:])">
+            <summary>
+            Retrives the values of WorkSheet Arg
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.Steps(System.Object[0:,0:])">
+            <summary>
+            Retrives the steps of a WoorkBook inside the folder of the selected item 
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.Frags(System.String,System.String,System.Object[0:,0:])">
+            <summary>
+            Retrives the frags of a WoorkBook inside the folder of the selected item 
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.IsOpened(System.String)">
+            <summary>
+            Tests to see if a file is open
+            </summary>
+            <param name="path">Path of the file that is going to be tested if its open</param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.ExcelManager.BlocksImporter(System.String,System.Object,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Import blocks to Tia Portal
+            </summary>
+            <param name="savePath"></param>
+            <param name="current"></param>
+            <param name="Folder"></param>
+            <param name="BlocksCreated"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.GenerateGrafcet(System.Collections.Generic.List{System.Object[0:,0:]},System.Collections.Generic.List{System.String},Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Generates the Grafcet Part
+            </summary>
+            <param name="matrizs"></param>
+            <param name="Names"></param>
+            <param name="plcSoftware"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.GenerateGrafcetThemePlate(System.String[])">
+            <summary>
+            Generates the base Grafcet
+            </summary>
+            <param name="dataTypes"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.AddStepVariableValues(System.Collections.Generic.List{TiaOpennessHelper.ExcelTree.StepHandler},System.String,System.String[])">
+            <summary>
+            Adds the dafaults variables to the static field
+            </summary>
+            <param name="stepsList"></param>
+            <param name="xmlPath"></param>
+            <param name="dataTypes"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.GenerateXMLWithTheCorrectNameGraf(System.String)">
+            <summary>
+            Changes the names in the Grafcet Xml
+            </summary>
+            <param name="name"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.CreateBlockStaticFieldT(TiaOpennessHelper.ExcelTree.StepHandler,System.String,System.String[])">
+            <summary>
+            Adds the Tras to the static Section 
+            </summary>
+            <param name="step"></param>
+            <param name="path"></param>
+            <param name="dataTypes"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.CreateBlockStaticFieldC(TiaOpennessHelper.ExcelTree.StepHandler,System.String,System.String[])">
+            <summary>
+            Adds the Commentary to the Static Section
+            </summary>
+            <param name="step"></param>
+            <param name="path"></param>
+            <param name="dataTypes"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.CreateBlockSteps(TiaOpennessHelper.ExcelTree.StepHandler,System.String,System.String)">
+            <summary>
+            Adds the Step part of the grafcet Xml 
+            </summary>
+            <param name="step"></param>
+            <param name="Init"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.CreateBlockTransition(TiaOpennessHelper.ExcelTree.StepHandler,System.String)">
+            <summary>
+            Adds the Trans part of the grafcet Xml 
+            </summary>
+            <param name="step"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.CreateNewBranch(TiaOpennessHelper.ExcelTree.StepHandler,System.String)">
+            <summary>
+            Creates a new Existing Branch
+            </summary>
+            <param name="step"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.CreateBlockConnection(TiaOpennessHelper.ExcelTree.StepHandler,System.String)">
+            <summary>
+            Adds the connection to the grafcet Xml 
+            </summary>
+            <param name="step"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.FillSpecialList">
+            <summary>
+            Populates the special list
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:TiaOpennessHelper.ExcelTree.GrafcetManager.ReplaceAmps(System.String)" -->
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.GetDataTypes(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Get datatypes from TiaPortal
+            </summary>
+            <param name="plcSoftware"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.GrafcetManager.GetHigherDataTypeVersion(System.String,Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Get higher version of tia portal data type
+            </summary>
+            <param name="s">data type name</param>
+            <param name="plcSoftware">PLC Sofware of TIA Portal</param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.NetworkManager.GenerateNetWork">
+            <summary>
+            Generates the NetWork Part
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.NetworkManager.GenerateXMLWithCorrectNameNet(System.String,System.String)">
+            <summary>
+            Changes the names in the NetWork XML
+            </summary>
+            <param name="name"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.NetworkManager.GenerateNetWorkThemePlate">
+            <summary>
+            Generates the base NetWork
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.NetworkManager.Add_VerriegelungHand_VerriegelungAutomatik_Transitionbedingung(TiaOpennessHelper.ExcelTree.StepHandler,System.Collections.Generic.List{TiaOpennessHelper.ExcelTree.StepHandler},System.String)">
+            <summary>
+            Adds the Verriegelung Hand,Verriegelung Automatik and Transitionbedingung to the FC file
+            </summary>
+            <param name="step"></param>
+            <param name="list"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.NetworkManager.Add_Transitionsverwaltung(TiaOpennessHelper.ExcelTree.StepHandler,System.Collections.Generic.List{TiaOpennessHelper.ExcelTree.StepHandler},System.String)">
+            <summary>
+            Adds the Transitionsverwaltungc to the FC file
+            </summary>
+            <param name="step"></param>
+            <param name="list"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.NetworkManager.Default_NetWork(TiaOpennessHelper.ExcelTree.StepHandler,System.Int32,System.String,System.String)">
+            <summary>
+            Uses a default theme plate to create the networks
+            </summary>
+            <param name="step"></param>
+            <param name="index"></param>
+            <param name="name"></param>
+            <param name="path"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.StepHandler.#ctor(System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Class where the steps and all the variables are stored
+            </summary>
+            <param name="StepName"></param>
+            <param name="SheetName">Variable used to know whats the sheet's name from where this step is</param>
+            <param name="StepDescription">Variable used to know what is the steps description</param>
+            <param name="StepNumber">Variable used to know what is the steps number</param>
+            <param name="StepTime">Variable used to know what is the steps time</param>
+        </member>
+        <member name="T:TiaOpennessHelper.ExcelTree.TreeViewManager">
+            <summary>
+            TreeViewManager
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.#ctor(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Object[0:,0:]},System.String,System.String,Siemens.Engineering.TiaPortal,Siemens.Engineering.Project,System.Object)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="SheetsNames"></param>
+            <param name="SheetsSteps"></param>
+            <param name="path"></param>
+            <param name="SavePath"></param>
+            <param name="tiaPortal"></param>
+            <param name="tiaPortalProject"></param>
+            <param name="current"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.Btn_Add_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Creates a new Excel with the DataGrid Values
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.Btn_Clear_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event that clears the DataGird
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.Btn_GenerateNetNGraf_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event that calls the method to Generate the NetWork and Grafcet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.Btn_Save_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Saves the current DataGrid values in the chosen path
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.CreateNewExcel">
+            <summary>
+            Function that creates a new excel with the DataGrid values in the chosen path
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.SaveExcelValue">
+            <summary>
+            Function that saves the current values in the DataGrid values in the chosen path
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.GenerateNetNGraf">
+            <summary>
+            Generate the NetWork and GrafcetFiles of the Current Path
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.PopulateGridWithMatrixList(System.Collections.Generic.List{System.Object[0:,0:]},System.Collections.Generic.List{System.String})">
+            <summary>
+            Populate datagrid with a list of matrixs
+            </summary>
+            <param name="SheetsSteps"></param>
+            <param name="SheetsNames"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.SaveWorksheetIntoMatrix(TiaOpennessHelper.ExcelTree.WorkSheet,System.String)">
+            <summary>
+            Transform worksheet into matrix
+            </summary>
+            <param name="ws"></param>
+            <param name="sheetName"></param>
+            <returns>matrix generated</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.PopulateComboBox(System.Collections.Generic.List{System.String})">
+            <summary>
+            Populate combobox with sheet names
+            </summary>
+            <param name="SheetsNames"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.RetrieveValues">
+            <summary>
+            Fills the Steps List with the Values of the DataGrid
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.SortDataGrid(System.Windows.Controls.DataGrid,System.Int32,System.ComponentModel.ListSortDirection)">
+            <summary>
+            Sorts the Data Grid
+            </summary>
+            <param name="dataGrid"></param>
+            <param name="columnIndex"></param>
+            <param name="sortDirection"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.UpdateWorksheetSteps">
+            <summary>
+            Updates Worksheet with selected sheet in combobox
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.WriteSavingLabelText(System.String)">
+            <summary>
+            Write text on label "Saving"
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.MainGridView_KeyDown(System.Object,System.Windows.Input.KeyEventArgs)">
+            <summary>
+            Event that allows the grid to have multiline
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.ComboSheet_SelectionChanged(System.Object,System.Windows.Controls.SelectionChangedEventArgs)">
+            <summary>
+            Event that changes the Data Grid Values if the item is a usable excel worksheet
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.Window_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event that handles window loaded
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.ExcelAsker_Closed(System.Object,System.EventArgs)">
+            <summary>
+            Handle ExcelAsker closed event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.ExcelTree.TreeViewManager.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Block.Access">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.Members.Member" />
+            TODO Edit XML Comment Template for Access
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Access.AccessScope">
+            <summary>
+            Scope of used Element within Network (LocalVariable, GlobalVariable)
+            </summary>
+            <value>The access scope.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Access.AccessSymbol">
+            <summary>
+            Symbol Node of XML structure which contains the used Component names
+            </summary>
+            <value>The access symbol.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Access.UId">
+            <summary>UId used in XML File</summary>
+            <value>The u identifier.</value>
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Block.CallRef">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for CallRef
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.CallRef.Name">
+            <summary>Name of the called Block</summary>
+            <value>The name.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.CallRef.BlockType">
+            <summary>Type of the called Block (FC/FB)</summary>
+            <value>The type of the block.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.CallRef.CallType">
+            <summary>Type of Call (FunctionCall/GlobalCall)</summary>
+            <value>The type of the call.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.CallRef.UId">
+            <summary>UId of the BlockCall</summary>
+            <value>The u identifier.</value>
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Block.Instruction">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for Instruction
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Instruction.InstructionName">
+            <summary>Name of instruction within the xml structure</summary>
+            <value>The name of the instruction.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Instruction.UId">
+            <summary>UId of the instruction within the xml structure</summary>
+            <value>The u identifier.</value>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Block.Instruction.#ctor(System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Block.Instruction"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="uId">The u identifier.</param>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Block.Network">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for Network
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Network.NetworkAccess">
+            <summary>List of Access (used Variables in Network)</summary>
+            <value>The network access.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Network.NetworkInstructions">
+            <summary>List of used Instructions with a Network</summary>
+            <value>The network instructions.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Network.NetworkCalls">
+            <summary>List of used BlockCalls within a Network</summary>
+            <value>The network calls.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Network.NetworkTitle">
+            <summary>title of Network</summary>
+            <value>The network title.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Network.NetworkComment">
+            <summary>comment of Network</summary>
+            <value>The network comment.</value>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Block.Network.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Block.Network"/> class.
+            </summary>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Block.Symbol">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for Symbol
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Symbol.Components">
+            <summary>
+            List of Components within the Symbol XML Node (e.g. Data.Member1.Member1_1)
+            </summary>
+            <value>The components.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.Symbol.SimpleAccessModifier">
+            <summary>Access Modfifier of used PLC Tag (e.g.":P")</summary>
+            <value>The simple access modifier.</value>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Block.Symbol.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Block.Symbol"/> class.</summary>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Block.Symbol.ToString">
+            <summary>gives a Symbol as a String (e.g. "Motor".Start)</summary>
+            <returns>string</returns>
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Block.BlockInformation">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.XmlInformation" />
+            TODO Edit XML Comment Template for BlockInformation
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockNumber">
+            <summary>Gets or sets the block number.</summary>
+            <value>The block number.</value>
+            TODO Edit XML Comment Template for BlockNumber
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockType">
+            <summary>Gets or sets the type of the block.</summary>
+            <value>The type of the block.</value>
+            TODO Edit XML Comment Template for BlockType
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockLanguage">
+            <summary>Gets or sets the block language.</summary>
+            <value>The block language.</value>
+            TODO Edit XML Comment Template for BlockLanguage
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockMemoryLayout">
+            <summary>Gets or sets the block memory layout.</summary>
+            <value>The block memory layout.</value>
+            TODO Edit XML Comment Template for BlockMemoryLayout
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockAutoNumber">
+            <summary>Gets or sets the block automatic number.</summary>
+            <value>The block automatic number.</value>
+            TODO Edit XML Comment Template for BlockAutoNumber
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockEnableTagReadback">
+            <summary>Gets or sets the block enable tag readback.</summary>
+            <value>The block enable tag readback.</value>
+            TODO Edit XML Comment Template for BlockEnableTagReadback
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockEnableTagReadbackBlockProperties">
+            <summary>Gets or sets the block enable tag readback block properties.</summary>
+            <value>The block enable tag readback block properties.</value>
+            TODO Edit XML Comment Template for BlockEnableTagReadbackBlockProperties
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockIsIecCheckEnabled">
+            <summary>Gets or sets the block is iec check enabled.</summary>
+            <value>The block is iec check enabled.</value>
+            TODO Edit XML Comment Template for BlockIsIECCheckEnabled
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockTitle">
+            <summary>Gets or sets the block title.</summary>
+            <value>The block title.</value>
+            TODO Edit XML Comment Template for BlockTitle
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockAuthor">
+            <summary>Gets or sets the block author.</summary>
+            <value>The block author.</value>
+            TODO Edit XML Comment Template for BlockAuthor
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockComment">
+            <summary>Gets or sets the block comment.</summary>
+            <value>The block comment.</value>
+            TODO Edit XML Comment Template for BlockComment
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockFamily">
+            <summary>Gets or sets the block family.</summary>
+            <value>The block family.</value>
+            TODO Edit XML Comment Template for BlockFamily
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockVersion">
+            <summary>Gets or sets the block version.</summary>
+            <value>The block version.</value>
+            TODO Edit XML Comment Template for BlockVersion
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockUserId">
+            <summary>Gets or sets the block user identifier.</summary>
+            <value>The block user identifier.</value>
+            TODO Edit XML Comment Template for BlockUserID
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockInterface">
+            <summary>Gets or sets the block interface.</summary>
+            <value>The block interface.</value>
+            TODO Edit XML Comment Template for BlockInterface
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInformation.BlockNetworks">
+            <summary>List of NetworksInformation</summary>
+            <value>The block networks.</value>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Block.BlockInformation.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Block.BlockInformation"/> class.
+            </summary>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Block.BlockInterface">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for BlockInterface
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInterface.InterfaceSections">
+            <summary>
+            List of Interface section which contains also the appropriate Member
+            </summary>
+            <value>The interface sections.</value>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Block.BlockInterface.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Block.BlockInterface"/> class.
+            </summary>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Block.BlockInterface.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Block.BlockInterfaceSection">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for BlockInterfaceSection
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInterfaceSection.InterfaceMember">
+            <summary>List of Member within the BlockInterface</summary>
+            <value>The interface member.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Block.BlockInterfaceSection.InterfaceSectionName">
+            <summary>Name of the Section within the Interface (Input, Output...)</summary>
+            <value>The name of the interface section.</value>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Block.BlockInterfaceSection.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Block.BlockInterfaceSection"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Block.BlockInterfaceSection.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.MultiLanguageText">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for MultiLanguageText
+        </member>
+        <member name="P:TiaOpennessHelper.Models.MultiLanguageText.MultiLanguageTextItems">
+            <summary>Dictionary that contains all defined languages of a text item</summary>
+            <value>The multi language text items.</value>
+        </member>
+        <member name="P:TiaOpennessHelper.Models.MultiLanguageText.CompositionNameInXml">
+            <summary>
+            CompositionName within the xml structure (InterfaceMember Comment = string.Empty)
+            </summary>
+            <value>The Composition name in XML.</value>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.MultiLanguageText.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.MultiLanguageText"/> class.
+            </summary>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.MultiLanguageText.ToString(System.Int32@)">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.ControllerDataType.PlcTypeInformation">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.XmlInformation" />
+            TODO Edit XML Comment Template for PlcTypeInformation
+        </member>
+        <member name="P:TiaOpennessHelper.Models.ControllerDataType.PlcTypeInformation.UdtTitle">
+            <summary>Gets or sets the udt title.</summary>
+            <value>The udt title.</value>
+            TODO Edit XML Comment Template for UDTTitle
+        </member>
+        <member name="P:TiaOpennessHelper.Models.ControllerDataType.PlcTypeInformation.UdtComment">
+            <summary>Gets or sets the udt comment.</summary>
+            <value>The udt comment.</value>
+            TODO Edit XML Comment Template for UDTComment
+        </member>
+        <member name="P:TiaOpennessHelper.Models.ControllerDataType.PlcTypeInformation.DatatypeMember">
+            <summary>Gets or sets the datatype member.</summary>
+            <value>The datatype member.</value>
+            TODO Edit XML Comment Template for DatatypeMember
+        </member>
+        <member name="M:TiaOpennessHelper.Models.ControllerDataType.PlcTypeInformation.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.ControllerDataType.PlcTypeInformation"/> class.
+            </summary>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.ControllerDataType.PlcTypeInformation.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableConstant">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.Members.Member" />
+            TODO Edit XML Comment Template for PlcTagTableConstant
+        </member>
+        <member name="F:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableConstant._constantValue">
+            <summary>The constant value</summary>
+            TODO Edit XML Comment Template for constantValue
+        </member>
+        <member name="P:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableConstant.ConstantValue">
+            <summary>Gets or sets the constant value.</summary>
+            <value>The constant value.</value>
+            TODO Edit XML Comment Template for ConstantValue
+        </member>
+        <member name="M:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableConstant.ToString(System.Int32@)">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableInformation">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.XmlInformation" />
+            TODO Edit XML Comment Template for PlcTagTableInformation
+        </member>
+        <member name="F:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableInformation._tags">
+            <summary>The tags</summary>
+            TODO Edit XML Comment Template for tags
+        </member>
+        <member name="P:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableInformation.Tags">
+            <summary>Gets or sets the tags.</summary>
+            <value>The tags.</value>
+            TODO Edit XML Comment Template for Tags
+        </member>
+        <member name="F:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableInformation._constants">
+            <summary>The constants</summary>
+            TODO Edit XML Comment Template for constants
+        </member>
+        <member name="P:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableInformation.Constants">
+            <summary>Gets or sets the constants.</summary>
+            <value>The constants.</value>
+            TODO Edit XML Comment Template for Constants
+        </member>
+        <member name="M:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableInformation.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableInformation"/> class.
+            </summary>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableInformation.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableTag">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.Members.Member" />
+            TODO Edit XML Comment Template for PlcTagTableTag
+        </member>
+        <member name="F:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableTag._address">
+            <summary>The address</summary>
+            TODO Edit XML Comment Template for address
+        </member>
+        <member name="P:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableTag.Address">
+            <summary>Gets or sets the address.</summary>
+            <value>The address.</value>
+            TODO Edit XML Comment Template for Address
+        </member>
+        <member name="M:TiaOpennessHelper.Models.ControllerTagTable.PlcTagTableTag.ToString(System.Int32@)">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <param name="id">The identifier.</param>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.DataBlock.DataBlockInformation">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.Block.BlockInformation" />
+            TODO Edit XML Comment Template for DataBlockInformation
+        </member>
+        <member name="F:TiaOpennessHelper.Models.DataBlock.DataBlockInformation._dbType">
+            <summary>The database type</summary>
+            TODO Edit XML Comment Template for dbType
+        </member>
+        <member name="P:TiaOpennessHelper.Models.DataBlock.DataBlockInformation.DbType">
+            <summary>Gets or sets the type of the database.</summary>
+            <value>The type of the database.</value>
+            TODO Edit XML Comment Template for DbType
+        </member>
+        <member name="P:TiaOpennessHelper.Models.DataBlock.DataBlockInformation.ArrayDataType">
+            <summary>Gets or sets the type of the array data.</summary>
+            <value>The type of the array data.</value>
+            TODO Edit XML Comment Template for ArrayDataType
+        </member>
+        <member name="P:TiaOpennessHelper.Models.DataBlock.DataBlockInformation.InstanceOfName">
+            <summary>Gets or sets the name of the instance of.</summary>
+            <value>The name of the instance of.</value>
+            TODO Edit XML Comment Template for InstanceOfName
+        </member>
+        <member name="P:TiaOpennessHelper.Models.DataBlock.DataBlockInformation.DownloadWithoutReinit">
+            <summary>Gets or sets the download without reinit.</summary>
+            <value>The download without reinit.</value>
+            TODO Edit XML Comment Template for DownloadWithoutReinit
+        </member>
+        <member name="P:TiaOpennessHelper.Models.DataBlock.DataBlockInformation.IsOnlyStoredInLoadMemory">
+            <summary>Gets or sets the is only stored in load memory.</summary>
+            <value>The is only stored in load memory.</value>
+            TODO Edit XML Comment Template for IsOnlyStoredInLoadMemory
+        </member>
+        <member name="P:TiaOpennessHelper.Models.DataBlock.DataBlockInformation.IsRetainMemResEnabled">
+            <summary>Gets or sets the is retain memory resource enabled.</summary>
+            <value>The is retain memory resource enabled.</value>
+            TODO Edit XML Comment Template for IsRetainMemResEnabled
+        </member>
+        <member name="P:TiaOpennessHelper.Models.DataBlock.DataBlockInformation.IsWriteProtectedInAs">
+            <summary>Gets or sets the is write protected in as.</summary>
+            <value>The is write protected in as.</value>
+            TODO Edit XML Comment Template for IsWriteProtectedInAS
+        </member>
+        <member name="P:TiaOpennessHelper.Models.DataBlock.DataBlockInformation.MemoryReserve">
+            <summary>Gets or sets the memory reserve.</summary>
+            <value>The memory reserve.</value>
+            TODO Edit XML Comment Template for MemoryReserve
+        </member>
+        <member name="M:TiaOpennessHelper.Models.DataBlock.DataBlockInformation.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Members.Member">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for Member
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Members.Member.MemberName">
+            <summary>Gets or sets the name of the member.</summary>
+            <value>The name of the member.</value>
+            TODO Edit XML Comment Template for MemberName
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Members.Member.MemberDatatype">
+            <summary>Gets or sets the member datatype.</summary>
+            <value>The member datatype.</value>
+            TODO Edit XML Comment Template for MemberDatatype
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Members.Member.MemberDefaultValue">
+            <summary>Gets or sets the member default value.</summary>
+            <value>The member default value.</value>
+            TODO Edit XML Comment Template for MemberDefaultValue
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Members.Member.MemberComment">
+            <summary>Gets or sets the member comment.</summary>
+            <value>The member comment.</value>
+            TODO Edit XML Comment Template for MemberComment
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Members.Member.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Members.Member"/> class.</summary>
+            <param name="name">The name.</param>
+            <param name="datatype">The datatype.</param>
+            <param name="defaultValue">The default value.</param>
+            <param name="comment">The comment.</param>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Members.Member.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Members.Member"/> class.</summary>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Members.Member.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Members.MultiInstance">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.Members.Member" />
+            TODO Edit XML Comment Template for MultiInstance
+        </member>
+        <member name="P:TiaOpennessHelper.Models.Members.MultiInstance.InterfaceSections">
+            <summary>Gets or sets the interface sections.</summary>
+            <value>The interface sections.</value>
+            TODO Edit XML Comment Template for interfaceSections
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Members.MultiInstance.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Members.MultiInstance"/> class.
+            </summary>
+            <param name="name">The name.</param>
+            <param name="dataType">Type of the data.</param>
+            <param name="defaultValue">The default value.</param>
+            <param name="comment">The comment.</param>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Members.MultiInstance.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.Members.Struct">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.Members.Member" />
+            TODO Edit XML Comment Template for Struct
+        </member>
+        <member name="F:TiaOpennessHelper.Models.Members.Struct.NestedMembers">
+            <summary>The nested members</summary>
+            TODO Edit XML Comment Template for nestedMembers
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Members.Struct.#ctor(System.String)">
+            <summary>Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.Members.Struct"/> class.</summary>
+            <param name="name">The name.</param>
+            TODO Edit XML Comment Template for #ctor
+        </member>
+        <member name="M:TiaOpennessHelper.Models.Members.Struct.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+            TODO Edit XML Comment Template for ToString
+        </member>
+        <member name="T:TiaOpennessHelper.Models.SCL.SclBlock">
+            <summary>
+            Representation of a scl source file.
+            </summary>
+            <seealso cref="T:TiaOpennessHelper.Models.Block.BlockInformation" />
+        </member>
+        <member name="P:TiaOpennessHelper.Models.SCL.SclBlock.BlockCode">
+            <summary>String containing the program code of the SCLBlock</summary>
+            <value>The code of the block.</value>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.SCL.SclBlock.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:TiaOpennessHelper.Models.SCL.SclBlock"/> class.
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.SCL.SclBlock.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>A <see cref="T:System.String" /> that represents this instance.</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.Models.SCL.SclBlock.PrintList(System.Collections.Generic.List{TiaOpennessHelper.Models.Members.Member},System.String)">
+            <summary>Returns a string representation of all the Members in list</summary>
+            <param name="list">The list.</param>
+            <param name="indent">The indent.</param>
+            <returns>String</returns>
+        </member>
+        <member name="T:TiaOpennessHelper.Models.XmlInformation">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:System.IComparable" />
+            TODO Edit XML Comment Template for XmlInformation
+        </member>
+        <member name="F:TiaOpennessHelper.Models.XmlInformation._name">
+            <summary>The name</summary>
+            TODO Edit XML Comment Template for name
+        </member>
+        <member name="P:TiaOpennessHelper.Models.XmlInformation.Name">
+            <summary>Gets or sets the name.</summary>
+            <value>The name.</value>
+            TODO Edit XML Comment Template for Name
+        </member>
+        <member name="F:TiaOpennessHelper.Models.XmlInformation._xmlType">
+            <summary>The XML type</summary>
+            TODO Edit XML Comment Template for xmlType
+        </member>
+        <member name="P:TiaOpennessHelper.Models.XmlInformation.XmlType">
+            <summary>Gets or sets the type of the XML.</summary>
+            <value>The type of the XML.</value>
+            TODO Edit XML Comment Template for XmlType
+        </member>
+        <member name="M:TiaOpennessHelper.Models.XmlInformation.CompareTo(System.Object)">
+            <summary>
+            Compares the current instance with another object of the same type and returns an integer that indicates whether the current instance precedes, follows, or occurs in the same position in the sort order as the other object.
+            </summary>
+            <param name="obj">An object to compare with this instance.</param>
+            <returns>
+            A value that indicates the relative order of the objects being compared. The return value has these meanings: Value Meaning Less than zero This instance precedes <paramref name="obj" /> in the sort order. Zero This instance occurs in the same position in the sort order as <paramref name="obj" />. Greater than zero This instance follows <paramref name="obj" /> in the sort order.
+            </returns>
+            <exception cref="T:System.ArgumentException">Object is not XmlInformation</exception>
+            TODO Edit XML Comment Template for CompareTo
+        </member>
+        <member name="T:TiaOpennessHelper.SafetyMaker.DBMaker">
+            <summary>
+            Interaction logic for DBMaker.xaml
+            </summary>
+            <summary>
+            DBMaker
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.#ctor(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Object[0:,0:]},System.String,System.String,Siemens.Engineering.TiaPortal,Siemens.Engineering.Project,System.Object)">
+            <summary>
+            DBMaker Initializer With Parameters
+            </summary>
+            <param name="Names"></param>
+            <param name="WorkSheets"></param>
+            <param name="path"></param>
+            <param name="SavePath"></param>
+            <param name="tiaPortal"></param>
+            <param name="tiaPortalProject"></param>
+            <param name="current"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.#ctor">
+            <summary>
+            DBMaker inicializer
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.Init">
+            <summary>
+            Initialize Components
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.CreateLeftGrid">
+            <summary>
+            Creates left gridView
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.CreateRightGrid">
+            <summary>
+            Creates right gridView
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.Button_CreateDB(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button Event that creates the data base of SPS, Schutzkreis and Safety  
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.Button_SaveCurrentValues(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button that saves the current grid view values in the current selected item
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.Button_ClearGrid(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Button used to clear the grids
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.InsertColumns(System.Int32)">
+            <summary>
+            Function used to insert Columns into the right grid when needed
+            </summary>
+            <param name="numberOfColumns">Number of columns that the user wishs to make</param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.DisableSort(System.Windows.Forms.DataGridView)">
+            <summary>
+            Function used disable the sort ability of the grid columns
+            </summary>
+            <param name="data">DatagridView that is gonna be used</param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.InsertCommonRowOfTheLeftGrid">
+            <summary>
+            Function used to add the normal row in the left grid view
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.InsertCommonRowsOfTheRightGrid">
+            <summary>
+            Function used to add the two normal rows in the right grid view
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.LoadValues">
+            <summary>
+            Function used to Load the values into the grid views
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.LoadValues(System.Object[0:,0:])">
+            <summary>
+            Function used to Load the values into the grid views
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.RetrieveValues">
+            <summary>
+            Function used to retrie the values form the 2 grid views
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.SaveEngValues">
+             <summary>
+            Saves the current values of the 2 grid views in the current selected item of the tree view
+             </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.WriteSavingLabelText(System.String)">
+            <summary>
+            Write text on label "Saving"
+            </summary>
+            <param name="text"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.PartAndValvesFiller(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Event used to fill the first column on the right grid with only "Part Presence" and "Valves" whenever a new row is entered
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.ColumnManager(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Event used to manage the column on the right grid
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.AddNewRows(System.Object,System.Windows.Forms.DataGridViewCellEventArgs)">
+            <summary>
+            Event used to add a new row whenever the user finishs giving a cell in the last row a value 
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.Window_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handles window loaded event
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.DBMaker.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.EngAssist.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructer of the values of a row in in the EngAssist worksheet
+            </summary>
+            <param name="Arbeitsgruppe_ARG">Its the "Arbeitsgruppe [ARG]" value</param>
+            <param name="Schutzkreis_SK">Its the "Schutzkreis [SK]" value</param>
+            <param name="Station">Its the "Station" value</param>
+            <param name="Erw_Stationsbez_SBZ">Its the "Erw. Stationsbez. [SBZ]" value</param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.NetworkDBMaker.GenerateDataBaseThemePlate">
+            <summary>
+            Generate the themeplate of a xml data base
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.NetworkDBMaker.PopulateDB(System.Collections.Generic.List{TiaOpennessHelper.SafetyMaker.Variable},System.String,System.String)">
+            <summary>
+            Populates the current empty data base with the values in the List of variables
+            </summary>
+            <param name="variables">List that will be used to populate the data base</param>
+            <param name="DBtype">Type of data base it will make</param>
+            <param name="SavePath"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.NetworkDBMaker.ReplacePs(System.String,System.String,System.String)">
+            <summary>
+            Opens the Xml and replaces the %s with the right values
+            </summary>
+            <param name="path">Current using path</param>
+            <param name="oldValue">Number that will be replaced</param>
+            <param name="newValue">Value that will be replacing the %</param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.NetworkDBMaker.CreateTag(System.String,TiaOpennessHelper.SafetyMaker.Variable)">
+            <summary>
+            Open Xml and creates TAG
+            </summary>
+            <param name="path">File path</param>
+            <param name="v">The Variable that will be used</param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.NetworkDBMaker.CreateStruct(System.String,TiaOpennessHelper.SafetyMaker.Variable,System.Collections.Generic.List{TiaOpennessHelper.SafetyMaker.Variable})">
+            <summary>
+            Open XML and creates a Struct
+            </summary>
+            <param name="path"></param>
+            <param name="vStruct"></param>
+            <param name="variables"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.SafetyMaker.NetworkDBMaker.GetQntRemotePanels">
+            <summary>
+            Return quantity of remote panels
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:TiaOpennessHelper.SCLParser.SclParser">
+            <summary>
+            Class to parse scl source files.
+            </summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrHeader">
+            <summary>Regex string for header</summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrVarIn">
+            <summary>Regex string for input variables</summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrVarOut">
+            <summary>Regex string for output variables</summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrVarInOut">
+            <summary>Regex string for inout variables</summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrVarTemp">
+            <summary>Regex string for temporary variables</summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrVarStat">
+            <summary>Regex string for static variables</summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrVarConst">
+            <summary>Regex string for constant variables</summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrMember1">
+            <summary>First part of regex string for all members</summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrMember2">
+            <summary>Second part of regex string for all members</summary>
+        </member>
+        <member name="F:TiaOpennessHelper.SCLParser.SclParser.StrCode">
+            <summary>Regex string for the code part</summary>
+        </member>
+        <member name="M:TiaOpennessHelper.SCLParser.SclParser.Parse(System.String)">
+            <summary>Parses the given file and returns the result as a SCLBlock.</summary>
+            <param name="fileName">Path to file to parse</param>
+            <returns>filled SCLBlock</returns>
+            <exception cref="T:System.ArgumentException">Arguent is null or empty;fileName</exception>
+            <exception cref="T:System.ArgumentNullException"></exception>
+            <exception cref="T:System.ArgumentOutOfRangeException"></exception>
+        </member>
+        <member name="M:TiaOpennessHelper.SCLParser.SclParser.ParseHeader(TiaOpennessHelper.Models.SCL.SclBlock,System.String,System.Text.RegularExpressions.Regex)">
+            <summary>
+            Parses the definition section (header) of a source file and adds it to the block
+            </summary>
+            <param name="block">The block.</param>
+            <param name="lines">The lines.</param>
+            <param name="header">The header.</param>
+        </member>
+        <member name="M:TiaOpennessHelper.SCLParser.SclParser.ParseInterface(TiaOpennessHelper.Models.SCL.SclBlock,System.String,System.String,System.Text.RegularExpressions.Regex,System.Text.RegularExpressions.Regex)">
+            <summary>
+            Parses the interface section (header) of a source file and adds it to the block
+            </summary>
+            <param name="block">The block.</param>
+            <param name="interfaceName">Name of the interface.</param>
+            <param name="lines">The lines.</param>
+            <param name="reInterface">The re interface.</param>
+            <param name="reMember">The re member.</param>
+        </member>
+        <member name="M:TiaOpennessHelper.SCLParser.SclParser.ParseStruct(System.String,System.Int32)">
+            <summary>Parses a member of type struct and returns all child elements</summary>
+            <param name="lines">The lines.</param>
+            <param name="indent">The indent.</param>
+            <returns>List&lt;Member&gt;</returns>
+        </member>
+        <member name="T:TiaOpennessHelper.OpennessTreeViews">
+            <summary>
+            Helper Class to retrive projektnavigation as TreeViewItem
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.RecursiveGetTreeView(Siemens.Engineering.IEngineeringInstance,System.Windows.Controls.TreeViewItem@)">
+            <summary>
+            Adds all objects in the provided folder as TreeViewItems to the provided treeViewItem
+            </summary>
+            <param name="folder">The folder.</param>
+            <param name="treeViewItem">The tree view item.</param>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.RecursiveGetDevicesTreeView(Siemens.Engineering.HW.DeviceItem)">
+            <summary>Returns a TreeViewItem of the objects in the IDeviceItem</summary>
+            <param name="item">The item.</param>
+            <returns>TreeViewItem</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetHardwareTreeView(Siemens.Engineering.HW.Device)">
+            <summary>Returns a TreeView of the hardware</summary>
+            <param name="station">The station.</param>
+            <returns>TreeViewItem</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetGraphicsTreeView(Siemens.Engineering.Project)">
+            <summary>Gets all graphics TreeView.</summary>
+            <param name="project">The project.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;project</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetBlocksTreeView(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Returns a TreeView of all Programm Blocks in the PlcSoftware
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <returns>TreeView of PlcBlocks</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;PlcSoftware</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetTagTablesTreeView(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Returns a TreeView of all PlcTagTables in the PlcSoftware
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <returns>TreeView of ControlerTagTables</returns>
+            <exception cref="T:System.ArgumentNullException">PArameter is null;PlcSoftware</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetDatatypesTreeView(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Returns a TreeView of all PlcTypes in the PlcSoftware
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <returns>TreeView of PlcTypes</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;PlcSoftware</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetExternalSourceFilesTreeView(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Returns a TreeView of all ExternalSourceFiles in the PlcSoftware
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <returns>TreeView of ExternalSourceFiles</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;PlcSoftware</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetHardwareTreeView(Siemens.Engineering.SW.PlcSoftware)">
+            <summary>
+            Returns a TreeViewItem of all hardware objects in the ContollesTarget
+            </summary>
+            <param name="plcSoftware">PlcSoftware to be searched</param>
+            <returns>TreeViewItem of hardware objects</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;PlcSoftware</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetScreensTreeView(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns TreeViewItem of all screens in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetTagTablesTreeView(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns TreeViewItem of all TagTables in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetCyclesTreeView(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns TreeViewItem of all user Cycles in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetConnectionsTreeView(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns TreeViewItem of all Connections in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetScriptsTreeView(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns TreeViewItem of all VB Scripts in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetScreenTemplatesTreeView(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns TreeViewItem of all ScreenTemplates in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetScreenPopupTreeView(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns TreeViewItem of all ScreenPopups in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetScreenSlideInTreeView(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>Returns TreeViewItem of all ScreenSlideIns in hmiTarget</summary>
+            <param name="hmiTarget">The hmi target.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetHardwareTreeView(Siemens.Engineering.Hmi.HmiTarget)">
+            <summary>
+            Returns a TreeViewItem of all hardware objects in the HmiTarget
+            </summary>
+            <param name="hmiTarget">HmiTarget to be searched</param>
+            <returns>TreeViewItem of hardware objects</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;hmiTarget</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetTypesTreeView(Siemens.Engineering.Library.Types.LibraryTypeFolder)">
+            <summary>Returns all ILibraryTypes in folder as TreeViewItems</summary>
+            <param name="folder">The folder.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;folder</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetMasterCopiesTreeView(Siemens.Engineering.Library.MasterCopies.MasterCopyFolder)">
+            <summary>Returns all MasterCopies in folder as TreeViewItems</summary>
+            <param name="folder">The folder.</param>
+            <returns>TreeViewItem</returns>
+            <exception cref="T:System.ArgumentNullException">Parameter is null;folder</exception>
+        </member>
+        <member name="M:TiaOpennessHelper.OpennessTreeViews.GetLibraryTreeView(Siemens.Engineering.Library.ILibrary)">
+            <summary>Returns a TreeViewItem representing the library</summary>
+            <param name="library">The library.</param>
+            <returns>TreeViewItem</returns>
+        </member>
+        <member name="T:TiaOpennessHelper.Utils.AdjustNames">
+            <summary>
+            Contains functions tohelp with prerequisites for strings and file names
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.Utils.AdjustNames.AdjustFileName(System.String)">
+            <summary>
+            remove all characters in the filename that are not allowed during export.
+            </summary>
+            <param name="fileName">string to check</param>
+            <returns>new string without forbidden characters</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.Utils.AdjustNames.AdjustXmlStrings(System.String)">
+            <summary>Replaces all special characters with their XML representation</summary>
+            <param name="xmlString">The XML string.</param>
+            <returns>String</returns>
+        </member>
+        <member name="P:TiaOpennessHelper.Utils.FolderInfo.fName">
+            <summary>
+            Folder Name
+            </summary>
+        </member>
+        <member name="P:TiaOpennessHelper.Utils.FolderInfo.fPath">
+            <summary>
+            Folder Path
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.Utils.FolderInfo.#ctor(System.String,System.String)">
+            <summary>
+            Costructor
+            </summary>
+            <param name="fName"></param>
+            <param name="fPath"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.RobotBase.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="symbolic"></param>
+            <param name="dataType"></param>
+            <param name="address"></param>
+            <param name="comment"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.RobotSafeOperation.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="Symbolic"></param>
+            <param name="dataType"></param>
+            <param name="address"></param>
+            <param name="comment"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.RobotSafeOperation.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.RobotSafeRangeMonitoring.#ctor(System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="Symbolic"></param>
+            <param name="dataType"></param>
+            <param name="address"></param>
+            <param name="comment"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.RobotSafeRangeMonitoring.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.RobotTecnologie.#ctor(System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="name"></param>
+            <param name="type"></param>
+            <param name="symbolic"></param>
+            <param name="dataType"></param>
+            <param name="address"></param>
+            <param name="comment"></param>
+            <param name="fbNumber"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.RobotTecnologie.#ctor">
+            <summary>
+            Default Constructor
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.#ctor">
+            <summary>
+            Normal Constructor
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.#ctor(TiaOpennessHelper.VWSymbolic.RobotInfo,System.Collections.Generic.List{System.Collections.Generic.List{TiaOpennessHelper.VWSymbolic.RobotBase}},System.Collections.Generic.List{System.Collections.Generic.List{TiaOpennessHelper.VWSymbolic.RobotTecnologie}},System.Collections.Generic.List{System.Collections.Generic.List{TiaOpennessHelper.VWSymbolic.RobotSafeRangeMonitoring}},System.Collections.Generic.List{System.Collections.Generic.List{TiaOpennessHelper.VWSymbolic.RobotSafeOperation}})">
+            <summary>
+            Change Robot Constructor
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.InitializeLists">
+            <summary>
+            Initialize Lists
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.NewRobot(System.Int32,System.String,System.String,System.Collections.Generic.List{System.String},System.String,System.Boolean)">
+            <summary>
+            Creates new Robot
+            </summary>
+            <param name="startAddress"></param>
+            <param name="name"></param>
+            <param name="robSafe"></param>
+            <param name="tecnologies"></param>
+            <param name="type"></param>
+            <param name="importToTia"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.AddPlcDbTags(System.String)">
+            <summary>
+            Add PLC Tags in PLC DB file
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.ChangeAddresses(System.Int32)">
+            <summary>
+            Change Robot Addresses
+            </summary>
+            <param name="startAddress"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.ChangeAddress(TiaOpennessHelper.VWSymbolic.RobotBase,System.Int32)">
+            <summary>
+            Change address and name of a single item
+            </summary>
+            <param name="item"></param>
+            <param name="startAddress"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateTagsXmlDoc">
+            <summary>
+            Generate XmlDocument containing created robot tags
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateManualImportXML">
+            <summary>
+            Generate XmlDocument to import manually into Tia Portal
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateSaveFile(System.String,System.String,System.String,System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            Generate and save XML file containing created robot info
+            </summary>
+            <param name="name"></param>
+            <param name="startAddress"></param>
+            <param name="robSafe"></param>
+            <param name="type"></param>
+            <param name="tecnologies"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateBase">
+            <summary>
+            Generate XElement with default robbase
+            </summary>
+            <returns>XML Default RobBase</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateTecnologies">
+            <summary>
+            Generate XElement with default tecnologies
+            </summary>
+            <returns>XML Default Tecnologies</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateRobSafe">
+            <summary>
+            Generate XElement with default robsafes
+            </summary>
+            <returns>XML Default RobSafes</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateTecBasicSlave">
+            <summary>
+            Generate XElement with default basic slave tecnologies
+            </summary>
+            <returns>XML Default Tecnologies Basic Slave</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateTecLaserSlave">
+            <summary>
+            Generate XElement with default laser slave tecnologies
+            </summary>
+            <returns>XML Default Tecnologies Laser Slave</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateRobSafeMonitoring">
+            <summary>
+            Generate XElement with default robot safe monitoring
+            </summary>
+            <returns>XML Default Robot Safe Monitoring</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateRobSafeOperation">
+            <summary>
+            Generate XElement with default robot safe operation
+            </summary>
+            <returns>XML Default Robot Safe Operation</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.VWSymbolic.SymbolicManager.GenerateSelectedTecnologies(System.Collections.Generic.List{System.String})">
+            <summary>
+            Generate XElement with selected tecnologies
+            </summary>
+            <param name="tecnologies"></param>
+            <returns>XML Selected Tecnologies</returns>
+        </member>
+        <member name="T:TiaOpennessHelper.XMLParser.XmlParser">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for XmlParser
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XmlParser._ns">
+            <summary>
+            The _ns (namespace)
+            </summary>
+        </member>
+        <member name="P:TiaOpennessHelper.XMLParser.XmlParser.FileName">
+            <summary>Gets or sets the name of the file.</summary>
+            <value>The name of the file.</value>
+            TODO Edit XML Comment Template for FileName
+        </member>
+        <member name="P:TiaOpennessHelper.XMLParser.XmlParser.Document">
+            <summary>Gets or sets the document.</summary>
+            <value>The document.</value>
+            TODO Edit XML Comment Template for Document
+        </member>
+        <member name="P:TiaOpennessHelper.XMLParser.XmlParser.RootNode">
+            <summary>Gets or sets the root node.</summary>
+            <value>The root node.</value>
+            TODO Edit XML Comment Template for RootNode
+        </member>
+        <member name="P:TiaOpennessHelper.XMLParser.XmlParser.Node">
+            <summary>Gets or sets the node.</summary>
+            <value>The node.</value>
+            TODO Edit XML Comment Template for Node
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.#ctor(System.String)">
+            <summary>Create Xml Parser</summary>
+            <param name="fileName">Name of the file.</param>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.Parse">
+            <summary>Parse XML File into Type 'XmlInformation'</summary>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.ReplaceXML(System.Xml.XmlDocument,System.String,System.String)">
+            <summary>
+            Replace XML string to another
+            </summary>
+            <param name="doc"></param>
+            <param name="oldText"></param>
+            <param name="newText"></param>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.IsDB(System.String)">
+            <summary>
+            Check if a block is a Database
+            </summary>
+            <param name="path"></param>
+            <returns>boolean</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetXmlNameAttribute(System.Xml.XmlDocument)">
+            <summary>
+            Get text inside XML Tag "Name"
+            </summary>
+            <param name="doc"></param>
+            <returns>Name</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.IDRenumbering(System.Xml.XmlNodeList)">
+            <summary>
+            Renumbering of the document ID's (attributes)
+            </summary>
+            <param name="nodes">Change id's on this node</param>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.RemoveWindowsUnallowedChars(System.String)">
+            <summary>
+            Replace invalid chars from string with '_'
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.InsertTag(System.Xml.XmlDocument,System.Xml.XmlDocument,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Insert a new tag
+            </summary>
+            <param name="doc"></param>
+            <param name="tagDoc"></param>
+            <param name="symbolic"></param>
+            <param name="dataType"></param>
+            <param name="address"></param>
+            <param name="comment"></param>
+            <param name="externalAccessible"></param>
+            <param name="externalVisible"></param>
+            <param name="externalWritable"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.XmlToPlcTags(System.String)">
+            <summary>
+            Convert XML Tags to a List of PLC_Tag's
+            </summary>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.IsPlcTags(System.String)">
+            <summary>
+            Check if Xml doc is a PLC Tags doc
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.CreateTag(System.String,System.String,System.String,System.String)">
+            <summary>
+            Create tag for Fail
+            </summary>
+            <param name="symbolic"></param>
+            <param name="datatype"></param>
+            <param name="comment"></param>
+            <param name="address"></param>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.ParsePlcTagTable">
+            <summary>Parse XML of Controller Tag Table</summary>
+            <returns>XmlInformation</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.ParseSoftwareBlock">
+            <summary>Parse XML of Software Block</summary>
+            <returns>XmlInformation</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.ParseDataBlock">
+            <summary>Parse XML of Data Block</summary>
+            <returns>XmlInformation</returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.ParsePlcType">
+            <summary>Parse XML of Controller Data type</summary>
+            <returns></returns>
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetDatablockType">
+            <summary>Gets the type of the datablock.</summary>
+            <returns></returns>
+            TODO Edit XML Comment Template for GetDatablockType
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetMetaInformation(System.String)">
+            <summary>Gets the meta information.</summary>
+            <param name="xpath">The xpath.</param>
+            <returns>String</returns>
+            TODO Edit XML Comment Template for GetMetaInformation
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetBlockInterfaceInformation">
+            <summary>Gets the block interface information.</summary>
+            <returns>BlockInterface</returns>
+            TODO Edit XML Comment Template for GetBlockInterfaceInformation
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.ParseInterface(System.Xml.XmlNodeList,System.Collections.Generic.List{TiaOpennessHelper.Models.Block.BlockInterfaceSection})">
+            <summary>Parses the interface.</summary>
+            <param name="listOfSections">The list of sections.</param>
+            <param name="interfaceSections">The interface sections.</param>
+            TODO Edit XML Comment Template for ParseInterface
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetBlockNetworkInformation">
+            <summary>Gets the block network information.</summary>
+            <returns>List&lt;Network&gt;</returns>
+            TODO Edit XML Comment Template for GetBlockNetworkInformation
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetUdtMembers">
+            <summary>Gets the udt members.</summary>
+            <returns>List&lt;Member&gt;</returns>
+            TODO Edit XML Comment Template for GetUdtMembers
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetStructChildNodes(System.Xml.XmlNodeList,TiaOpennessHelper.Models.Members.Struct)">
+            <summary>Gets the structure child nodes.</summary>
+            <param name="childNodes">The child nodes.</param>
+            <param name="structMember">The structure member.</param>
+            TODO Edit XML Comment Template for GetStructChildNodes
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetMultiInstanceMember(System.Xml.XmlNode,TiaOpennessHelper.Models.Members.MultiInstance)">
+            <summary>Gets the multi instance member.</summary>
+            <param name="member">The member.</param>
+            <param name="instance">The instance.</param>
+            TODO Edit XML Comment Template for GetMultiInstanceMember
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetComment(System.Xml.XmlNode,TiaOpennessHelper.Models.Members.Member)">
+            <summary>Gets the comment.</summary>
+            <param name="childNodes">The child nodes.</param>
+            <param name="blockIMember">The block i member.</param>
+            TODO Edit XML Comment Template for GetComment
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetStartValue(System.Xml.XmlNode,TiaOpennessHelper.Models.Members.Member)">
+            <summary>Gets the start value.</summary>
+            <param name="childNodes">The child nodes.</param>
+            <param name="blockIMember">The block i member.</param>
+            TODO Edit XML Comment Template for GetStartValue
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetTitleOrComment(System.Xml.XmlNode,TiaOpennessHelper.Models.MultiLanguageText)">
+            <summary>Gets the title or comment.</summary>
+            <param name="nodeToMultiLanguageText">The node to multi language text.</param>
+            <param name="textItems">The text items.</param>
+            TODO Edit XML Comment Template for GetTitleOrComment
+        </member>
+        <member name="M:TiaOpennessHelper.XMLParser.XmlParser.GetBlockTitleOrComment(System.String)">
+            <summary>Gets the block title or comment.</summary>
+            <param name="xpath">The xpath.</param>
+            <returns>MultiLanguageText</returns>
+            TODO Edit XML Comment Template for GetBlockTitleOrComment
+        </member>
+        <member name="T:TiaOpennessHelper.XMLParser.XPathConstants">
+            <summary>
+            
+            </summary>
+            TODO Edit XML Comment Template for XPathConstants
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblockname">
+            <summary>The xpathblockname</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKNAME
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblocknumber">
+            <summary>The xpathblocknumber</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKNUMBER
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblocktype">
+            <summary>The xpathblocktype</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKTYPE
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblocklanguage">
+            <summary>The xpathblocklanguage</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKLANGUAGE
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblockmemorylayout">
+            <summary>
+            The xpathblockmemorylayout
+            </summary>
+            TODO Edit XML Comment Template for XPATHBLOCKMEMORYLAYOUT
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblockauthor">
+            <summary>The xpathblockauthor</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKAUTHOR
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblocktitle">
+            <summary>The xpathblocktitle</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKTITLE
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblockcomment">
+            <summary>The xpathblockcomment</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKCOMMENT
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblockfamily">
+            <summary>The xpathblockfamily</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKFAMILY
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblockversion">
+            <summary>The xpathblockversion</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKVERSION
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathblockuserid">
+            <summary>The xpathblockuserid</summary>
+            TODO Edit XML Comment Template for XPATHBLOCKUSERID
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathcodeblock">
+            <summary>The xpathcodeblock</summary>
+            TODO Edit XML Comment Template for XPATHCODEBLOCK
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathdatablock">
+            <summary>The xpathdatablock</summary>
+            TODO Edit XML Comment Template for XPATHDATABLOCK
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathplcdatatype">
+            <summary>The xpathplcdatatype</summary>
+            TODO Edit XML Comment Template for XPATHPLCDATATYPE
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathtagtable">
+            <summary>The xpathtagtable</summary>
+            TODO Edit XML Comment Template for XPATHTAGTABLE
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpatharraydatatype">
+            <summary>The xpatharraydatatype</summary>
+            TODO Edit XML Comment Template for XPATHARRAYDATATYPE
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathinstanceofname">
+            <summary>The xpathinstanceofname</summary>
+            TODO Edit XML Comment Template for XPATHINSTANCEOFNAME
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.Xpathdatablocktype">
+            <summary>The xpathdatablocktype</summary>
+            TODO Edit XML Comment Template for XPATHDATABLOCKTYPE
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.XpathAutonumber">
+            <summary>The xpat h_ autonumber</summary>
+            TODO Edit XML Comment Template for XPATH_AUTONUMBER
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.XpathEnabletagreadback">
+            <summary>
+            The xpat h_ enabletagreadback
+            </summary>
+            TODO Edit XML Comment Template for XPATH_ENABLETAGREADBACK
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.XpathEnabletagreadbackblockproperties">
+            <summary>
+            The xpat h_ enabletagreadbackblockproperties
+            </summary>
+            TODO Edit XML Comment Template for XPATH_ENABLETAGREADBACKBLOCKPROPERTIES
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.XpathIsieccheckenabled">
+            <summary>
+            The xpat h_ isieccheckenabled
+            </summary>
+            TODO Edit XML Comment Template for XPATH_ISIECCHECKENABLED
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.XpathDownloadwithoutreinit">
+            <summary>
+            The xpat h_ downloadwithoutreinit
+            </summary>
+            TODO Edit XML Comment Template for XPATH_DOWNLOADWITHOUTREINIT
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.XpathIsonlystoredinloadmemory">
+            <summary>
+            The xpat h_ isonlystoredinloadmemory
+            </summary>
+            TODO Edit XML Comment Template for XPATH_ISONLYSTOREDINLOADMEMORY
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.XpathIsretainmemresenabled">
+            <summary>
+            The xpat h_ isretainmemresenabled
+            </summary>
+            TODO Edit XML Comment Template for XPATH_ISRETAINMEMRESENABLED
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.XpathIswriteprotectedinas">
+            <summary>
+            The xpat h_ iswriteprotectedinas
+            </summary>
+            TODO Edit XML Comment Template for XPATH_ISWRITEPROTECTEDINAS
+        </member>
+        <member name="F:TiaOpennessHelper.XMLParser.XPathConstants.XpathMemoryreserve">
+            <summary>
+            The xpat h_ memoryreserve
+            </summary>
+            TODO Edit XML Comment Template for XPATH_MEMORYRESERVE
+        </member>
+        <member name="T:TiaOpennessHelper.Enums.DatablockType">
+            <summary>
+            Subtype for Datablocks
+            </summary>
+        </member>
+        <member name="F:TiaOpennessHelper.Enums.DatablockType.ArrayDb">
+            <summary>
+            Array Datablock
+            </summary>
+        </member>
+        <member name="F:TiaOpennessHelper.Enums.DatablockType.IdBofFb">
+            <summary>
+            Instance Datablock of FB
+            </summary>
+        </member>
+        <member name="F:TiaOpennessHelper.Enums.DatablockType.SharedDb">
+            <summary>
+            Global Datablock
+            </summary>
+        </member>
+        <member name="F:TiaOpennessHelper.Enums.DatablockType.DBofUdt">
+            <summary>
+            Datablock generated from UDT
+            </summary>
+        </member>
+        <member name="T:TiaOpennessHelper.Enums.TiaXmlType">
+            <summary>
+            Representing the different Xml Types
+            </summary>
+        </member>
+        <member name="F:TiaOpennessHelper.Enums.TiaXmlType.Block">
+            <summary>
+            The block
+            </summary>
+        </member>
+        <member name="F:TiaOpennessHelper.Enums.TiaXmlType.DataBlock">
+            <summary>
+            The data block
+            </summary>
+        </member>
+        <member name="F:TiaOpennessHelper.Enums.TiaXmlType.PlcTagTable">
+            <summary>
+            The controller tag table
+            </summary>
+        </member>
+        <member name="F:TiaOpennessHelper.Enums.TiaXmlType.PlcType">
+            <summary>
+            The controller data type
+            </summary>
+        </member>
+    </members>
+</doc>
