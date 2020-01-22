@@ -1,8 +1,0 @@
-	<Access Scope="GlobalVariable" UId="NEWUID">
-      <Symbol>
-        <Component Name="ROBNAME_PI_APPL" />
-        <Component Name="RB-PLC" />
-        <Component Name="COMMBIT" />
-        <Address Area="Input" Type="Bool" BitOffset="41873" Informative="true" />
-      </Symbol>
-    </Access>

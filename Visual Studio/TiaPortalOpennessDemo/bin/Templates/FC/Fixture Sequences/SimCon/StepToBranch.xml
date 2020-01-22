@@ -1,9 +1,0 @@
-      <Connection>
-        <NodeFrom>
-          <StepRef Number="UID_FROM" />
-        </NodeFrom>
-        <NodeTo>
-          <BranchRef Number="UID_B" In="UID_NR" />
-        </NodeTo>
-        <LinkType>Direct</LinkType>
-      </Connection>

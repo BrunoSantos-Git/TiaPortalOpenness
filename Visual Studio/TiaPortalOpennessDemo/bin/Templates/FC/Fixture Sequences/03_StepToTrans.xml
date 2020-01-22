@@ -1,9 +1,0 @@
-﻿<Connection>
-        <NodeFrom>
-          <StepRef Number="UNR_STEP" />
-        </NodeFrom>
-        <NodeTo>
-          <TransitionRef Number="UNR_TRANS" />
-        </NodeTo>
-        <LinkType>Direct</LinkType>
-</Connection>
