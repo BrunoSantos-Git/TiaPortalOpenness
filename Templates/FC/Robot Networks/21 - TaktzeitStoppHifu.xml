@@ -68,8 +68,7 @@
     </Access>
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
-        <Component Name="DB_ARG" />
-        <Component Name="IBN=0" />
+        <Component Name="INTROSYS_VKE=0" />
         <Address Area="None" Type="Bool" BlockNumber="100" BitOffset="1496" Informative="true" />
       </Symbol>
     </Access>

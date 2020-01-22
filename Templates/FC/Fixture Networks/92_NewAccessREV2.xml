@@ -1,8 +1,0 @@
-	<Access Scope="GlobalVariable" UId="_UID">
-      <Symbol>
-        <Component Name="LEV1" />
-        <Component Name="LEV2" />
-        <Component Name="LEV3" />
-        <Address Area="_AREA" Type="_TYPE" BitOffset="0" Informative="true" />
-      </Symbol>
-    </Access>

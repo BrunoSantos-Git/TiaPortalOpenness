@@ -4,7 +4,7 @@
   <Parts>
     <Access Scope="GlobalVariable" UId="21">
       <Symbol>
-        <Component Name="F2DRBNAME" />
+        <Component Name="11" />
         <Component Name="BA" />
         <Component Name="SWE7" />
         <Address Area="None" Type="Bool" BlockNumber="102" BitOffset="144" Informative="true" />

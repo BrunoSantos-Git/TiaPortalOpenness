@@ -4,7 +4,7 @@
   <Parts>
     <Access Scope="GlobalVariable" UId="21">
       <Symbol>
-        <Component Name="ROBNAME" />
+        <Component Name="125005R01" />
         <Component Name="Rob" />
         <Component Name="oRob" />
         <Address Area="None" Type="Bool" BlockNumber="100" BitOffset="3208" Informative="true" />
@@ -12,7 +12,7 @@
     </Access>
     <Access Scope="GlobalVariable" UId="22">
       <Symbol>
-        <Component Name="ROBNAME" />
+        <Component Name="125005R01" />
         <Component Name="Rob" />
         <Component Name="FrgFolge" />
         <Address Area="None" Type="Bool" BlockNumber="100" BitOffset="3128" Informative="true" />
@@ -20,21 +20,20 @@
     </Access>
     <Access Scope="GlobalVariable" UId="23">
       <Symbol>
-        <Component Name="ROBNAME" />
+        <Component Name="125005R01" />
         <Component Name="FM" />
         <Address Area="None" Type="Bool" BlockNumber="100" BitOffset="33112" Informative="true" />
       </Symbol>
     </Access>
     <Access Scope="GlobalVariable" UId="24">
       <Symbol>
-        <Component Name="DB_ARG" />
-        <Component Name="IBN=0" />
+        <Component Name="INTROSYS_VKE=0" />
         <Address Area="None" Type="Bool" BlockNumber="150" BitOffset="141088" Informative="true" />
       </Symbol>
     </Access>
     <Access Scope="GlobalVariable" UId="25">
       <Symbol>
-        <Component Name="ROBNAME" />
+        <Component Name="125005R01" />
         <Component Name="FolgeStart" />
         <Address Area="None" Type="Bool" BlockNumber="100" BitOffset="33680" Informative="true" />
       </Symbol>
