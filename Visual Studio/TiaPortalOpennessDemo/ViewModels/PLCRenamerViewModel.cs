@@ -2076,16 +2076,17 @@ namespace TiaPortalOpennessDemo.ViewModels
         /// <returns>TreeViewItem</returns>
         private static TreeViewItem CreateDeviceTreeViewItem(Device device)
         {
-            TreeViewItem plc = null;
             TreeViewItem item = null;
 
             var plcSoftware = OpennessHelper.GetPlcSoftware(device);
 
             if (plcSoftware != null)
             {
-                plc = new TreeViewItem();
-                plc.Header = plcSoftware.Name;
-                plc.Tag = plcSoftware;
+                TreeViewItem plc = new TreeViewItem
+                {
+                    Header = plcSoftware.Name,
+                    Tag = plcSoftware
+                };
 
                 #region Program blocks
                 //TreeViewItem for Blocks
@@ -2345,8 +2346,10 @@ namespace TiaPortalOpennessDemo.ViewModels
         /// <param name="strings"></param>
         private void GenerateConfigFile(List<string> groups, Dictionary<string, string> strings)
         {
-            XDocument xDoc = new XDocument();
-            xDoc.Declaration = new XDeclaration("1.0", "utf-8", null);
+            XDocument xDoc = new XDocument
+            {
+                Declaration = new XDeclaration("1.0", "utf-8", null)
+            };
             string ip = IP1 + "." + IP2 + "." + IP3 + ".1";
             XElement xConfig = new XElement("Config", new XAttribute("project", tiaPortalProject.Name));
             XElement xGroups = new XElement("Groups");

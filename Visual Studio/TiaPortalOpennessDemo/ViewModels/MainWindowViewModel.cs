@@ -2156,16 +2156,9 @@ namespace TiaPortalOpennessDemo.ViewModels
         /// <value>The standard main folder command.</value>
         /// TODO Edit XML Comment Template for StandardMainFolderCommand
         public CommandBase StandardMainFolderCommand { get; set; }
-        /// <summary>Gets or sets the standard export symbolic folder command.</summary>
-        /// <value>The standard symbolic export folder command.</value>
-        /// TODO Edit XML Comment Template for StandardExportSymbolicFolderCommand
-        public CommandBase StandardExportSymbolicFolderCommand { get; set; }
         /// <summary>Gets or sets the standard import robot schnittstelle path command.</summary>
         /// <value>The standard export robot Schnittstelle path command.</value>
         public CommandBase StandardImportSchnittstelleFileCommand { get; set; }
-        /// <summary>Gets or sets the standard export Symbolic path command.</summary>
-        /// <value>The standard export Symbolic path command.</value>
-        public CommandBase StandardImportSymbolicFileCommand { get; set; }
         /// <summary>Gets or sets the standard plc db file path command.</summary>
         /// <value>The standard plc db file path command.</value>
         public CommandBase StandardPlcDBFileCommand { get; set; }
@@ -2190,10 +2183,6 @@ namespace TiaPortalOpennessDemo.ViewModels
         /// <value>The refresh library command.</value>
         /// TODO Edit XML Comment Template for RefreshLibraryCommand
         public CommandBase RefreshLibraryCommand { get; set; }
-        /// <summary>Gets or sets the refresh symbolics command.</summary>
-        /// <value>The refresh symbolics command.</value>
-        /// TODO Edit XML Comment Template for RefreshSymbolicsCommand
-        public CommandBase RefreshSymbolicsCommand { get; set; }
         /// <summary>Gets or sets the refresh main tree command.</summary>
         /// <value>The refresh main tree command.</value>
         /// TODO Edit XML Comment Template for RefreshMainTreeCommand
